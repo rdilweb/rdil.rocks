@@ -18,13 +18,10 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - Gemfile
+  - Gemfile.lock
   - .gitignore
   - .sass-cache
   - .cirrus.yml
-  - tmp
-  - setup/**/**
-include:
-  - _redirects
 plugins:
   - jekyll-sass-converter
   - jekyll-relative-links
