@@ -1,0 +1,5 @@
+ports:
+  - port: 4000
+
+tasks:
+  - command: bundle install
