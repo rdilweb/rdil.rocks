@@ -1,0 +1,27 @@
+[build]
+command = "jekyll build"
+publish = "_site/"
+
+[[headers]]
+for = "/manifest.json"
+
+[headers.values]
+Access-Control-Allow-Origin = "*"
+
+[[headers]]
+for = "/*"
+
+[[headers.values]]
+Referrer-Policy = "same-origin"
+
+[[redirects]]
+from = "/update"
+to = "https://github.com/hyperiumjailbreak/client/releases/"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.rdil.rocks/"
+to = "https://rdil.rocks/"
+status = 301
+force = true

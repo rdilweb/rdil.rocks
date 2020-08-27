@@ -1,0 +1,31 @@
+theme: picklecore
+title: RDIL's Site
+name: RDIL's Site
+title_separator: "-"
+timezone: America/New_York
+encoding: UTF-8
+skin: dark
+webmanifest: manifest.json
+apple-touch-icon: /apple-touch-icon.png
+index_on_google: true
+twitter:
+  username: rdil_pickle
+email: me@rdil.rocks
+url: https://rdil.rocks
+github: RDIL
+description: Official website of RDIL, a coder, designer of websites, and open-source lover.
+exclude:
+  - .bundle
+  - .jekyll-assets-cache
+  - Gemfile
+  - .gitignore
+  - .sass-cache
+  - .cirrus.yml
+  - tmp
+  - setup/**/**
+include:
+  - _redirects
+plugins:
+  - jekyll-sass-converter
+  - jekyll-relative-links
+  - jekyll-sitemap
