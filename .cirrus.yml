@@ -7,7 +7,7 @@ make_preview_task:
     fingerprint_script: |
       ruby -v
       cat Gemfile
-    populate_script: bundle install
+    populate_script: gem update && bundle install
   build_and_test_script: jekyll build
   cleanup_before_upload_script: rm -rf _site/static
   site_build_artifacts:
