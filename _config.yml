@@ -5,7 +5,7 @@ title_separator: "-"
 timezone: America/New_York
 encoding: UTF-8
 skin: dark
-webmanifest: manifest.json
+webmanifest: /manifest.json
 apple-touch-icon: /apple-touch-icon.png
 index_on_google: true
 twitter:
@@ -26,3 +26,4 @@ plugins:
   - jekyll-sass-converter
   - jekyll-relative-links
   - jekyll-sitemap
+  - jekyll-last-modified-at
