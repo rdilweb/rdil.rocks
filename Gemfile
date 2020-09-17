@@ -8,3 +8,5 @@ gem 'jekyll-last-modified-at'
 
 # WINDOWS SUPPORT
 gem 'tzinfo-data'
+
+gem 'rake'
