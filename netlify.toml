@@ -1,5 +1,5 @@
 [build]
-command = "curl -fsSL https://yarnpkg.com/install.sh | bash && rake buildAll"
+command = "rm -rf ~/.yarn && curl -fsSL https://yarnpkg.com/install.sh | bash && rake buildAll"
 publish = "_site/"
 
 [[headers]]
