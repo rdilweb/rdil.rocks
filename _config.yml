@@ -22,6 +22,7 @@ exclude:
   - .gitignore
   - .sass-cache
   - .cirrus.yml
+  - cherry
 plugins:
   - jekyll-sass-converter
   - jekyll-relative-links

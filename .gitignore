@@ -17,3 +17,7 @@ _sass/bulma/test
 _sass/bulma/.github
 _sass/bulma/css
 _sass/bulma/docs
+
+cherry/node_modules
+cherry/.docusaurus
+cherry/build
