@@ -4,7 +4,37 @@ title: Releases
 description: An archive of previous releases with changelogs.
 ---
 
-Here are all the previous releases and their changelogs.
+Here are all the previous releases and changelogs.
+
+## v1.3.0
+
+### Oak
+
+```diff
+* Update simpleconfig to 2.0.0
+* Fixed some bugs
+```
+
+### Willow
+
+```diff
+* Update simpleconfig to 2.0.0
+* Change instance to INSTANCE in codebase
+* Fixed some bugs
+```
+
+### Maple
+
+```diff
+* Update simpleconfig to 2.0.0
+* Fixed some bugs
+```
+
+### Pine
+
+```diff
++ Add Pine
+```
 
 ## v1.2.0
 
