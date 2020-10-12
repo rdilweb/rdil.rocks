@@ -32,8 +32,8 @@ const features = [
     title: <>Multiple Minecraft Versions</>,
     description: (
       <>
-        Cherry supports several Minecraft versions, including 1.14.4, and
-        1.15.2!
+        Cherry supports several Minecraft versions, including 1.14.4, 1.15.2,
+        and 1.16!
       </>
     ),
   },

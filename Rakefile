@@ -2,17 +2,13 @@ task default: %w[serve]
 
 desc "run the site"
 task :serve do
-  sh "jekyll s"
+  Rake::Task["buildAll"].invoke
+  sh "cd _site && npx static-server-rdil"
 end
 
 desc "build the site"
-task :buildBase do
-  sh "jekyll build"
-end
-
-desc "build the site and all node components"
 task :buildAll do
-  Rake::Task["buildBase"].invoke
+  sh "jekyll build"
   Rake::Task["buildNodeComponents"].invoke
 end
 
