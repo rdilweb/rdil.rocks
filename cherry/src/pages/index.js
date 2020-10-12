@@ -75,7 +75,7 @@ export default () => {
         <section className={styles.button}>
           <Link
             className="button button--primary button--lg"
-            to={useBaseUrl("docs/install/")}
+            to={useBaseUrl("docs/downloads/")}
           >
             Download
           </Link>

@@ -1,10 +1,10 @@
 ---
-id: releases
-title: Releases
-description: An archive of previous releases with changelogs.
+id: changelog
+title: Changelog
+description: All previous releases and the associated changelogs.
 ---
 
-Here are all the previous releases and changelogs.
+Here are all the previous releases and the associated changelogs.
 
 ## v1.3.0
 

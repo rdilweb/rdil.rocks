@@ -1,5 +1,5 @@
 module.exports = {
   sidebar: {
-    Documentation: ["features", "install", "releases", "thanks"],
+    Documentation: ["features", "downloads", "changelog", "thanks"],
   },
 }

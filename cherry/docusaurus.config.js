@@ -20,8 +20,8 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/install",
-          label: "Install",
+          to: "docs/downloads",
+          label: "Download",
           position: "left",
         },
         {
