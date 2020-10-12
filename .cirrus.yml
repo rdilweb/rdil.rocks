@@ -1,0 +1,10 @@
+make_preview_task:
+  auto_cancellation: true
+  env:
+    JEKYLL_ENV: production
+  populate_script: gem update && bundle install
+  build_and_test_script: rake buildAll
+  site_build_artifacts:
+    path: _site/**/**
+  container:
+    dockerfile: ci.Dockerfile
