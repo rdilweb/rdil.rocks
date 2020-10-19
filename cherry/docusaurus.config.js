@@ -25,6 +25,11 @@ module.exports = {
           position: "left",
         },
         {
+          href: "https://www.curseforge.com/minecraft/mc-mods/cherry",
+          label: "CurseForge",
+          position: "right",
+        },
+        {
           href: "https://github.com/RDIL/Cherry",
           label: "GitHub",
           position: "right",
