@@ -6,10 +6,11 @@ task :serve do
   sh "cd _site && npx static-server-rdil"
 end
 
-desc "build the site"
-task :buildAll do
+desc "build the whole site"
+task buildAll: %w[buildBase buildNodeComponents mergeSitemaps]
+
+task :buildBase do
   sh "jekyll build"
-  Rake::Task["buildNodeComponents"].invoke
 end
 
 desc "update bulma"
@@ -20,4 +21,9 @@ end
 desc "build node components"
 task :buildNodeComponents do
   sh "cd cherry && yarn && yarn build && cd .. && cp -r cherry/build _site/cherry"
+end
+
+desc "merge sitemaps into root sitemap"
+task :mergeSitemaps do
+  sh "npx merge-sitemaps _site/sitemap.xml _site/cherry/sitemap.xml _site/sitemap.xml"
 end

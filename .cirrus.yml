@@ -1,9 +1,14 @@
-make_preview_task:
+Build_task:
   auto_cancellation: true
   env:
     JEKYLL_ENV: production
+    NODE_ENV: production
   populate_script: gem update && bundle install
-  build_and_test_script: rake buildAll
+  cherry_yarn_cache:
+    folder: cherry/node_modules
+    populate_script: cd cherry && yarn
+    reupload_on_changes: true
+  build_script: rake buildAll
   site_build_artifacts:
     path: _site/**/**
   container:
