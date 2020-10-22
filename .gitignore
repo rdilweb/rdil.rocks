@@ -1,6 +1,5 @@
 _site/
 .DS_Store
-.jekyll-assets-cache
 .sass-cache
 
 _sass/bulma/.editorconfig
@@ -21,3 +20,6 @@ _sass/bulma/docs
 cherry/node_modules
 cherry/.docusaurus
 cherry/build
+
+node_modules
+build

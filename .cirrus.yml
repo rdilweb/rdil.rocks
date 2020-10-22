@@ -1,15 +1,9 @@
 Build_task:
-  auto_cancellation: true
-  env:
-    JEKYLL_ENV: production
-    NODE_ENV: production
-  populate_script: gem update && bundle install
-  cherry_yarn_cache:
-    folder: cherry/node_modules
-    populate_script: cd cherry && yarn
-    reupload_on_changes: true
-  build_script: rake buildAll
-  site_build_artifacts:
-    path: _site/**/**
-  container:
-    dockerfile: ci.Dockerfile
+    auto_cancellation: true
+    env:
+        NODE_ENV: production
+    build_script: yarn build
+    build_artifacts:
+        path: build/**/**
+    container:
+        image: node:latest

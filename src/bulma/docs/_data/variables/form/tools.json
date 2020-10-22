@@ -1,0 +1,37 @@
+{
+  "by_name": {
+    "$label-color": {
+      "name": "$label-color",
+      "value": "$text-strong",
+      "type": "variable",
+      "computed_type": "color",
+      "computed_value": "hsl(0, 0%, 21%)"
+    },
+    "$label-weight": {
+      "name": "$label-weight",
+      "value": "$weight-bold",
+      "type": "variable",
+      "computed_type": "font-weight",
+      "computed_value": "700"
+    },
+    "$help-size": {
+      "name": "$help-size",
+      "value": "$size-small",
+      "type": "variable",
+      "computed_type": "size",
+      "computed_value": "0.75rem"
+    },
+    "$label-colors": {
+      "name": "$label-colors",
+      "value": "$form-colors",
+      "type": "variable"
+    }
+  },
+  "list": [
+    "$label-color",
+    "$label-weight",
+    "$help-size",
+    "$label-colors"
+  ],
+  "file_path": "form/tools.sass"
+}

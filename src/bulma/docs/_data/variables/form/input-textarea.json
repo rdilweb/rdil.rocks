@@ -1,0 +1,31 @@
+{
+  "by_name": {
+    "$textarea-padding": {
+      "name": "$textarea-padding",
+      "value": "$control-padding-horizontal",
+      "type": "variable"
+    },
+    "$textarea-max-height": {
+      "name": "$textarea-max-height",
+      "value": "40em",
+      "type": "size"
+    },
+    "$textarea-min-height": {
+      "name": "$textarea-min-height",
+      "value": "8em",
+      "type": "size"
+    },
+    "$textarea-colors": {
+      "name": "$textarea-colors",
+      "value": "$form-colors",
+      "type": "variable"
+    }
+  },
+  "list": [
+    "$textarea-padding",
+    "$textarea-max-height",
+    "$textarea-min-height",
+    "$textarea-colors"
+  ],
+  "file_path": "form/input-textarea.sass"
+}
