@@ -3,7 +3,7 @@ Build_task:
     env:
         NODE_ENV: production
     build_script: yarn build
-    build_artifacts:
+    site_preview_artifacts:
         path: build/**/**
     container:
         image: node:latest
