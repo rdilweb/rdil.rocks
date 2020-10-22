@@ -178,13 +178,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bulma@npm:^0.9.1":
-  version: 0.9.1
-  resolution: "bulma@npm:0.9.1"
-  checksum: b4bfe969cb711537383aabab724019ab3e5028891382a20dedde85fa8247a0af9ec0f8cdd26e7276528311cda97e77cdf382b2b0f86f1034963273e1fadb9433
-  languageName: node
-  linkType: hard
-
 "caseless@npm:~0.12.0":
   version: 0.12.0
   resolution: "caseless@npm:0.12.0"
@@ -856,15 +849,11 @@ fsevents@~2.1.2:
     "@types/fs-extra": ^9.0.2
     "@types/node": ^14.14.2
     "@types/sass": ^1.16.0
-    bulma: ^0.9.1
     chalk: ^4.1.0
     fs-extra: ^9.0.1
     prettier: ^2.1.2
     rimraf: ^3.0.2
     sass: ^1.27.0
-  dependenciesMeta:
-    bulma@0.9.1:
-      unplugged: true
   languageName: unknown
   linkType: soft
 

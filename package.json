@@ -3,10 +3,10 @@
     "private": true,
     "scripts": {
         "build": "node scripts/build.js",
-        "prettier": "prettier --write **/*.{js,css,yml,md,html,json}"
+        "prettier": "prettier --write **/*.{js,css,yml,md,html,json,scss}",
+        "update:bulma": "cd src && yarn run rimraf bulma && git clone https://github.com/jgthms/bulma.git && yarn run rimraf bulma/.git"
     },
     "dependencies": {
-        "bulma": "^0.9.1",
         "chalk": "^4.1.0",
         "fs-extra": "^9.0.1",
         "rimraf": "^3.0.2",
@@ -21,10 +21,5 @@
     "prettier": {
         "semi": false,
         "tabWidth": 4
-    },
-    "dependenciesMeta": {
-        "bulma@0.9.1": {
-            "unplugged": true
-        }
     }
 }
