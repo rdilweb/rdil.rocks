@@ -5,6 +5,31 @@ __metadata:
   version: 4
   cacheKey: 7
 
+"@types/fs-extra@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "@types/fs-extra@npm:9.0.2"
+  dependencies:
+    "@types/node": "*"
+  checksum: 9fb00885d8d064cf81e25722e6ee6f8af316065beb33b980f24a4a918e06c15ae328b82d3ede240e9b99e039c59467a266c1e4549d5b3ad2498111c75eb90987
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:*, @types/node@npm:^14.14.2":
+  version: 14.14.2
+  resolution: "@types/node@npm:14.14.2"
+  checksum: e6ad786008ec81e010525beb09067f31cc55a3a02120a7e383e21309c1422a0d4a56059c1da46716509e36dbd4d2c607790f3fd715275a09b9f3ffb2cf3b243e
+  languageName: node
+  linkType: hard
+
+"@types/sass@npm:^1.16.0":
+  version: 1.16.0
+  resolution: "@types/sass@npm:1.16.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: e95d14da2d05dea49e913db55922857234b01f2b1b513dd8cc556b64ffa6d89fb81ce4c1f21a6b4cd20f39d61455975e623ed681502b3d06b2d24a2ddd03a21e
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -150,6 +175,13 @@ __metadata:
   dependencies:
     fill-range: ^7.0.1
   checksum: f3493181c3e91a1333d3c9afc9b3263a3f62f4ced0b033c372efc1373b48a7699557f4e04026b232a8556e043ca5360a9d3008c33852350138d4b0ea57558b8d
+  languageName: node
+  linkType: hard
+
+"bulma@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "bulma@npm:0.9.1"
+  checksum: b4bfe969cb711537383aabab724019ab3e5028891382a20dedde85fa8247a0af9ec0f8cdd26e7276528311cda97e77cdf382b2b0f86f1034963273e1fadb9433
   languageName: node
   linkType: hard
 
@@ -821,11 +853,18 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "rdil.rocks@workspace:."
   dependencies:
+    "@types/fs-extra": ^9.0.2
+    "@types/node": ^14.14.2
+    "@types/sass": ^1.16.0
+    bulma: ^0.9.1
     chalk: ^4.1.0
     fs-extra: ^9.0.1
     prettier: ^2.1.2
     rimraf: ^3.0.2
     sass: ^1.27.0
+  dependenciesMeta:
+    bulma@0.9.1:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

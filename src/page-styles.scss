@@ -155,7 +155,7 @@ a {
 }
 
 #nav-btn span:nth-child(1) {
-  top: 0px;
+  top: 0;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -192,7 +192,7 @@ a {
 }
 
 #nav-btn.open span:nth-child(2) {
-  width: 0%;
+  width: 0;
   opacity: 0;
 }
 
