@@ -47,3 +47,5 @@ cherry/.yarn/*
 !cherry/.yarn/sdks
 !cherry/.yarn/versions
 cherry/.pnp.*
+
+node_modules
