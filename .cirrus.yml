@@ -1,7 +1,11 @@
 Build_task:
-    auto_cancellation: true
     env:
         NODE_ENV: production
+    yarn_cache:
+        folder: .yarn/cache
+    cherry_yarn_cache:
+        folder: cherry/.yarn/cache
+    prepopulate_script: yarn
     build_script: yarn build
     site_preview_artifacts:
         path: build/**/**

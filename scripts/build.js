@@ -29,7 +29,7 @@ function build() {
     fs.writeFileSync("build/bundle.min.css", out.css)
 
     console.log("[4/5] Building cherry")
-    child_process.execSync("cd cherry && yarn build")
+    child_process.execSync("cd cherry && yarn && yarn build")
 
     console.log("[5/5] Copying cherry files")
     fs.copySync("cherry/build", "build/cherry", {
