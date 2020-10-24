@@ -3,6 +3,7 @@
     "private": true,
     "scripts": {
         "build": "node scripts/build.js",
+        "start": "yarn build && cd build && npx static-server-rdil --enhanced-security",
         "prettier": "prettier --write **/*.{js,css,yml,md,html,json,scss}",
         "update:bulma": "cd src && yarn run rimraf bulma && git clone https://github.com/jgthms/bulma.git && yarn run rimraf bulma/.git"
     },
