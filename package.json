@@ -1,0 +1,26 @@
+{
+    "name": "rdil.rocks",
+    "private": true,
+    "scripts": {
+        "build": "node scripts/build.js",
+        "start": "yarn build && cd build && npx static-server-rdil --enhanced-security",
+        "prettier": "prettier --write **/*.{js,css,yml,md,html,json,scss}",
+        "update:bulma": "cd src && yarn run rimraf bulma && git clone https://github.com/jgthms/bulma.git && yarn run rimraf bulma/.git"
+    },
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "fs-extra": "^9.0.1",
+        "rimraf": "^3.0.2",
+        "sass": "^1.27.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.2",
+        "@types/node": "^14.14.2",
+        "@types/sass": "^1.16.0",
+        "prettier": "^2.1.2"
+    },
+    "prettier": {
+        "semi": false,
+        "tabWidth": 4
+    }
+}
