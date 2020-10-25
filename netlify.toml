@@ -1,6 +1,6 @@
 [build]
-command = "rm -rf ~/.yarn && curl -fsSL https://yarnpkg.com/install.sh | bash && export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\" && rake buildAll"
-publish = "_site/"
+command = "yarn install && yarn build"
+publish = "build/"
 
 [[headers]]
 for = "/manifest.json"
