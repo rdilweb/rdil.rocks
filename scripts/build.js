@@ -19,22 +19,30 @@ function build() {
         dereference: true,
     })
 
-    console.log("[2/5] Compiling sass bundle")
-    const out = sass.renderSync({
-        file: "src/page-styles.scss",
-        outputStyle: "compressed",
+    console.log("[2/5] Building sass bundles")
+    const sassBundles = [
+        ["src/base.scss", "build/bundle.min.css"],
+        ["src/code-style-page.scss", "build/page-code-style.min.css"],
+    ]
+
+    sassBundles.forEach(bundle => {
+        const out = sass.renderSync({
+            file: bundle[0],
+            outputStyle: "compressed",
+        })
+        fs.writeFileSync(bundle[1], out.css)
     })
 
-    console.log("[3/5] Writing sass bundle")
-    fs.writeFileSync("build/bundle.min.css", out.css)
-
-    console.log("[4/5] Building cherry")
+    console.log("[3/5] Building cherry")
     child_process.execSync("cd cherry && yarn && yarn build")
 
-    console.log("[5/5] Copying cherry files")
+    console.log("[4/5] Copying cherry files")
     fs.copySync("cherry/build", "build/cherry", {
         dereference: true,
     })
+
+    console.log("[5/5] Merging sitemaps")
+    child_process.execSync("npx merge-sitemaps build/sitemap.xml build/cherry/sitemap.xml build/sitemap.xml")
 
     console.log(chalk.greenBright("\nDone!"))
 }
