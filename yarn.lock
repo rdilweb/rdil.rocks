@@ -14,10 +14,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.2":
+"@types/node@npm:*":
   version: 14.14.2
   resolution: "@types/node@npm:14.14.2"
   checksum: e6ad786008ec81e010525beb09067f31cc55a3a02120a7e383e21309c1422a0d4a56059c1da46716509e36dbd4d2c607790f3fd715275a09b9f3ffb2cf3b243e
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.14.6":
+  version: 14.14.6
+  resolution: "@types/node@npm:14.14.6"
+  checksum: 9b06b04ab2ae3761136fb39b573f95d90e748ebcf232e126304d642e4910039a74973547635729b627a0401791a1f2491aa9aa6d4d6bb80922a0b869a2731a63
   languageName: node
   linkType: hard
 
@@ -847,13 +854,13 @@ fsevents@~2.1.2:
   resolution: "rdil.rocks@workspace:."
   dependencies:
     "@types/fs-extra": ^9.0.2
-    "@types/node": ^14.14.2
+    "@types/node": ^14.14.6
     "@types/sass": ^1.16.0
     chalk: ^4.1.0
     fs-extra: ^9.0.1
     prettier: ^2.1.2
     rimraf: ^3.0.2
-    sass: ^1.27.0
+    sass: ^1.28.0
   languageName: unknown
   linkType: soft
 
@@ -941,14 +948,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.27.0":
-  version: 1.27.0
-  resolution: "sass@npm:1.27.0"
+"sass@npm:^1.28.0":
+  version: 1.28.0
+  resolution: "sass@npm:1.28.0"
   dependencies:
     chokidar: ">=2.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: db4342b13bbcc5e0f13c1d9139f31c48f9c5a03bdb1c8d8ef7b47d063f5c333a2b69642bd489501cd756f4d0d1da43ee77127938cf9743cc39839952319a705e
+  checksum: b4d718512e6eb05d44a2f679dcf593ff72f12b168851fc3bd37add5e142e7e36f04d98a908ed8f9e196f6aef1db09c6d3e6e5e947819c74df56bb24dd584c7b9
   languageName: node
   linkType: hard
 
