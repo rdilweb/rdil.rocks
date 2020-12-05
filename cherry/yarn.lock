@@ -2024,6 +2024,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdx-js/react@npm:^1.6.22":
+  version: 1.6.22
+  resolution: "@mdx-js/react@npm:1.6.22"
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0
+  checksum: 3a0a189aa04a3b73e4846f8311573d45404c4ec74a1a4b196e7829492fedabe38b869016125620403bcf5f999f58ab75c9f54279f7557e361c239b57e5ed2267
+  languageName: node
+  linkType: hard
+
 "@mdx-js/util@npm:1.6.21":
   version: 1.6.21
   resolution: "@mdx-js/util@npm:1.6.21"
@@ -3864,7 +3873,7 @@ __metadata:
   dependencies:
     "@docusaurus/core": ^2.0.0-alpha.69
     "@docusaurus/preset-classic": ^2.0.0-alpha.69
-    "@mdx-js/react": ^1.6.21
+    "@mdx-js/react": ^1.6.22
     clsx: ^1.1.1
     react: ^17.0.1
     react-dom: ^17.0.1
