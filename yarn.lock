@@ -5,12 +5,12 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@types/fs-extra@npm:^9.0.3":
-  version: 9.0.3
-  resolution: "@types/fs-extra@npm:9.0.3"
+"@types/fs-extra@npm:^9.0.4":
+  version: 9.0.4
+  resolution: "@types/fs-extra@npm:9.0.4"
   dependencies:
     "@types/node": "*"
-  checksum: 4e7a42c0ff9f858d547a1e12c7c712e75751e6813722fdfe146cf3e41921aba64b183251f0650f432bb0ce0afd0098c9124509637f5e1a526af6dd6f8d77621d
+  checksum: 399b1444bf7843268f31f6d333e708740eb70b8ea70d905f108bc649dfdfa45f985bd4e149b3feacc358b1ad73fad28f0ac6eed51bdade6050398571512013fb
   languageName: node
   linkType: hard
 
@@ -1129,12 +1129,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "prettier@npm:2.2.0"
+"prettier@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "prettier@npm:2.2.1"
   bin:
     prettier: bin-prettier.js
-  checksum: fe7e2ac725d3b067204700c5fcee415a90e1c1ab01735a7748bce791db61a3242939a032bfe5f8faa2c054571f4e9bac266b766e483648511af72f69fb041a6c
+  checksum: 92c6c9f4b87eba1f28466edee57dd18c80d00b858edda77d46d1950d20e6e302b68ee255fc91133ba931e63c4577b5ae30da194d9626a8f3c0177778b91bf056
   languageName: node
   linkType: hard
 
@@ -1170,14 +1170,14 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "rdil.rocks@workspace:."
   dependencies:
-    "@types/fs-extra": ^9.0.3
+    "@types/fs-extra": ^9.0.4
     "@types/node": 14.x
     "@types/sass": ^1.16.0
     fs-extra: ^9.0.1
     npm-run-all: ^4.1.5
-    prettier: ^2.2.0
+    prettier: ^2.2.1
     rimraf: ^3.0.2
-    sass: ^1.29.0
+    sass: ^1.30.0
   languageName: unknown
   linkType: soft
 
@@ -1296,14 +1296,14 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.29.0":
-  version: 1.29.0
-  resolution: "sass@npm:1.29.0"
+"sass@npm:^1.30.0":
+  version: 1.30.0
+  resolution: "sass@npm:1.30.0"
   dependencies:
     chokidar: ">=2.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: 8114e0c4e73be695d25030f51bff8da0151f335b135869e926d39e21688cd81a6be0368a332caec40425e64df499bd34962aa4ca59926a6bd0e11aa43ac306d9
+  checksum: 8bbaf43df42290902d0d325bcbaef5e43409ad5bd4de8447d0f94dc7e6571aec191c26045e06de2d1c38d22cf7ee33b58b9f1a99e4451743d9841f40ab837d10
   languageName: node
   linkType: hard
 
