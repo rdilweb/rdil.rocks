@@ -2,30 +2,32 @@
     "name": "rdil.rocks",
     "private": true,
     "scripts": {
-        "build": "run-s build:prebuild build:main build:cherry build:postbuild merge-sitemaps",
-        "build:prebuild": "rimraf build && node scripts/prebuild.js",
-        "build:postbuild": "node scripts/postbuild.js",
-        "build:main": "node scripts/build.js",
-        "build:cherry": "cd cherry && yarn && yarn build",
-        "start": "yarn build && cd build && npx static-server-rdil --enhanced-security",
-        "prettier": "prettier --write **/*.{js,css,yml,md,html,json,scss}",
-        "update:bulma": "cd src && yarn run rimraf bulma && git clone https://github.com/jgthms/bulma.git --single-branch --depth 1 && yarn run rimraf bulma/.git",
-        "merge-sitemaps": "npx merge-sitemaps build/sitemap.xml build/cherry/sitemap.xml build/sitemap.xml"
+        "build": "run-s clean build:root build:cherry assemble",
+        "build:root": "yarn workspace root build",
+        "build:cherry": "yarn workspace cherry build",
+        "start:root": "yarn workspace root start",
+        "start:cherry": "yarn workspace cherry start",
+        "start": "run-p start:root start:cherry",
+        "assemble": "node assemble",
+        "prettier": "prettier --write **/*.{js,jsx,ts,tsx,css,yml,md,html,json,scss}",
+        "clean": "rimraf build"
     },
     "dependencies": {
         "fs-extra": "^9.0.1",
         "npm-run-all": "^4.1.5",
-        "rimraf": "^3.0.2",
-        "sass": "^1.30.0"
+        "rimraf": "^3.0.2"
     },
     "devDependencies": {
-        "@types/fs-extra": "^9.0.4",
+        "@types/fs-extra": "^9.0.6",
         "@types/node": "14.x",
-        "@types/sass": "^1.16.0",
         "prettier": "^2.2.1"
     },
     "prettier": {
         "semi": false,
         "tabWidth": 4
-    }
+    },
+    "workspaces": [
+        "cherry",
+        "root"
+    ]
 }

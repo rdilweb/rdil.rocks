@@ -1,68 +1,62 @@
 import React from "react"
-
+import { Card, Grid } from "@material-ui/core"
 import NavBar from "../components/NavBar"
-
+import Seo from "../components/Seo"
 import "../css/base.css"
 
 const Home = () => {
     return (
         <>
+            <Seo title="Home | RDIL's Site" page="" />
             <NavBar />
-            <main class="content">
-                <div class="title">
+            <main>
+                <div>
                     <h1>Reece Dunham</h1>
                     <p>
                         Heya, I'm a coder, designer of websites, and open-source
                         lover.
                     </p>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-content">
-                                <h3>About</h3>
-                                <p>
-                                    I am a software developer and I maintain
-                                    many open source projects on GitHub. I have
-                                    been coding since 2014, and can say I have
-                                    proficient knowledge inmost of the common
-                                    programming languages such as Python, HTML,
-                                    and JS to name a few.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-content">
-                                <h3>Experience</h3>
-                                <p>
-                                    I have taken a large amount of classes on
-                                    Python (my main language) and web design,
-                                    plus some on other languages such as Java,
-                                    React, and the basics of Docker. I run
-                                    several OSS projects that have helped me to
-                                    learn how to apply code to the real world.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-content">
-                                <h3>Hobbies</h3>
-                                <p>
-                                    When I'm not working on software, I am most
-                                    likely walking my dog, enjoying tennis,
-                                    taking a hike in the local woods, playing a
-                                    video game or two, listening to Spotify, or
-                                    watching Netflix. Or sleeping - that's great
-                                    for gaining energy to code more.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Grid container justify="center" spacing={2}>
+                    <Grid item xs={12} sm={4}>
+                        <Card className="card">
+                            <h3>About Me</h3>
+                            <p>
+                                I am a software developer and I maintain many
+                                open source projects on GitHub. I have been
+                                coding since 2014, and can say I have knowledge
+                                in most of the common programming languages such
+                                as Python and JavaScript to name a few.
+                            </p>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Card className="card">
+                            <h3>Experience</h3>
+                            <p>
+                                I have taken a large amount of classes on Python
+                                (my main language) and web design, plus some on
+                                other languages such as Java, React, and the
+                                basics of Docker. I run several OSS projects
+                                that have helped me to learn how to apply code
+                                to the real world.
+                            </p>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Card className="card">
+                            <h3>Hobbies</h3>
+                            <p>
+                                When I'm not working on software, I am most
+                                likely walking my dog, enjoying tennis, taking a
+                                hike in the local woods, playing a video game or
+                                two, listening to Spotify, or watching Netflix.
+                                Or sleeping - that's great for gaining energy to
+                                code more.
+                            </p>
+                        </Card>
+                    </Grid>
+                </Grid>
 
                 <div>
                     <h2>Get in touch</h2>
@@ -128,7 +122,7 @@ const Home = () => {
                     <h2>More about me</h2>
                     <ul>
                         <li>
-                            <a href="/pages/code-style">My code style</a>
+                            <a href="/code-style">My code style</a>
                         </li>
                     </ul>
                 </div>
