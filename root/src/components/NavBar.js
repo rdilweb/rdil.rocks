@@ -3,13 +3,26 @@ import { ReactComponent as GitHub } from "../icons/github.svg"
 import { ReactComponent as Twitter } from "../icons/twitter.svg"
 import { ReactComponent as Envelope } from "../icons/envelope.svg"
 import { ReactComponent as GitLab } from "../icons/gitlab.svg"
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
+import {
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    ThemeProvider,
+    createMuiTheme,
+} from "@material-ui/core"
+
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: "Open Sans,sans-serif",
+    },
+})
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = React.useState(false)
 
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <div
                 id="nav-btn"
                 onClick={() => setIsOpen(!isOpen)}
@@ -73,7 +86,7 @@ const NavBar = () => {
                     </List>
                 </nav>
             ) : null}
-        </>
+        </ThemeProvider>
     )
 }
 

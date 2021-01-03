@@ -8729,6 +8729,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-canonical-urls@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "gatsby-plugin-canonical-urls@npm:2.7.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+  peerDependencies:
+    gatsby: ^2.0.0
+  checksum: aac362ee075f95fa76f12700235ffe88ae004d4035c75b8e6f109c525365612446b05db439f1f2bd83aa5941a573a9e602ba828912f41e2ac261c7b2bfaaa147
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-page-creator@npm:^2.7.2":
   version: 2.7.2
   resolution: "gatsby-plugin-page-creator@npm:2.7.2"
@@ -16664,6 +16675,7 @@ fsevents@~2.1.2:
     "@material-ui/core": ^4.11.2
     "@svgr/webpack": ^5.5.0
     gatsby: ^2.29.2
+    gatsby-plugin-canonical-urls: ^2.7.0
     gatsby-plugin-react-helmet: ^3.7.0
     gatsby-plugin-svgr: ^2.0.2
     gatsby-plugin-webpack-size: ^1.0.0

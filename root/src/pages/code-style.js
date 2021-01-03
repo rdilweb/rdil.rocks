@@ -27,9 +27,9 @@ const CodeStyle = () => (
             <p>
                 I like statements that are short. Lambdas are amazing and I love
                 using them where possible. Statements can be long, assuming they
-                aren't just return chains. Final variables should be used for
-                the compiler to inline them. Builders should be continued on the
-                next line, with the `.` being 4 spaces after the column the
+                aren't just return chains. Final variables should be used where
+                possible for better API design. Builders should be continued on
+                the next line, with the `.` being 4 spaces after the column the
                 first line of the builder is on. If statements shouldn't go on
                 more than one line. Opening brackets should be on the line of
                 the block they start, they do not get their own line.

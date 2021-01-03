@@ -19,7 +19,6 @@ const Seo = (props) => (
             property="og:description"
             content="Official website of RDIL, a coder, designer of websites, and open-source lover."
         />
-        <link rel="canonical" href={`https://rdil.rocks/${props.page}`} />
         <meta property="og:url" content={`https://rdil.rocks/${props.page}`} />
         <meta property="og:site_name" content="RDIL's Site" />
         <meta name="twitter:card" content="summary" />

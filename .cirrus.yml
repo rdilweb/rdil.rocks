@@ -10,4 +10,4 @@ Build_task:
     site_preview_artifacts:
         path: build/**/**
     container:
-        image: node:latest
+        image: node:14
