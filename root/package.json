@@ -7,6 +7,7 @@
         "gatsby": "^2.29.2",
         "gatsby-plugin-react-helmet": "^3.7.0",
         "gatsby-plugin-svgr": "^2.0.2",
+        "gatsby-plugin-webpack-size": "^1.0.0",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-helmet": "^6.1.0",
