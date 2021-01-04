@@ -52,7 +52,7 @@ module.exports = {
                     showLastUpdateTime: true,
                 },
                 theme: {
-                    customCss: require.resolve("./src/css/custom.css"),
+                    customCss: require.resolve("./src/css/cherry-infima.css"),
                 },
                 sitemap: {
                     cacheTime: 600 * 1000,

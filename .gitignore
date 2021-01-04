@@ -2,21 +2,6 @@ _site/
 .DS_Store
 .sass-cache
 
-src/bulma/.editorconfig
-src/bulma/.travis.yml
-src/bulma/CHANGELOG.md
-src/bulma/bower.json
-src/bulma/bulma-rtl.sass
-src/bulma/package.json
-src/bulma/package-lock.json
-src/bulma/yarn.lock
-src/bulma/BACKERS.md
-src/bulma/favicon.ico
-src/bulma/test
-src/bulma/.github
-src/bulma/css
-src/bulma/docs
-
 cherry/.docusaurus
 cherry/build
 cherry/.cache-loader
@@ -49,3 +34,7 @@ cherry/.yarn/*
 cherry/.pnp.*
 
 node_modules
+
+cherry/.cache
+root/.cache
+root/public
