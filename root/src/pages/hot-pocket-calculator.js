@@ -1,7 +1,12 @@
 import React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import { TextField, createMuiTheme, ThemeProvider, Card } from "@material-ui/core"
+import {
+    TextField,
+    createMuiTheme,
+    ThemeProvider,
+    Card,
+} from "@material-ui/core"
 import "../css/base.css"
 import "../css/hot-pocket-calculator-page.css"
 
@@ -9,8 +14,8 @@ const textFieldTheme = createMuiTheme({
     palette: {
         type: "dark",
         primary: {
-            main: "#fff"
-        }
+            main: "#fff",
+        },
     },
 })
 
@@ -55,8 +60,9 @@ const HotPocketCalculator = () => {
                         <h1>Hot Pocket Calculator</h1>
                         <p>
                             This is a calculator that determines how many hot
-                            pockets you could possibly make, <i>one at a time</i>, in the
-                            amount of time you specify.
+                            pockets you could possibly make,{" "}
+                            <i>one at a time</i>, in the amount of time you
+                            specify.
                         </p>
                         <h2>Why?</h2>
                         <p>I was bored.</p>

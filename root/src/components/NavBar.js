@@ -15,7 +15,7 @@ import {
 const theme = createMuiTheme({
     type: "dark",
     primary: {
-        main: "#fff"
+        main: "#fff",
     },
     typography: {
         fontFamily: "Open Sans,sans-serif",
