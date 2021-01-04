@@ -3,12 +3,6 @@ command = "yarn install && yarn build"
 publish = "build/"
 
 [[headers]]
-for = "/manifest.json"
-
-[headers.values]
-Access-Control-Allow-Origin = "*"
-
-[[headers]]
 for = "/*"
 
 [[headers.values]]
