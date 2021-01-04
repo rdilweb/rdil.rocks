@@ -1,7 +1,7 @@
 import React from "react"
 import clsx from "clsx"
 import Layout from "@theme/Layout"
-import styles from "./styles.module.css"
+import styles from "../css/cherry-home-page.module.css"
 import Link from "@docusaurus/Link"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 

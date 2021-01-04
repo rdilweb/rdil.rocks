@@ -1,4 +1,5 @@
 build
 cherry/build
 cherry/.docusaurus
-src/bulma
+root/public
+root/.cache
