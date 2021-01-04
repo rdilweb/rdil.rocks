@@ -64,6 +64,9 @@ a {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    border: 2px white solid;
+    border-right: none;
+    border-bottom: none;
 }
 
 .sidebar-nav a {

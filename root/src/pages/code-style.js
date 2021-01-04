@@ -41,14 +41,16 @@ const CodeStyle = () => (
                 Here is where things get really controversial. ES6 should be
                 used if either Babel is in the environment, it will work on its
                 own, or a bundler will automatically rewrite it as ES5. This
-                means arrow functions are very great. Semicolons should be
-                avoided at all costs. As long as the statement is properly
-                logically closed, a semicolon should not be used. Things should
-                be indented like Python: 4 spaces. 2 spaces isn't enough to see
-                blocks in my opinion. JSX should follow Prettier defaults.
-                Quotes should be double quotes. <br />
+                means arrow functions are used relatively often, but functions
+                are fine also. Semicolons should be avoided at all costs. As
+                long as the statement is properly logically closed, a semicolon
+                should not be used. Things should be indented like Python: 4
+                spaces. 2 spaces isn't enough to see blocks in my opinion. JSX
+                should follow Prettier defaults. Quotes should be double quotes.{" "}
+                <br />
                 My Prettier configuration:
             </p>
+            <div className="code-lang">.prettierc</div>
             <code>{`{ "semi": false, "tabWidth": 4 }`}</code>
         </div>
     </main>

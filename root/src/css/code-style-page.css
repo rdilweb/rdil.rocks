@@ -1,4 +1,16 @@
 code {
+    font-family: monospace;
+    background: #292929;
+    color: white;
+    font-size: 16px;
     padding: 5px;
-    background-color: #2b2a2a;
+}
+
+.code-lang {
+    display: block;
+    padding: 5px;
+    text-transform: uppercase;
+    content: attr(data-lang);
+    background: white;
+    color: #24292e;
 }

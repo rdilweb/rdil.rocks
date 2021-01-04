@@ -13,6 +13,10 @@ import {
 } from "@material-ui/core"
 
 const theme = createMuiTheme({
+    type: "dark",
+    primary: {
+        main: "#fff"
+    },
     typography: {
         fontFamily: "Open Sans,sans-serif",
     },
@@ -26,10 +30,10 @@ const NavBar = () => {
             <div
                 id="nav-btn"
                 onClick={() => setIsOpen(!isOpen)}
-                className={isOpen ? "open" : null}
+                className={isOpen ? "open" : undefined}
                 role="button"
                 onKeyPress={() => setIsOpen(!isOpen)}
-                tabIndex="0"
+                tabIndex={0}
             >
                 <span></span>
                 <span></span>
