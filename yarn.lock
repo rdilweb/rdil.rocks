@@ -5292,7 +5292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-css@npm:^4.2.3":
+"clean-css@npm:^4.2.1, clean-css@npm:^4.2.3":
   version: 4.2.3
   resolution: "clean-css@npm:4.2.3"
   dependencies:
@@ -8748,6 +8748,20 @@ fsevents@~2.1.2:
   peerDependencies:
     gatsby: ^2.0.0
   checksum: aac362ee075f95fa76f12700235ffe88ae004d4035c75b8e6f109c525365612446b05db439f1f2bd83aa5941a573a9e602ba828912f41e2ac261c7b2bfaaa147
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-material-ui@npm:^2.1.10":
+  version: 2.1.10
+  resolution: "gatsby-plugin-material-ui@npm:2.1.10"
+  dependencies:
+    autoprefixer: ^9.6.1
+    clean-css: ^4.2.1
+    postcss: ^7.0.17
+  peerDependencies:
+    "@material-ui/styles": ">=4.0.0"
+    gatsby: ">=2.0.33"
+  checksum: 32a12c93b550aec9e46895d48cef704961edc4a928b526934e41825ba1c35f0ff21c9f57ed8d9daddd0830ae6a9b60cac61f2b73e3797536b1b3c5078d860f1e
   languageName: node
   linkType: hard
 
@@ -16673,6 +16687,7 @@ fsevents@~2.1.2:
     "@types/react-helmet": ^6.1.0
     gatsby: ^2.29.3
     gatsby-plugin-canonical-urls: ^2.7.0
+    gatsby-plugin-material-ui: ^2.1.10
     gatsby-plugin-react-helmet: ^3.7.0
     gatsby-plugin-svgr: ^2.0.2
     react: ^17.0.1
