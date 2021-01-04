@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "dependencies": {
         "@material-ui/core": "^4.11.2",
+        "@material-ui/styles": "^4.11.2",
         "@svgr/webpack": "^5.5.0",
         "gatsby": "^2.29.3",
         "gatsby-plugin-canonical-urls": "^2.7.0",
