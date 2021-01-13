@@ -1,14 +1,9 @@
-const SizePlugin = require("size-plugin")
 const WebpackBar = require("webpackbar")
 
-exports.onCreateWebpackConfig = ({ stage, actions }, options) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({
         plugins: [
             new WebpackBar(),
-            (stage === "build-javascript" || options.development) &&
-                new SizePlugin({
-                    writeFile: false,
-                }),
-        ].filter(Boolean),
+        ],
     })
 }
