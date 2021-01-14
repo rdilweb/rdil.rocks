@@ -4,5 +4,5 @@ const fs = require("fs-extra")
 const rimraf = require("rimraf").sync
 
 rimraf("build")
-fs.copySync("root/public", "build")
+fs.copySync("root/out", "build")
 fs.copySync("cherry/build", "build/cherry")

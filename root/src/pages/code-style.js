@@ -1,13 +1,12 @@
 import React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import "../css/base.css"
-import "../css/code-style-page.css"
+import styles from "../components/code-style.module.css"
 
 const CodeStyle = () => (
     <>
         <NavBar />
-        <Seo title="My Code Style | RDIL's Site" page="code-style" />
+        <Seo title="My Code Style | RDIL's Site" page="/code-style" />
         <main>
             <h1>My Code Style</h1>
             <p>
@@ -21,9 +20,11 @@ const CodeStyle = () => (
                     I like statements that are short. Functions should have type
                     hints if they don't need to support 3.5 or lower. One
                     variable per line. Imports should either all be full module,
-                    or all be members (<code>from</code> imports). The only
-                    exception to this is if an initialization function not
-                    wrapped in a <code>__main__</code> check needs to be run.
+                    or all be members (<code className={styles.code}>from</code>{" "}
+                    imports). The only exception to this is if an initialization
+                    function not wrapped in a{" "}
+                    <code className={styles.code}>__main__</code> check needs to
+                    be run.
                 </p>
             </div>
             <div>
@@ -55,8 +56,10 @@ const CodeStyle = () => (
                     Quotes should be double quotes. <br />
                     My Prettier configuration:
                 </p>
-                <div className="code-lang">.prettierc</div>
-                <code>{`{ "semi": false, "tabWidth": 4 }`}</code>
+                <div className={styles.codeLang}>.prettierc</div>
+                <code
+                    className={styles.code}
+                >{`{ "semi": false, "tabWidth": 4 }`}</code>
             </div>
         </main>
     </>

@@ -2,11 +2,6 @@
     padding: 20px;
 }
 
-hr {
-    background-color: white;
-    border: 2px solid white;
-}
-
 @font-face {
     font-family: "Open Sans";
     font-style: normal;
@@ -29,10 +24,6 @@ body {
     background-color: #24292e;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-    margin: 75px 100px;
 }
 
 h1 {

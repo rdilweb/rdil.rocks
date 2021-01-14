@@ -7,8 +7,7 @@ import {
     ThemeProvider,
     Card,
 } from "@material-ui/core"
-import "../css/base.css"
-import "../css/hot-pocket-calculator-page.css"
+import styles from "../components/hot-pocket-calculator.module.css"
 
 const textFieldTheme = createMuiTheme({
     palette: {
@@ -51,7 +50,7 @@ const HotPocketCalculator = () => {
         <>
             <Seo
                 title="Hot Pocket Calculator | RDIL's Site"
-                page="hot-pocket-calculator"
+                page="/hot-pocket-calculator"
             />
             <NavBar />
             <ThemeProvider theme={textFieldTheme}>
@@ -67,7 +66,7 @@ const HotPocketCalculator = () => {
                         <h2>Why?</h2>
                         <p>I was bored.</p>
                         <h2>Calculator</h2>
-                        <Card className="hot-pocket-card">
+                        <Card className={styles.hot_pocket_card}>
                             <h3>Years &rarr; Hot Pockets</h3>
                             <TextField
                                 label="Years"
@@ -81,7 +80,7 @@ const HotPocketCalculator = () => {
                             />
                             <p>Result: {yearResult}</p>
                         </Card>
-                        <Card className="hot-pocket-card">
+                        <Card className={styles.hot_pocket_card}>
                             <h3>Days &rarr; Hot Pockets</h3>
                             <TextField
                                 label="Days"

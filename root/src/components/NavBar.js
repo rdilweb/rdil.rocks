@@ -1,8 +1,8 @@
 import React from "react"
-import { ReactComponent as GitHub } from "../icons/github.svg"
-import { ReactComponent as Twitter } from "../icons/twitter.svg"
-import { ReactComponent as Envelope } from "../icons/envelope.svg"
-import { ReactComponent as GitLab } from "../icons/gitlab.svg"
+import GitHub from "./icons/Github"
+import Twitter from "./icons/Twitter"
+import Envelope from "./icons/Envelope"
+import GitLab from "./icons/Gitlab"
 import {
     List,
     ListItem,
@@ -35,9 +35,9 @@ const NavBar = () => {
                 onKeyPress={() => setIsOpen(!isOpen)}
                 tabIndex={0}
             >
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
             </div>
             {isOpen ? (
                 <nav
@@ -46,7 +46,7 @@ const NavBar = () => {
                     style={{ width: isOpen ? "265px" : "0" }}
                 >
                     <List>
-                        <ListItem button>
+                        <ListItem>
                             <ListItemIcon>
                                 <GitHub className="sidebar-icon" />
                             </ListItemIcon>
@@ -54,10 +54,10 @@ const NavBar = () => {
                                 href="https://github.com/RDIL"
                                 alt="RDIL on GitHub"
                             >
-                                <ListItemText primary="GitHub"></ListItemText>
+                                <ListItemText primary="GitHub" />
                             </a>
                         </ListItem>
-                        <ListItem button>
+                        <ListItem>
                             <ListItemIcon>
                                 <Twitter className="sidebar-icon" />
                             </ListItemIcon>
@@ -65,18 +65,18 @@ const NavBar = () => {
                                 href="https://twitter.com/rdil_pickle"
                                 alt="rdil_pickle on Twitter"
                             >
-                                <ListItemText primary="Twitter"></ListItemText>
+                                <ListItemText primary="Twitter" />
                             </a>
                         </ListItem>
-                        <ListItem button>
+                        <ListItem>
                             <ListItemIcon>
                                 <Envelope className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="mailto:me@rdil.rocks" alt="Email me">
-                                <ListItemText primary="Email"></ListItemText>
+                                <ListItemText primary="Email" />
                             </a>
                         </ListItem>
-                        <ListItem button>
+                        <ListItem>
                             <ListItemIcon>
                                 <GitLab className="sidebar-icon" />
                             </ListItemIcon>
@@ -84,7 +84,7 @@ const NavBar = () => {
                                 href="https://gitlab.com/rdil"
                                 alt="rdil on GitLab"
                             >
-                                <ListItemText primary="GitLab"></ListItemText>
+                                <ListItemText primary="GitLab" />
                             </a>
                         </ListItem>
                     </List>

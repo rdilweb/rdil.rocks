@@ -1,6 +1,7 @@
 {
     "name": "rdil.rocks",
     "private": true,
+    "license": "MPL-2.0",
     "scripts": {
         "build": "run-s clean build:root build:cherry assemble",
         "build:root": "yarn workspace root build",
@@ -20,7 +21,10 @@
     "devDependencies": {
         "@types/fs-extra": "^9.0.6",
         "@types/node": "^14.14.19",
-        "prettier": "^2.2.1"
+        "prettier": "^2.2.1",
+        "prettier-plugin-organize-imports": "^1.1.1",
+        "prettier-plugin-packagejson": "^2.2.9",
+        "typescript": "^4.1.3"
     },
     "prettier": {
         "semi": false,

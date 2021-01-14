@@ -1,5 +1,5 @@
 build
 cherry/build
 cherry/.docusaurus
-root/public
-root/.cache
+root/out
+root/.next

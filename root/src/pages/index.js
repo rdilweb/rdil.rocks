@@ -2,7 +2,6 @@ import React from "react"
 import { Card, Grid } from "@material-ui/core"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import "../css/base.css"
 
 const Home = () => {
     return (
