@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function SvgGitlab(props) {
+function SvgGitLab(props) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +14,4 @@ function SvgGitlab(props) {
     )
 }
 
-export default SvgGitlab
+export default SvgGitLab

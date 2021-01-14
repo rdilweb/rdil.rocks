@@ -9,16 +9,21 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import React from "react"
+import * as React from "react"
 
-const buildYouTubeEmbedUrl = (data) => {
+const buildYouTubeEmbedUrl = (data: string): string => {
     const params = `controls=0&amp;autoplay=1${
         data[1] != null ? `&amp;start=${data[1]}` : ""
     }`
     return `https://www.youtube.com/embed/${data[0]}?${params}`
 }
 
-const LoadableSound = (props) => {
+interface LoadableSoundProps {
+    show: boolean
+    data: string
+}
+
+const LoadableSound = (props: LoadableSoundProps) => {
     return props.show && props.data[0] !== "" ? (
         <iframe
             width="0"

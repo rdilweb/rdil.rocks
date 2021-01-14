@@ -1,25 +1,14 @@
+import { Card, TextField } from "@material-ui/core"
 import React from "react"
+// @ts-ignore
+import styles from "../components/hot-pocket-calculator.module.css"
+import MuiDarkTheme from "../components/MuiDarkTheme"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import {
-    TextField,
-    createMuiTheme,
-    ThemeProvider,
-    Card,
-} from "@material-ui/core"
-import styles from "../components/hot-pocket-calculator.module.css"
-
-const textFieldTheme = createMuiTheme({
-    palette: {
-        type: "dark",
-        primary: {
-            main: "#fff",
-        },
-    },
-})
 
 const HOT_POCKETS_PER_HOUR = 60 / 3.5
 const HOT_POCKETS_PER_DAY = Math.floor(HOT_POCKETS_PER_HOUR) * 24
+const INIT = "0 Hot Pockets"
 
 const HotPocketCalculator = () => {
     const yearsToHotPockets = (years) => {
@@ -29,18 +18,18 @@ const HotPocketCalculator = () => {
 
     const daysToHotPockets = (days) => HOT_POCKETS_PER_DAY * days
 
-    const [currentYear, setCurrentYear] = React.useState(0)
-    const [currentDay, setCurrentDay] = React.useState(0)
-    const [yearResult, setYearResult] = React.useState(0)
-    const [dayResult, setDayResult] = React.useState(0)
+    const [currentYear, setCurrentYear] = React.useState<string>(INIT)
+    const [currentDay, setCurrentDay] = React.useState<string>(INIT)
+    const [yearResult, setYearResult] = React.useState<string>(INIT)
+    const [dayResult, setDayResult] = React.useState<string>(INIT)
 
-    function onYearUpdate(event) {
+    function onYearUpdate(event: { target: { value: string } }): void {
         const val = event.target.value
         setCurrentYear(val)
         setYearResult(`${yearsToHotPockets(val)} Hot Pockets`)
     }
 
-    function onDayUpdate(event) {
+    function onDayUpdate(event: { target: { value: string } }): void {
         const val = event.target.value
         setCurrentDay(val)
         setDayResult(`${daysToHotPockets(val)} Hot Pockets`)
@@ -53,7 +42,7 @@ const HotPocketCalculator = () => {
                 page="/hot-pocket-calculator"
             />
             <NavBar />
-            <ThemeProvider theme={textFieldTheme}>
+            <MuiDarkTheme>
                 <main>
                     <div>
                         <h1>Hot Pocket Calculator</h1>
@@ -66,7 +55,7 @@ const HotPocketCalculator = () => {
                         <h2>Why?</h2>
                         <p>I was bored.</p>
                         <h2>Calculator</h2>
-                        <Card className={styles.hot_pocket_card}>
+                        <Card className={styles["hot-pocket-card"]}>
                             <h3>Years &rarr; Hot Pockets</h3>
                             <TextField
                                 label="Years"
@@ -80,7 +69,7 @@ const HotPocketCalculator = () => {
                             />
                             <p>Result: {yearResult}</p>
                         </Card>
-                        <Card className={styles.hot_pocket_card}>
+                        <Card className={styles["hot-pocket-card"]}>
                             <h3>Days &rarr; Hot Pockets</h3>
                             <TextField
                                 label="Days"
@@ -96,7 +85,7 @@ const HotPocketCalculator = () => {
                         </Card>
                     </div>
                 </main>
-            </ThemeProvider>
+            </MuiDarkTheme>
         </>
     )
 }

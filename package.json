@@ -2,16 +2,29 @@
     "name": "rdil.rocks",
     "private": true,
     "license": "MPL-2.0",
+    "workspaces": {
+        "packages": [
+            "cherry",
+            "root"
+        ],
+        "nohoist": [
+            "cherry/**"
+        ]
+    },
     "scripts": {
-        "build": "run-s clean build:root build:cherry assemble",
-        "build:root": "yarn workspace root build",
-        "build:cherry": "yarn workspace cherry build",
-        "start:root": "yarn workspace root start",
-        "start:cherry": "yarn workspace cherry start",
-        "start": "run-p start:root start:cherry",
         "assemble": "node assemble",
+        "build": "run-s clean build:root build:cherry assemble",
+        "build:cherry": "yarn workspace cherry build",
+        "build:root": "yarn workspace root build",
+        "clean": "rimraf build",
         "prettier": "prettier --write **/*.{js,jsx,ts,tsx,css,yml,md,html,json}",
-        "clean": "rimraf build"
+        "start": "run-p start:root start:cherry",
+        "start:cherry": "yarn workspace cherry start",
+        "start:root": "yarn workspace root start"
+    },
+    "prettier": {
+        "semi": false,
+        "tabWidth": 4
     },
     "dependencies": {
         "fs-extra": "^9.0.1",
@@ -21,17 +34,12 @@
     "devDependencies": {
         "@types/fs-extra": "^9.0.6",
         "@types/node": "^14.14.19",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
         "prettier": "^2.2.1",
         "prettier-plugin-organize-imports": "^1.1.1",
         "prettier-plugin-packagejson": "^2.2.9",
-        "typescript": "^4.1.3"
-    },
-    "prettier": {
-        "semi": false,
-        "tabWidth": 4
-    },
-    "workspaces": [
-        "cherry",
-        "root"
-    ]
+        "typescript": "^4.1.3",
+        "typescript-plugin-css-modules": "^3.0.1"
+    }
 }

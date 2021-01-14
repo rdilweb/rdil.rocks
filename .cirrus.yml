@@ -5,10 +5,7 @@ Build_task:
     env:
         NODE_ENV: production
     Yarn_cache:
-        folder: .yarn/cache
-        reupload_on_changes: true
-    Root_Gatsby_cache:
-        folder: root/.cache
+        folder: node_modules
         reupload_on_changes: true
     Dependencies_script: yarn
     Build_script: yarn build

@@ -1,7 +1,12 @@
-import React from "react"
 import Head from "next/head"
+import React from "react"
 
-const Seo = (props) => (
+interface SeoProps {
+    title: string
+    page: string
+}
+
+const Seo = (props: SeoProps) => (
     <Head>
         <title>{props.title}</title>
         <meta charSet="utf-8" />

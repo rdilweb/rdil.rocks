@@ -1,32 +1,16 @@
+import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
 import React from "react"
-import GitHub from "./icons/Github"
-import Twitter from "./icons/Twitter"
 import Envelope from "./icons/Envelope"
-import GitLab from "./icons/Gitlab"
-import {
-    List,
-    ListItem,
-    ListItemIcon,
-    ListItemText,
-    ThemeProvider,
-    createMuiTheme,
-} from "@material-ui/core"
-
-const theme = createMuiTheme({
-    type: "dark",
-    primary: {
-        main: "#fff",
-    },
-    typography: {
-        fontFamily: "Open Sans,sans-serif",
-    },
-})
+import GitHub from "./icons/GitHub"
+import GitLab from "./icons/GitLab"
+import Twitter from "./icons/Twitter"
+import MuiDarkTheme from "./MuiDarkTheme"
 
 const NavBar = () => {
-    const [isOpen, setIsOpen] = React.useState(false)
+    const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
     return (
-        <ThemeProvider theme={theme}>
+        <MuiDarkTheme>
             <div
                 id="nav-btn"
                 onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +36,7 @@ const NavBar = () => {
                             </ListItemIcon>
                             <a
                                 href="https://github.com/RDIL"
-                                alt="RDIL on GitHub"
+                                title="RDIL on GitHub"
                             >
                                 <ListItemText primary="GitHub" />
                             </a>
@@ -63,7 +47,7 @@ const NavBar = () => {
                             </ListItemIcon>
                             <a
                                 href="https://twitter.com/rdil_pickle"
-                                alt="rdil_pickle on Twitter"
+                                title="rdil_pickle on Twitter"
                             >
                                 <ListItemText primary="Twitter" />
                             </a>
@@ -72,7 +56,7 @@ const NavBar = () => {
                             <ListItemIcon>
                                 <Envelope className="sidebar-icon" />
                             </ListItemIcon>
-                            <a href="mailto:me@rdil.rocks" alt="Email me">
+                            <a href="mailto:me@rdil.rocks" title="Email me">
                                 <ListItemText primary="Email" />
                             </a>
                         </ListItem>
@@ -82,7 +66,7 @@ const NavBar = () => {
                             </ListItemIcon>
                             <a
                                 href="https://gitlab.com/rdil"
-                                alt="rdil on GitLab"
+                                title="rdil on GitLab"
                             >
                                 <ListItemText primary="GitLab" />
                             </a>
@@ -90,7 +74,7 @@ const NavBar = () => {
                     </List>
                 </nav>
             ) : null}
-        </ThemeProvider>
+        </MuiDarkTheme>
     )
 }
 

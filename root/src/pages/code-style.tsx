@@ -1,7 +1,8 @@
 import React from "react"
+// @ts-ignore
+import styles from "../components/code-style.module.css"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import styles from "../components/code-style.module.css"
 
 const CodeStyle = () => (
     <>
@@ -56,7 +57,7 @@ const CodeStyle = () => (
                     Quotes should be double quotes. <br />
                     My Prettier configuration:
                 </p>
-                <div className={styles.codeLang}>.prettierc</div>
+                <div className={styles["code-lang"]}>.prettierc</div>
                 <code
                     className={styles.code}
                 >{`{ "semi": false, "tabWidth": 4 }`}</code>
