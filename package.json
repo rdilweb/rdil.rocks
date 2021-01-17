@@ -2,15 +2,10 @@
     "name": "rdil.rocks",
     "private": true,
     "license": "MPL-2.0",
-    "workspaces": {
-        "packages": [
-            "cherry",
-            "root"
-        ],
-        "nohoist": [
-            "cherry/**"
-        ]
-    },
+    "workspaces": [
+        "cherry",
+        "root"
+    ],
     "scripts": {
         "assemble": "node assemble",
         "build": "run-s clean build:root build:cherry assemble",
