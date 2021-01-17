@@ -2703,7 +2703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@svgr/webpack@npm:^5.4.0, @svgr/webpack@npm:^5.5.0":
+"@svgr/webpack@npm:^5.4.0":
   version: 5.5.0
   resolution: "@svgr/webpack@npm:5.5.0"
   dependencies:
@@ -8630,9 +8630,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:^2.17.0":
-  version: 2.17.0
-  resolution: "gatsby-cli@npm:2.17.0"
+"gatsby-cli@npm:^2.17.1":
+  version: 2.17.1
+  resolution: "gatsby-cli@npm:2.17.1"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@hapi/joi": ^15.1.1
@@ -8649,8 +8649,8 @@ fsevents@~2.3.1:
     fs-exists-cached: ^1.0.0
     fs-extra: ^8.1.0
     gatsby-core-utils: ^1.8.0
-    gatsby-recipes: ^0.7.0
-    gatsby-telemetry: ^1.8.0
+    gatsby-recipes: ^0.7.1
+    gatsby-telemetry: ^1.8.1
     hosted-git-info: ^3.0.6
     is-valid-path: ^0.1.1
     lodash: ^4.17.20
@@ -8674,7 +8674,7 @@ fsevents@~2.3.1:
     yurnalist: ^1.1.2
   bin:
     gatsby: cli.js
-  checksum: efd29db5882515f677446b25b02fda4d57add19a4b7d0cc61a72825ac05e4737805d9174e5fb2edaa3886599ac1e9b0b6da7a88aa6f9b1c09a0efb51af291ece
+  checksum: e1aeb64aa9918a22bf59da58091652b768f1c7bfbbd4539a04b9de65e9f1a9745ff32d48c50ca3297ec0738e5ae5094cc0c3f42dfd209263b5e3b90a7203da4c
   languageName: node
   linkType: hard
 
@@ -8767,21 +8767,21 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-page-creator@npm:^2.8.0":
-  version: 2.8.0
-  resolution: "gatsby-plugin-page-creator@npm:2.8.0"
+"gatsby-plugin-page-creator@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "gatsby-plugin-page-creator@npm:2.8.1"
   dependencies:
     "@babel/traverse": ^7.12.5
     "@sindresorhus/slugify": ^1.1.0
     chokidar: ^3.4.2
     fs-exists-cached: ^1.0.0
     gatsby-page-utils: ^0.7.0
-    gatsby-telemetry: ^1.8.0
+    gatsby-telemetry: ^1.8.1
     globby: ^11.0.1
     lodash: ^4.17.20
   peerDependencies:
     gatsby: ^2.0.0
-  checksum: 2017f127d6722353ce78b341f7a98efe65a4fa98ee84858de4b8a11b13fcaffd363db8bd2050af414a8ce3b1011b4e3ffeeb0f58233d814c923ad347b4fa70bc
+  checksum: 3f1a995adb3c5005669b0723833b56902644706900fc8551dc6b8152c2e4eb5de06f03e6099ae3646586743da2f5181d7a558ef77de18cbef6865e01241ebf99
   languageName: node
   linkType: hard
 
@@ -8794,16 +8794,6 @@ fsevents@~2.3.1:
     gatsby: ^2.0.0
     react-helmet: ^5.1.3 || ^6.0.0
   checksum: 089ff730be32724398ac8c570bbb203f58bb32bdbdf635e2c25c9bbdfba1e2cd3ddf5a52d926d69aee0679a0364939976dbfc93869a318b8f8d59a0021dbe1f4
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-svgr@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "gatsby-plugin-svgr@npm:2.1.0"
-  peerDependencies:
-    "@svgr/webpack": ">=2.0.0"
-    gatsby: ">=2.0.0"
-  checksum: 624cb0f92f7bb6cf5a3cf0dc95fd4145410d389d61ccbe667ec4b5309e8b5d48230c57ad0b5a54e884b52c7c3bdc15d245216e5e5e0ce7b9aeca14caa4a3eb12
   languageName: node
   linkType: hard
 
@@ -8846,9 +8836,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-recipes@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "gatsby-recipes@npm:0.7.0"
+"gatsby-recipes@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "gatsby-recipes@npm:0.7.1"
   dependencies:
     "@babel/core": ^7.12.3
     "@babel/generator": ^7.12.5
@@ -8874,7 +8864,7 @@ fsevents@~2.3.1:
     express-graphql: ^0.9.0
     fs-extra: ^8.1.0
     gatsby-core-utils: ^1.8.0
-    gatsby-telemetry: ^1.8.0
+    gatsby-telemetry: ^1.8.1
     glob: ^7.1.6
     graphql: ^14.6.0
     graphql-compose: ^6.3.8
@@ -8908,13 +8898,13 @@ fsevents@~2.3.1:
     ws: ^7.3.0
     xstate: ^4.9.1
     yoga-layout-prebuilt: ^1.9.6
-  checksum: 61e49d976c87bac45d3f2d6d33716fa101e9964020601840d6fd0e9d8dd1e0dd52c450f89dc68f5fdf349c6f14c9b0bf50a67776328c7609e7bd853b466cefa9
+  checksum: 9ff3464585e774ba7e89ff282023fdca3f7424a4d7bb0c5c612cc01a1766832119a59e0357372459d8cbcbebe26186653d02bfa5745a1baa371e307f329639d2
   languageName: node
   linkType: hard
 
-"gatsby-telemetry@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "gatsby-telemetry@npm:1.8.0"
+"gatsby-telemetry@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "gatsby-telemetry@npm:1.8.1"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
@@ -8930,13 +8920,13 @@ fsevents@~2.3.1:
     lodash: ^4.17.20
     node-fetch: ^2.6.1
     uuid: 3.4.0
-  checksum: 98f1c18af226241166f8e59de7cc737e9a0a84f89fdab39876b3c70362fa91e1c271e4030dfea82421f091abb8825b0d0c85ade891af5facf4eea2166d5ae95e
+  checksum: 2e0895d5de400330ea39d1112cfe797e1bf95a7236873305b3b57d3bfab5b1a98f6dbac53ea02eab033225c54277dd06a4f8f97a5f6bd7f4d33cf8ea83f6558e
   languageName: node
   linkType: hard
 
-"gatsby@npm:^2.30.1":
-  version: 2.30.1
-  resolution: "gatsby@npm:2.30.1"
+"gatsby@npm:^2.30.2":
+  version: 2.30.3
+  resolution: "gatsby@npm:2.30.3"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -9005,16 +8995,16 @@ fsevents@~2.3.1:
     find-cache-dir: ^3.3.1
     fs-exists-cached: 1.0.0
     fs-extra: ^8.1.0
-    gatsby-cli: ^2.17.0
+    gatsby-cli: ^2.17.1
     gatsby-core-utils: ^1.8.0
     gatsby-graphiql-explorer: ^0.9.0
     gatsby-legacy-polyfills: ^0.5.0
     gatsby-link: ^2.9.0
-    gatsby-plugin-page-creator: ^2.8.0
+    gatsby-plugin-page-creator: ^2.8.1
     gatsby-plugin-typescript: ^2.10.0
     gatsby-plugin-utils: ^0.7.0
     gatsby-react-router-scroll: ^3.5.0
-    gatsby-telemetry: ^1.8.0
+    gatsby-telemetry: ^1.8.1
     glob: ^7.1.6
     got: 8.3.2
     graphql: ^14.6.0
@@ -9096,7 +9086,7 @@ fsevents@~2.3.1:
     react-dom: ^16.4.2
   bin:
     gatsby: ./cli.js
-  checksum: 5d5a085966e61c24260935c2be2ccc5632176ac3b082cc99ca268b533e16ace9bb6d2d27b19fdfe4c8ca2429b71b57897e387c3c01cb314e3b01ff4b71d903a8
+  checksum: 9a1c34b33eaf43deca650285dee484c99449b64b1a75064de4c0804d329153081c7464c7e970fc9f80f86e3c0e57e571d49bb37caadb61daf1266765f15fdfb5
   languageName: node
   linkType: hard
 
@@ -16692,16 +16682,14 @@ fsevents@~2.3.1:
   dependencies:
     "@material-ui/core": ^4.11.2
     "@material-ui/styles": ^4.11.2
-    "@svgr/webpack": ^5.5.0
     "@types/node": ^14.14.19
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
     "@types/react-helmet": ^6.1.0
-    gatsby: ^2.30.1
+    gatsby: ^2.30.2
     gatsby-plugin-canonical-urls: ^2.8.0
     gatsby-plugin-material-ui: ^2.1.10
     gatsby-plugin-react-helmet: ^3.8.0
-    gatsby-plugin-svgr: ^2.1.0
     react: ^17.0.1
     react-dom: ^17.0.1
     react-helmet: ^6.1.0
