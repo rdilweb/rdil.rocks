@@ -13200,6 +13200,7 @@ fsevents@~2.3.1:
     "@material-ui/icons": ^4.11.2
     "@material-ui/styles": ^4.11.2
     "@types/node": "*"
+    "@types/react": "*"
     next: ^10.0.5
     react: ^17.0.1
     react-dom: ^17.0.1
