@@ -1,8 +1,8 @@
 import React from "react"
-import { ReactComponent as GitHub } from "../icons/github.svg"
-import { ReactComponent as Twitter } from "../icons/twitter.svg"
-import { ReactComponent as Envelope } from "../icons/envelope.svg"
-import { ReactComponent as GitLab } from "../icons/gitlab.svg"
+import GitHub from "../icons/GitHub"
+import Twitter from "../icons/Twitter"
+import Envelope from "../icons/Envelope"
+import GitLab from "../icons/GitLab"
 import {
     List,
     ListItem,
