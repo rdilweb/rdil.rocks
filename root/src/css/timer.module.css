@@ -1,0 +1,13 @@
+.input {
+    width: 42px;
+}
+
+.small {
+    width: 250px;
+}
+
+.paper {
+    padding: 35px;
+    margin: 15px;
+    text-align: center;
+}
