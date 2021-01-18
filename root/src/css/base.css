@@ -2,9 +2,8 @@
     padding: 20px;
 }
 
-hr {
-    background-color: white;
-    border: 2px solid white;
+main {
+    margin: 75px 100px;
 }
 
 @font-face {
@@ -31,10 +30,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-    margin: 75px 100px;
-}
-
 h1 {
     font-size: 3em;
 }
@@ -49,7 +44,7 @@ a {
 
 @media only screen and (max-width: 500px) {
     main {
-        margin: 75px 12.5px;
+        margin: 75px 13px;
     }
 }
 
