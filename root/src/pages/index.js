@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Card, Grid } from "@material-ui/core"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
@@ -122,7 +123,10 @@ const Home = () => {
                     <h2>More about me</h2>
                     <ul>
                         <li>
-                            <a href="/code-style">My code style</a>
+                            <Link to="/code-style">My code style</Link>
+                        </li>
+                        <li>
+                            <Link to="/blog">My blog</Link>
                         </li>
                     </ul>
                 </div>

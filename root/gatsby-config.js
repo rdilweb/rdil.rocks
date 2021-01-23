@@ -7,6 +7,14 @@ const plugins = [
             siteUrl: "https://rdil.rocks",
         },
     },
+    {
+        resolve: "gatsby-source-filesystem",
+        options: {
+            path: `${__dirname}/src/blog`,
+            name: "blog",
+        },
+    },
+    "gatsby-transformer-remark",
 ]
 
 module.exports = { plugins }
