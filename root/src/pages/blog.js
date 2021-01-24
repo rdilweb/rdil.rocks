@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/Seo"
 import NavBar from "../components/NavBar"
+import "../css/base.css"
 import { Card, Grid } from "@material-ui/core"
 
 const BlogIndex = ({ data }) => {
