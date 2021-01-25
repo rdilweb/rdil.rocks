@@ -2253,13 +2253,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/core@npm:^4.11.2":
-  version: 4.11.2
-  resolution: "@material-ui/core@npm:4.11.2"
+"@material-ui/core@npm:4.11.3":
+  version: 4.11.3
+  resolution: "@material-ui/core@npm:4.11.3"
   dependencies:
     "@babel/runtime": ^7.4.4
-    "@material-ui/styles": ^4.11.2
-    "@material-ui/system": ^4.11.2
+    "@material-ui/styles": ^4.11.3
+    "@material-ui/system": ^4.11.3
     "@material-ui/types": ^5.1.0
     "@material-ui/utils": ^4.11.2
     "@types/react-transition-group": ^4.2.0
@@ -2276,7 +2276,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: fe89aa37a5117873b467923f0b16189bcd795fb28aa422ec678ff781b14a1351bea8db6fde9cec0a76f49a38ca9ded1fc4f82705d42ac27e6ede787d3412c584
+  checksum: 1bca52d08e1d7d8fc52769cd72692f1e3dd99e8a20450f0f2205f8b3633165f868f1339e719937314d12fb06b43fd8fb578ac2eb9e502b7f83428a7595694cb7
   languageName: node
   linkType: hard
 
@@ -2297,9 +2297,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/styles@npm:^4.11.2":
-  version: 4.11.2
-  resolution: "@material-ui/styles@npm:4.11.2"
+"@material-ui/styles@npm:4.11.3, @material-ui/styles@npm:^4.11.3":
+  version: 4.11.3
+  resolution: "@material-ui/styles@npm:4.11.3"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@emotion/hash": ^0.8.0
@@ -2308,14 +2308,14 @@ __metadata:
     clsx: ^1.0.4
     csstype: ^2.5.2
     hoist-non-react-statics: ^3.3.2
-    jss: ^10.0.3
-    jss-plugin-camel-case: ^10.0.3
-    jss-plugin-default-unit: ^10.0.3
-    jss-plugin-global: ^10.0.3
-    jss-plugin-nested: ^10.0.3
-    jss-plugin-props-sort: ^10.0.3
-    jss-plugin-rule-value-function: ^10.0.3
-    jss-plugin-vendor-prefixer: ^10.0.3
+    jss: ^10.5.1
+    jss-plugin-camel-case: ^10.5.1
+    jss-plugin-default-unit: ^10.5.1
+    jss-plugin-global: ^10.5.1
+    jss-plugin-nested: ^10.5.1
+    jss-plugin-props-sort: ^10.5.1
+    jss-plugin-rule-value-function: ^10.5.1
+    jss-plugin-vendor-prefixer: ^10.5.1
     prop-types: ^15.7.2
   peerDependencies:
     "@types/react": ^16.8.6 || ^17.0.0
@@ -2324,13 +2324,13 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 149b2033600a49236f6278377e2e8085b2b9ae44044df712205754d28a7265e8dee4daf267af6d3a3c8c2ee135b53c262755d74f8753f39c7578a69798f3399b
+  checksum: fed7007d4934181214963ada961aa859b2900179eb30316d9d714405728a397fa81307d25e94c19dffea193ee68f0aa41457db3ec2d3ce351a45747c5ceed426
   languageName: node
   linkType: hard
 
-"@material-ui/system@npm:^4.11.2":
-  version: 4.11.2
-  resolution: "@material-ui/system@npm:4.11.2"
+"@material-ui/system@npm:^4.11.3":
+  version: 4.11.3
+  resolution: "@material-ui/system@npm:4.11.3"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/utils": ^4.11.2
@@ -2343,7 +2343,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 27c43902134d26e1f0bc29f5e4b9303ac88f143f7004dde93d85a4432181c7458e9c2ce30fa7e18260a2ce899576d57fc302a01be4d9731a37155ea4a7375d11
+  checksum: f00f6419820893110b19d9af3ee7f4410d3de321850f4b6933aa9540ca5e27a42e4fc58a1c986cb22bbaa2b7538ce3fb49275d0b2a8285dcfb72b2877be93541
   languageName: node
   linkType: hard
 
@@ -11782,7 +11782,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-camel-case@npm:^10.0.3":
+"jss-plugin-camel-case@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-camel-case@npm:10.5.1"
   dependencies:
@@ -11793,7 +11793,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-default-unit@npm:^10.0.3":
+"jss-plugin-default-unit@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-default-unit@npm:10.5.1"
   dependencies:
@@ -11803,7 +11803,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-global@npm:^10.0.3":
+"jss-plugin-global@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-global@npm:10.5.1"
   dependencies:
@@ -11813,7 +11813,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-nested@npm:^10.0.3":
+"jss-plugin-nested@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-nested@npm:10.5.1"
   dependencies:
@@ -11824,7 +11824,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-props-sort@npm:^10.0.3":
+"jss-plugin-props-sort@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-props-sort@npm:10.5.1"
   dependencies:
@@ -11834,7 +11834,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-rule-value-function@npm:^10.0.3":
+"jss-plugin-rule-value-function@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-rule-value-function@npm:10.5.1"
   dependencies:
@@ -11845,7 +11845,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss-plugin-vendor-prefixer@npm:^10.0.3":
+"jss-plugin-vendor-prefixer@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss-plugin-vendor-prefixer@npm:10.5.1"
   dependencies:
@@ -11856,7 +11856,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jss@npm:10.5.1, jss@npm:^10.0.3":
+"jss@npm:10.5.1, jss@npm:^10.5.1":
   version: 10.5.1
   resolution: "jss@npm:10.5.1"
   dependencies:
@@ -17013,9 +17013,9 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "root@workspace:root"
   dependencies:
-    "@material-ui/core": ^4.11.2
+    "@material-ui/core": 4.11.3
     "@material-ui/icons": ^4.11.2
-    "@material-ui/styles": ^4.11.2
+    "@material-ui/styles": 4.11.3
     "@types/node": ^14.14.22
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
