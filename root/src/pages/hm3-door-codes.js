@@ -10,7 +10,10 @@ const Hm3DoorCodes = () => (
         <Seo title="HITMAN™ 3 Door Codes" page="hm3-door-codes" />
         <main>
             <h1>HITMAN&trade; 3 Door Codes</h1>
-            <p>A quick reference guide (mostly for myself) for a game in one my favorite video game series: Hitman.</p>
+            <p>
+                A quick reference guide (mostly for myself) for a game in one my
+                favorite video game series: Hitman.
+            </p>
             <h2>Dubai, United Arab Emirates</h2>
             <ul>
                 <li>Staff Rooms: 4706</li>
