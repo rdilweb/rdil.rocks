@@ -15,6 +15,12 @@ const plugins = [
         },
     },
     "gatsby-transformer-remark",
+    {
+        resolve: "gatsby-source-dev",
+        options: {
+            username: "rdil",
+        },
+    },
 ]
 
 module.exports = { plugins }

@@ -4,6 +4,7 @@ import Seo from "../components/Seo"
 import NavBar from "../components/NavBar"
 import "../css/base.css"
 import { Card, Grid } from "@material-ui/core"
+import DevTo from "../icons/DevTo"
 
 const BlogIndex = ({ data }) => {
     const posts = data.allMarkdownRemark.nodes
@@ -64,6 +65,44 @@ const BlogIndex = ({ data }) => {
                             </Grid>
                         )
                     })}
+                    {data.allDevArticles.edges
+                        .map((edge) => edge.node.article)
+                        .map((article) => {
+                            return (
+                                <Grid item xs={12} sm={6} key={article.slug}>
+                                    <Card className="card">
+                                        <article
+                                            className="post-list-item"
+                                            itemScope
+                                            itemType="http://schema.org/Article"
+                                        >
+                                            <header>
+                                                <h2>
+                                                    <a
+                                                        href={article.url}
+                                                        itemProp="url"
+                                                    >
+                                                        <span itemProp="headline">
+                                                            {article.title}
+                                                        </span>
+                                                    </a>
+                                                    {" "}
+                                                    <DevTo />
+                                                </h2>
+                                                <small>
+                                                    {article.created_at}
+                                                </small>
+                                            </header>
+                                            <section>
+                                                <p itemProp="description">
+                                                    {article.description}
+                                                </p>
+                                            </section>
+                                        </article>
+                                    </Card>
+                                </Grid>
+                            )
+                        })}
                 </Grid>
             </main>
         </>
@@ -81,6 +120,19 @@ export const pageQuery = graphql`
                     date(formatString: "MMMM DD, YYYY")
                     title
                     slug
+                }
+            }
+        }
+        allDevArticles {
+            edges {
+                node {
+                    article {
+                        slug
+                        created_at(formatString: "MMMM DD, YYYY")
+                        description
+                        title
+                        url
+                    }
                 }
             }
         }
