@@ -85,8 +85,7 @@ const BlogIndex = ({ data }) => {
                                                         <span itemProp="headline">
                                                             {article.title}
                                                         </span>
-                                                    </a>
-                                                    {" "}
+                                                    </a>{" "}
                                                     <DevTo />
                                                 </h2>
                                                 <small>
