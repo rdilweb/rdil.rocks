@@ -7,7 +7,7 @@ date: "2019-12-15"
 Opinion: Venmo is easy to use and helpful.
 Fact: unless you take this one step, anybody can see who you pay.
 
-Hello everybody,
+Hello everybody.
 Today I am here to talk about Venmo, the handy tool made by PayPal,
 with the purpose of making it super easy to pay others right from your phone.
 
