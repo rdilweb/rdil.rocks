@@ -6,10 +6,6 @@ date: "2021-01-27"
 
 Note: This content was originally from [privacy.rdil.rocks](https://github.com/rdilweb/privacy), but has been moved here for maintainability.
 
-[Content License](https://github.com/rdilweb/rdil.rocks/blob/master/LICENSE.blog.md)
-
-[Improve this page (it's open source!)](https://github.com/rdilweb/rdil.rocks/blob/master/root/src/blog/privacy.md)
-
 Welcome to my privacy page. Here you can find a lot of my thoughts on privacy and related concepts that I find important and fight for.
 
 ## Table of Contents
