@@ -1,0 +1,37 @@
+---
+id: discord-sentry-reporting
+title: discord-sentry-reporting
+slug: /libraries/bluejay/discord-sentry-reporting
+---
+
+`discord-sentry-reporting` takes a discord.py `Client` object, and makes it so errors are reported to [Sentry](https://sentry.io/).
+
+## Download
+
+<span class="badge badge--success">PyPI Package</span> <a href="https://pypi.org/project/discord-sentry-reporting" target="_blank" rel="noopener noreferrer">discord-sentry-reporting</a>
+
+## Usage
+
+Here is an example bot that uses it:
+
+```python
+import discord
+from discord_sentry_reporting import use_sentry
+
+bot = discord.AutoShardedClient()
+
+use_sentry(
+    bot,
+    dsn="your-dsn@sentry.io"
+    # pass any other keyword arguments here
+    # they will be passed to the Sentry SDK
+)
+
+
+@bot.event
+async def on_message(message):
+    assert 1 == 0
+    # resulting AssertionError will be reported!
+
+bot.run("token")
+```

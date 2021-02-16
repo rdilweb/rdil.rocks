@@ -1,0 +1,10 @@
+{
+    "name": "gatsby-plugin-dev-rdil",
+    "private": true,
+    "license": "MIT",
+    "author": "Aivan Monceller",
+    "main": "gatsby-node.js",
+    "peerDependencies": {
+        "gatsby": "2.x"
+    }
+}

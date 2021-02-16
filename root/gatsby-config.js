@@ -16,7 +16,7 @@ const plugins = [
     },
     "gatsby-transformer-remark",
     {
-        resolve: "gatsby-source-dev",
+        resolve: "gatsby-plugin-dev-rdil",
         options: {
             username: "rdil",
         },

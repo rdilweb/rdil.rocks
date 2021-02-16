@@ -1593,6 +1593,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/remark-plugin-npm2yarn@npm:^2.0.0-alpha.70":
+  version: 2.0.0-alpha.fd17476c3
+  resolution: "@docusaurus/remark-plugin-npm2yarn@npm:2.0.0-alpha.fd17476c3"
+  dependencies:
+    npm-to-yarn: ^1.0.1
+  peerDependencies:
+    react: ^16.8.4
+    react-dom: ^16.8.4
+  checksum: b92fbc1a88197a0c2b0260893b72d3a1a4c2674a0534120358bdd09030ad46379bb6b47a9bffcd49d97e861b27ffd4f3e479a8153c50613435406c1d758c3b0f
+  languageName: node
+  linkType: hard
+
 "@docusaurus/theme-classic@npm:2.0.0-alpha.70":
   version: 2.0.0-alpha.70
   resolution: "@docusaurus/theme-classic@npm:2.0.0-alpha.70"
@@ -3799,15 +3811,6 @@ __metadata:
   version: 4.1.1
   resolution: "axe-core@npm:4.1.1"
   checksum: cd00c2d359f118bb2631a0e018a5d9183996488aec5dd52c7cea2c96613725c388268f0b01d22f594271837d5f26b586a1e79e302578527fe28e71ea433c0660
-  languageName: node
-  linkType: hard
-
-"axios@npm:^0.19.0":
-  version: 0.19.2
-  resolution: "axios@npm:0.19.2"
-  dependencies:
-    follow-redirects: 1.5.10
-  checksum: bad346deea24050f9953ce09bb8015f85a99a7b8f016806adccfab0b8981827d1fbee9c77c0ef7c70cc48392c1af6bbc65e07c3e88221d17282d2d5fd0a191f6
   languageName: node
   linkType: hard
 
@@ -6164,15 +6167,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:=3.1.0, debug@npm:~3.1.0":
-  version: 3.1.0
-  resolution: "debug@npm:3.1.0"
-  dependencies:
-    ms: 2.0.0
-  checksum: 1295acd5e0531761255661d325cd0a80ac8c5f6de8942a53bb23c2197ccb97526972de662ed0e5d9393be83f3428a298a6e7185ecb02f0da6282019cd2ffb4a8
-  languageName: node
-  linkType: hard
-
 "debug@npm:^3.0.0, debug@npm:^3.1.0, debug@npm:^3.1.1, debug@npm:^3.2.6, debug@npm:^3.2.7":
   version: 3.2.7
   resolution: "debug@npm:3.2.7"
@@ -6191,6 +6185,15 @@ __metadata:
     supports-color:
       optional: true
   checksum: 5543570879e2274f6725d4285a034d6e0822d35faefc6f55965933fb440e8c21eb3a0bef934e66f4b6b491f898ee2de37cab980e9d4fd61372136c19d3ce4527
+  languageName: node
+  linkType: hard
+
+"debug@npm:~3.1.0":
+  version: 3.1.0
+  resolution: "debug@npm:3.1.0"
+  dependencies:
+    ms: 2.0.0
+  checksum: 1295acd5e0531761255661d325cd0a80ac8c5f6de8942a53bb23c2197ccb97526972de662ed0e5d9393be83f3428a298a6e7185ecb02f0da6282019cd2ffb4a8
   languageName: node
   linkType: hard
 
@@ -6343,6 +6346,13 @@ __metadata:
     rimraf: ^3.0.0
     slash: ^3.0.0
   checksum: e9de3180b2a5742adf877d1acdf1721fe42a27ea86890a9f19e949697ac4d972ba505e912df023a8b5ef04c1b5989a02e8451fd52fa6d3487b8745c21456efc6
+  languageName: node
+  linkType: hard
+
+"delay@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "delay@npm:5.0.0"
+  checksum: 404b4dd8e60f9fe869dbbd502696cdf4da2b4f3b5b4c10d3345bdec7a3af896ebbb175e16e3aeef7b2063a8ffbb446a04b97218fb276233c90c103b8676c83a0
   languageName: node
   linkType: hard
 
@@ -6573,6 +6583,7 @@ __metadata:
   dependencies:
     "@docusaurus/core": 2.0.0-alpha.70
     "@docusaurus/plugin-content-docs": 2.0.0-alpha.70
+    "@docusaurus/remark-plugin-npm2yarn": ^2.0.0-alpha.70
     "@docusaurus/theme-classic": 2.0.0-alpha.70
     "@mdx-js/react": ^1.6.22
     clsx: ^1.1.1
@@ -7947,6 +7958,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"filter-obj@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "filter-obj@npm:1.1.0"
+  checksum: 1049ac0c306198edf2c090375f7a80545a01e798b4996dbde13398a263cd923b5eb8a240dfadb03260621249a404a686e1a55980c6e59af70ee3880323998703
+  languageName: node
+  linkType: hard
+
 "finalhandler@npm:~1.1.2":
   version: 1.1.2
   resolution: "finalhandler@npm:1.1.2"
@@ -8065,15 +8083,6 @@ __metadata:
     inherits: ^2.0.3
     readable-stream: ^2.3.6
   checksum: b8fa1fbfadd5c4b6df3cf2c34b3c408fe508a2899c536bafa339f679de545689997e907bd4ff61dd292942f8044fb2f293a5956dd8b601f6a5601617842d0dda
-  languageName: node
-  linkType: hard
-
-"follow-redirects@npm:1.5.10":
-  version: 1.5.10
-  resolution: "follow-redirects@npm:1.5.10"
-  dependencies:
-    debug: =3.1.0
-  checksum: 6e58e02c31337b6b41ffc3d5f3d49920b7db428eddcf374537da00ef121fe473983e12d8557f4304287604168d3efcc288d1f009abaf4c9d61e5db0c0cee3c4a
   languageName: node
   linkType: hard
 
@@ -8578,18 +8587,6 @@ fsevents@~2.3.1:
     xstate: ^4.9.1
     yoga-layout-prebuilt: ^1.9.6
   checksum: 5c0e88fd220085720113a2e7789ff05ce1454e5611d0f1a35bc37ca10e1e358497a66c7403667967e3d8dc79f51603378bc6d7873cf0563e06f3e79ccba84f68
-  languageName: node
-  linkType: hard
-
-"gatsby-source-dev@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "gatsby-source-dev@npm:0.1.4"
-  dependencies:
-    axios: ^0.19.0
-    query-string: ^6.1.0
-  peerDependencies:
-    gatsby: ^2.0.0
-  checksum: cf9718c43d0f5e7b845b11f37ec3db854b60707989729d0a839e11bc26b6024104b47208952110e78096af4c13685e6b1fe5b47565804bf26cb42cc824e350d4
   languageName: node
   linkType: hard
 
@@ -13136,6 +13133,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"npm-to-yarn@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "npm-to-yarn@npm:1.0.1"
+  checksum: 2d8bb0ffe3c5e8f2ce909ba4121ba5af07824ecd0605c77ba0956e361a2359fece6cfe4fa63b74e23879c7bfebaa68b5f9c773bdb803b90e04ba015b35e7812a
+  languageName: node
+  linkType: hard
+
 "npmlog@npm:^4.1.2":
   version: 4.1.2
   resolution: "npmlog@npm:4.1.2"
@@ -15408,7 +15412,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"query-string@npm:^6.1.0, query-string@npm:^6.13.1, query-string@npm:^6.13.8":
+"query-string@npm:^6.13.1, query-string@npm:^6.13.8":
   version: 6.13.8
   resolution: "query-string@npm:6.13.8"
   dependencies:
@@ -15416,6 +15420,18 @@ fsevents@~2.3.1:
     split-on-first: ^1.0.0
     strict-uri-encode: ^2.0.0
   checksum: 5d52ccd5988d60bb17990b287f2fa03d7d4eb3358f6716da7fc32c865196acf957cbdaa9272a36d60de80f06be67cbc7985c21432fecd75ab0166bbf06d87ff9
+  languageName: node
+  linkType: hard
+
+"query-string@npm:^6.14.0":
+  version: 6.14.0
+  resolution: "query-string@npm:6.14.0"
+  dependencies:
+    decode-uri-component: ^0.2.0
+    filter-obj: ^1.1.0
+    split-on-first: ^1.0.0
+    strict-uri-encode: ^2.0.0
+  checksum: 70af3a82fe9babc51b72ed9d68cd5485754ee84456b8d1ab80c8f8fdda9302630513b91d96ed89e701cbdf04619bbcde1695b061ea47b91b099c9f79e4080bba
   languageName: node
   linkType: hard
 
@@ -16607,13 +16623,15 @@ fsevents@~2.3.1:
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
     "@types/react-helmet": ^6.1.0
+    axios: ^0.21.1
+    delay: ^5.0.0
     gatsby: ^2.31.1
     gatsby-plugin-canonical-urls: ^2.9.0
     gatsby-plugin-material-ui: ^2.1.10
     gatsby-plugin-react-helmet: ^3.9.0
-    gatsby-source-dev: ^0.1.4
     gatsby-source-filesystem: ^2.10.0
     gatsby-transformer-remark: ^2.15.0
+    query-string: ^6.14.0
     react: ^17.0.1
     react-dom: ^17.0.1
     react-helmet: ^6.1.0

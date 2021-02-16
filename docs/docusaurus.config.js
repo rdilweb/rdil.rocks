@@ -4,7 +4,7 @@ module.exports = {
     tagline: "Documentation for most of RDIL's projects.",
     url: "https://rdil.rocks",
     baseUrl: "/docs/",
-    onBrokenLinks: "throw",
+    onBrokenLinks: "warn",
     onBrokenMarkdownLinks: "warn",
     favicon: "https://rdil.rocks/favicon.ico",
     organizationName: "rdilweb",
@@ -51,8 +51,21 @@ module.exports = {
                 showLastUpdateTime: true,
                 showLastUpdateAuthor: true,
                 admonitions: {},
+                remarkPlugins: [
+                    [
+                        require("@docusaurus/remark-plugin-npm2yarn"),
+                        {
+                            sync: true,
+                        },
+                    ],
+                ],
             },
         ],
     ],
-    themes: [["@docusaurus/theme-classic", { customCss: require.resolve("./src/css/docs-infima.css") }]],
+    themes: [
+        [
+            "@docusaurus/theme-classic",
+            { customCss: require.resolve("./src/css/docs-infima.css") },
+        ],
+    ],
 }
