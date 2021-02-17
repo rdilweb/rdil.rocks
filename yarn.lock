@@ -2724,7 +2724,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.19, @types/node@npm:^14.14.22":
+"@types/node@npm:*, @types/node@npm:^14.14.22, @types/node@npm:^14.14.28":
   version: 14.14.28
   resolution: "@types/node@npm:14.14.28"
   checksum: e750df4d5e93c639d04100e7d54d9e416ecc649d4d7951ac1d5b82d092c556f6e7775a191995e06d6def65ae7bc25533d188fe122dc660724d119ce3ddae2cea
@@ -2775,7 +2775,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.0":
+"@types/react-dom@npm:^17.0.1":
   version: 17.0.1
   resolution: "@types/react-dom@npm:17.0.1"
   dependencies:
@@ -2811,7 +2811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.1":
+"@types/react@npm:*, @types/react@npm:^17.0.2":
   version: 17.0.2
   resolution: "@types/react@npm:17.0.2"
   dependencies:
@@ -15605,19 +15605,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"query-string@npm:^6.13.1, query-string@npm:^6.13.8":
-  version: 6.13.8
-  resolution: "query-string@npm:6.13.8"
-  dependencies:
-    decode-uri-component: ^0.2.0
-    filter-obj: ^1.1.0
-    split-on-first: ^1.0.0
-    strict-uri-encode: ^2.0.0
-  checksum: 70af3a82fe9babc51b72ed9d68cd5485754ee84456b8d1ab80c8f8fdda9302630513b91d96ed89e701cbdf04619bbcde1695b061ea47b91b099c9f79e4080bba
-  languageName: node
-  linkType: hard
-
-"query-string@npm:^6.14.0":
+"query-string@npm:^6.13.1, query-string@npm:^6.13.8, query-string@npm:^6.14.0":
   version: 6.14.0
   resolution: "query-string@npm:6.14.0"
   dependencies:
@@ -15888,21 +15876,6 @@ fsevents@~2.3.1:
   version: 17.0.1
   resolution: "react-is@npm:17.0.1"
   checksum: 5a83dfc78e7adcb93d632bf367b0733db650e3abd2e9c57c33b87e50d201212c1884b0d7bcf13e692f1556189fa1b87f9f3e0ba10fe858fd6aebe83ed4fcd1ea
-  languageName: node
-  linkType: hard
-
-"react-json-view@npm:^1.19.1":
-  version: 1.21.1
-  resolution: "react-json-view@npm:1.21.1"
-  dependencies:
-    flux: ^4.0.1
-    react-base16-styling: ^0.6.0
-    react-lifecycles-compat: ^3.0.4
-    react-textarea-autosize: ^6.1.0
-  peerDependencies:
-    react: ^17.0.0 || ^16.3.0 || ^15.5.4
-    react-dom: ^17.0.0 || ^16.3.0 || ^15.5.4
-  checksum: 5f3348d4affa7f855cf27d9746e70ba1203ac387bc7a56e1808dd506c88b547bd5f7350fb21629f8446b79df81ab13fcfaf6587b8f1272e8e17650b011c232ed
   languageName: node
   linkType: hard
 
@@ -16848,18 +16821,18 @@ fsevents@~2.3.1:
     "@material-ui/core": 4.11.3
     "@material-ui/icons": ^4.11.2
     "@material-ui/styles": 4.11.3
-    "@types/node": ^14.14.22
-    "@types/react": ^17.0.1
-    "@types/react-dom": ^17.0.0
+    "@types/node": ^14.14.28
+    "@types/react": ^17.0.2
+    "@types/react-dom": ^17.0.1
     "@types/react-helmet": ^6.1.0
     axios: ^0.21.1
     delay: ^5.0.0
-    gatsby: ^2.31.1
-    gatsby-plugin-canonical-urls: ^2.9.0
+    gatsby: ^2.32.3
+    gatsby-plugin-canonical-urls: ^2.10.0
     gatsby-plugin-material-ui: ^2.1.10
-    gatsby-plugin-react-helmet: ^3.9.0
-    gatsby-source-filesystem: ^2.10.0
-    gatsby-transformer-remark: ^2.15.0
+    gatsby-plugin-react-helmet: ^3.10.0
+    gatsby-source-filesystem: ^2.11.0
+    gatsby-transformer-remark: ^2.16.0
     query-string: ^6.14.0
     react: ^17.0.1
     react-dom: ^17.0.1
@@ -19467,6 +19440,15 @@ fsevents@~2.3.1:
   bin:
     uuid: ./bin/uuid
   checksum: 1ce3f37e214d6d0dc94a6a9663a0365013ace66bc3fd5b203e6f5d2eeb978aaee1192367222386345d30b4c6a447928c501121aa84c637724bf105ef57284949
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "uuid@npm:7.0.3"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: a56be8a5bbf2bae755d749d0693637274935b5ae250dfaaaf79241391cf1a7c142a202492196363ec62ec51a476e5e3fc4de2944d854abf2e9b35a33e0e31d4c
   languageName: node
   linkType: hard
 
