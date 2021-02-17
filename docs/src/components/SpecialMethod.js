@@ -5,7 +5,9 @@ export default function SpecialMethod() {
     return (
         <React.Fragment>
             <Tooltip />
-            <span className="badge badge--primary" data-tip="Special Method">SP</span>
+            <span className="badge badge--primary" data-tip="Special Method">
+                SP
+            </span>
         </React.Fragment>
     )
 }
