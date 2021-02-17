@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar"
 import "../css/base.css"
 import { Card, Grid } from "@material-ui/core"
 import DevTo from "../icons/DevTo"
+import Heart from "../icons/Heart"
 
 const BlogIndex = ({ data }) => {
     const posts = data.allMarkdownRemark.nodes
@@ -102,6 +103,35 @@ const BlogIndex = ({ data }) => {
                                 </Grid>
                             )
                         })}
+                        <Grid
+                            item
+                            xs={12}
+                            sm={6}
+                        >
+                            <Card className="card">
+                                <article
+                                    className="post-list-item"
+                                    itemScope
+                                    itemType="http://schema.org/Article"
+                                >
+                                    <header>
+                                        <h2>
+                                            <span itemProp="headline">
+                                                Sponsor Update #1
+                                            </span>
+                                            {" "}
+                                            <Heart />
+                                        </h2>
+                                        <small>
+                                            February 6, 2021
+                                        </small>
+                                    </header>
+                                    <section>
+                                        <p itemProp="description">This post is only available to my <a href="https://github.com/sponsors/RDIL">GitHub Sponsors</a>.</p>
+                                    </section>
+                                </article>
+                            </Card>
+                        </Grid>
                 </Grid>
             </main>
         </>
