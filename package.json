@@ -9,7 +9,7 @@
         "start:root": "yarn workspace root start",
         "start:cherry": "yarn workspace cherry start",
         "start:docs": "yarn workspace docs start",
-        "start": "run-p start:root start:docs start:cherry",
+        "start": "echo PLEASE USE start:root, start:cherry, or start:docs",
         "assemble": "node assemble",
         "prettier": "prettier --write **/*.{js,jsx,ts,tsx,css,yml,md,html,json}",
         "clean": "rimraf build"

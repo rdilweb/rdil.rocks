@@ -13,6 +13,18 @@ module.exports = {
                         "libraries/bluejay/flask-rest-error-handling",
                     ],
                 },
+                {
+                    filehandlers: [
+                        "libraries/filehandlers/filehandlers-index",
+                        "libraries/filehandlers/api",
+                    ],
+                },
+                {
+                    intutils: [
+                        "libraries/intutils/intutils-home",
+                        "libraries/intutils/api",
+                    ],
+                },
                 "libraries/lcpy",
                 "libraries/mkdocs-plugin-progress",
                 "libraries/parse-repr",

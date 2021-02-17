@@ -1,0 +1,58 @@
+---
+id: filehandlers-index
+title: filehandlers
+slug: /libraries/filehandlers
+sidebar_label: Home
+---
+
+`filehandlers` is a library for working with files.
+
+## Download
+
+<span class="badge badge--success">PyPI Package</span> <a href="https://pypi.org/project/filehandlers" target="_blank" rel="noopener noreferrer">filehandlers</a>
+
+## Concept
+
+filehandlers is built on a simple model.
+
+### File
+
+A file is represented with an instance of `filehandlers.AbstractFile`.
+
+:::tip Initializing an `AbstractFile`
+
+The file doesn't need to exist when creating an instance of `AbstractFile`.
+
+:::
+
+### Manipulation
+
+Now, say you want to change that file... that is where `filehandlers.FileManipulator` comes in.
+You need to pass the `AbstractFile` instance when creating a `FileManipulator` so filehandlers knows exactly
+which file it is controlling.
+
+The manipulator includes code for a number of common functions that you may find handy.
+
+### Simple Example
+
+Here is a quick example that shows how to use filehandlers to write to a file:
+
+```python
+from filehandlers import FileManipulator, AbstractFile
+
+# define the file
+my_cool_file = AbstractFile("log.txt")
+
+# create FileManipulator
+my_cool_files_changer = FileManipulator(my_cool_file)
+
+# write data to file 5 times
+for i in range(5):
+    my_cool_files_changer.write_to_file("Message #" + i + ": " + debug_message)
+```
+
+You can see the full API documentation [here](./api.md).
+
+## Source
+
+The source can be found [on GitHub](https://github.com/RDIL/filehandlers).

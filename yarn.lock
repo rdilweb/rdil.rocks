@@ -6589,6 +6589,7 @@ __metadata:
     clsx: ^1.1.1
     react: ^17.0.1
     react-dom: ^17.0.1
+    react-tooltip: ^4.2.14
   languageName: unknown
   linkType: soft
 
@@ -15798,6 +15799,19 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"react-tooltip@npm:^4.2.14":
+  version: 4.2.14
+  resolution: "react-tooltip@npm:4.2.14"
+  dependencies:
+    prop-types: ^15.7.2
+    uuid: ^7.0.3
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: 2c2f71382d70f3a46ec01ee39e3646d1be049f787db4842cd66a5557b09c296a73bb0ae85d38002b5d577b0ab2d6a5dede62470abe7b1f535f899ec48e468e3d
+  languageName: node
+  linkType: hard
+
 "react-transition-group@npm:^4.4.0":
   version: 4.4.1
   resolution: "react-transition-group@npm:4.4.1"
@@ -19212,6 +19226,15 @@ fsevents@~2.3.1:
   bin:
     uuid: ./bin/uuid
   checksum: 1ce3f37e214d6d0dc94a6a9663a0365013ace66bc3fd5b203e6f5d2eeb978aaee1192367222386345d30b4c6a447928c501121aa84c637724bf105ef57284949
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "uuid@npm:7.0.3"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: a56be8a5bbf2bae755d749d0693637274935b5ae250dfaaaf79241391cf1a7c142a202492196363ec62ec51a476e5e3fc4de2944d854abf2e9b35a33e0e31d4c
   languageName: node
   linkType: hard
 

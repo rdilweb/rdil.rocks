@@ -10,8 +10,8 @@ An index of the libraries documented here.
 -   Bluejay
     -   [discord-sentry-reporting](/libraries/bluejay/discord-sentry-reporting.mdx)
     -   [flask-rest-error-handling](/libraries/bluejay/flask-rest-error-handling.mdx)
--   [filehandlers](/libraries/filehandlers/index.md)
--   [intutils](/libraries/intutils/index.md)
+-   [filehandlers](/libraries/filehandlers/index.mdx)
+-   [intutils](./libraries/intutils/index.mdx)
 -   [lcpy](/libraries/lcpy.mdx)
 -   [mkdocs-plugin-progress](/libraries/mkdocs-plugin-progress.mdx)
 -   [parse-repr](/libraries/parse-repr.mdx)
