@@ -148,6 +148,131 @@ Delete the file if it exists.
 </div>
 </div>
 
+<div className="api-container">
+
+### `get_cache(self)`
+
+<div className="api-container-body">
+
+Get the cache.
+
+The cache will be a list of the file's lines at the time of the last refresh.
+
+Refreshes are called when this class is created, or when manually triggered by `FileManipulator#refresh`.
+
+> *Returns*: `List[str]` - The cache.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_file(self)`
+
+<div className="api-container-body">
+
+Get the AbstractFile instance.
+
+> *Returns*: `AbstractFile` - The `AbstractFile` instance.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_file_contents_singlestring(self)`
+
+<div className="api-container-body">
+
+Get the file's contents, but as one multi-line string.
+
+:::warning Cache
+
+This function does not use the cache.
+
+:::
+
+> *Returns*: `str` - The file's contents.
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+> *Throws `FileNotFoundError`*: If the file doesn't exist.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_file_name(self)`
+
+<div className="api-container-body">
+
+Get the file's name.
+
+> *Returns*: `str` - The file's name.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `load_from_json(self)`
+
+<div className="api-container-body">
+
+Loads the file, and returns the dictionary containing the data.
+
+> *Returns*: `Dict[str, Any]` - The dictionary with the data.
+
+> *Throws `JSONDecodeError`* - If it isn't valid JSON.
+
+> *Throws `PermissionError`* - If you don't have needed permission to access the file.
+
+> *Throws `FileNotFoundError`* - If the file doesn't exist.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `refresh(self, slim=False)`
+
+<div className="api-container-body">
+
+Update the cache.
+
+> *Parameter `slim`*: `Optional[bool]` If empty lines should be removed. (_default: `False`_)
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `write_to_file(self, string)`
+
+<div className="api-container-body">
+
+Write to the file.
+
+:::warning Types
+
+Please ensure that what you are writing to the file is a Python standard type (string, integer, etc).
+
+:::
+
+> *Parameter `string`*: `str` - What to write to the file. (_required_)
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+> *Throws `TypeError`: If the data you pass is an unsupported type.
+
+> *Throws `FileNotFoundError`*: If the file doesn't exist.
+
+</div>
+</div>
+
 ## `OpenModes`
 
 An enum for the different options you can pass to the keyword argument mode in Python's open function.
