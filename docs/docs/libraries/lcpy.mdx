@@ -1,0 +1,91 @@
+---
+id: lcpy
+title: lcpy
+slug: /libraries/lcpy
+---
+
+`lcpy`, or lowercase values in Python, is a simple library that allows you to use values like `true` instead of `True`.
+I created this when I was teaching a student Python who kept forgetting to put in proper uppercase letters.
+It is super simple, and has very few drawbacks.
+
+## Download
+
+<span class="badge badge--success">PyPI Package</span> <a href="https://pypi.org/project/lc-py" target="_blank" rel="noopener noreferrer">lc-py</a>
+
+The name of the package on PyPI is `lc-py`. (Sorry, `lcpy` was already taken!)
+
+## Usage
+
+To use the library, you will first need to put this at the top of any Python files that you want to use the lowercase values in:
+
+```python
+from lcpy import *
+```
+
+and that is basically it, you can now use it.
+
+### Single-imports
+
+Some static analysis tools don't enjoy it when you use `*` imports.
+You can import single values by doing:
+
+```python
+# replace false with the value you want
+from lcpy import false
+```
+
+## Values
+
+If you read the [usage section](#usage) and now have a basic understanding, here are the values you can use:
+
+-   `true`
+-   `false`
+-   `none`
+-   `exception` (**new** in v1.1.0)
+
+The following values can only be used in `v2.0.0` and above:
+
+-   `indexerror`
+-   `environmenterror`
+-   `eoferror`
+-   `oserror`
+-   `processlookuperror`
+-   `fileexistserror`
+-   `filenotfounderror`
+-   `floatingpointerror`
+-   `recursionerror`
+-   `referenceerror`
+-   `runtimeerror`
+-   `arithmeticerror`
+-   `assertionerror`
+-   `attributeerror`
+-   `baseexception`
+-   `blockingioerror`
+-   `brokenpipeerror`
+-   `buffererror`
+-   `childprocesserror`
+-   `connectionabortederror`
+-   `connectionrefusederror`
+-   `connectionreseterror`
+-   `interruptederror`
+-   `isadirectoryerror`
+-   `ioerror`
+-   `importerror`
+-   `indentationerror`
+-   `keyerror`
+-   `lookuperror`
+-   `modulenotfounderror`
+
+## Related Documents
+
+You can read the proposals written for this project here:
+
+-   [PDF](/proposals/lcpy/lcpy_project_proposal.pdf)
+-   [RTF (Rich Text Format)](/proposals/lcpy/lcpy_project_proposal.rtf)
+-   [EPUB](/proposals/lcpy/lcpy_project_proposal.epub)
+-   [DOCX (Microsoft Word Document)](/proposals/lcpy/lcpy_project_proposal.docx)
+-   [ODT (OpenDocument Format)](/proposals/lcpy/lcpy_project_proposal.odt)
+
+## Source
+
+The source can be found [on GitHub](https://github.com/RDIL/lcpy).

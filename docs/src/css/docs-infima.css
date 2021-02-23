@@ -1,0 +1,15 @@
+:root {
+    --ifm-color-primary: hsla(187, 100%, 42%, 1);
+}
+
+blockquote {
+    color: var(--ifm-font-color-base);
+}
+
+.api-container {
+    padding-left: 20px;
+}
+
+.api-container-body {
+    margin-left: 20px;
+}

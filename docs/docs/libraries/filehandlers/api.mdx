@@ -1,0 +1,335 @@
+---
+title: filehandlers API Reference
+id: api
+slug: /libraries/filehandlers/api
+sidebar_label: API Reference
+---
+
+import SpecialMethod from "@site/src/components/SpecialMethod"
+
+## `AbstractFile`
+
+A file in instance form.
+
+<div className="api-container">
+
+### `__abs__(self)` <SpecialMethod />
+
+<div className="api-container-body">
+
+Override of `abs()`.
+
+Provides the absolute path to the file.
+
+> *Returns*: `str` - The absolute path to the file.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `__init__(self, name)` <SpecialMethod />
+
+<div className="api-container-body">
+
+Creates the class.
+
+> *Parameter `name`*: `str` - The file name. (_required_)
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `__str__(self)` <SpecialMethod />
+
+<div className="api-container-body">
+
+Override of `str()`.
+
+> *Returns*: `str` - The name of the file.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `exists(self, touch_if_false=False)`
+
+<div className="api-container-body">
+
+Get if this file exists or not (boolean value).
+
+> *Returns*: `bool` - If the file exists.
+
+> *Parameter `touch_if_false`*: `Optional[bool]` - If the file should be created if it doesn't exist. (_default_: `False`)
+
+> *Throws `PermissionError`*: If you don't have the required permissions to access the file.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `parent_directory(self)`
+
+<div className="api-container-body">
+
+Get the parent directory of this file's path.
+
+> *Returns*: `str` - The absolute path to the parent directory.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `touch(self)`
+
+<div className="api-container-body">
+
+Create the file if it doesn't already exist.
+
+In case you are wondering, the name for this function comes from the Unix command touch, which creates a new file with the name as a parameter.
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+</div>
+</div>
+
+## `FileManipulator`
+
+Class used for managing an assigned file.
+
+<div className="api-container">
+
+### `__init__(self, abstract_file)` <SpecialMethod />
+
+<div className="api-container-body">
+
+Create class instance.
+
+> *Parameter `abstract_file`*: `AbstractFile` - The AbstractFile instance. (_required_)
+
+> *Throws `TypeError`*: If the argument isn't an AbstractFile.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `clear_file(self)`
+
+<div className="api-container-body">
+
+Clear the file.
+
+Warning: You will not be able to recover the old contents!
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+> *Throws `FileNotFoundError`*: If the file doesn't exist.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `delete(self)`
+
+<div className="api-container-body">
+
+Delete the file if it exists.
+
+> *Returns*: `bool` - If it got deleted or not.
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_cache(self)`
+
+<div className="api-container-body">
+
+Get the cache.
+
+The cache will be a list of the file's lines at the time of the last refresh.
+
+Refreshes are called when this class is created, or when manually triggered by `FileManipulator#refresh`.
+
+> *Returns*: `List[str]` - The cache.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_file(self)`
+
+<div className="api-container-body">
+
+Get the AbstractFile instance.
+
+> *Returns*: `AbstractFile` - The `AbstractFile` instance.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_file_contents_singlestring(self)`
+
+<div className="api-container-body">
+
+Get the file's contents, but as one multi-line string.
+
+:::warning Cache
+
+This function does not use the cache.
+
+:::
+
+> *Returns*: `str` - The file's contents.
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+> *Throws `FileNotFoundError`*: If the file doesn't exist.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `get_file_name(self)`
+
+<div className="api-container-body">
+
+Get the file's name.
+
+> *Returns*: `str` - The file's name.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `load_from_json(self)`
+
+<div className="api-container-body">
+
+Loads the file, and returns the dictionary containing the data.
+
+> *Returns*: `Dict[str, Any]` - The dictionary with the data.
+
+> *Throws `JSONDecodeError`* - If it isn't valid JSON.
+
+> *Throws `PermissionError`* - If you don't have needed permission to access the file.
+
+> *Throws `FileNotFoundError`* - If the file doesn't exist.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `refresh(self, slim=False)`
+
+<div className="api-container-body">
+
+Update the cache.
+
+> *Parameter `slim`*: `Optional[bool]` If empty lines should be removed. (_default: `False`_)
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+</div>
+</div>
+
+<div className="api-container">
+
+### `write_to_file(self, string)`
+
+<div className="api-container-body">
+
+Write to the file.
+
+:::warning Types
+
+Please ensure that what you are writing to the file is a Python standard type (string, integer, etc).
+
+:::
+
+> *Parameter `string`*: `str` - What to write to the file. (_required_)
+
+> *Throws `PermissionError`*: If you don't have needed permission to access the file.
+
+> *Throws `TypeError`: If the data you pass is an unsupported type.
+
+> *Throws `FileNotFoundError`*: If the file doesn't exist.
+
+</div>
+</div>
+
+## `OpenModes`
+
+An enum for the different options you can pass to the keyword argument mode in Python's open function.
+
+It can be used like this:
+
+```python
+from filehandlers import OpenModes
+open("myfile.txt", mode=OpenModes.READ.value)
+This can help so you don't need to remember all the different mode options.
+```
+
+:::warning Using `WRITE`
+
+For the write option, the file will be cleared and then written to. To avoid this, use append instead!
+
+:::
+
+:::tip Binary mode vs Text mode
+
+Text mode should be used when writing text files (whether using plain text or a text-based format like TXT),
+while binary mode must be used when writing non-text files like images.
+
+:::
+
+### `APPEND`
+
+Create the file - raises error if file exists.
+
+### `BINARY`
+
+This will open a file for reading and writing (updating).
+
+### `CREATE`
+
+Create the file and ready it to be written to.
+
+### `CREATE_AND_WRITE`
+
+The default option for the built-in open function.
+
+### `READ`
+
+Read only access to the file (binary enabled).
+
+### `READ_BINARY`
+
+Write only access to the file - see warning above.
+
+### `TEXT`
+
+Open in binary mode.
+
+### `WRITE`
+
+Write only access to the file - see warning above (binary enabled).
+
+### `WRITE_BINARY`
+
+Clear the file.
