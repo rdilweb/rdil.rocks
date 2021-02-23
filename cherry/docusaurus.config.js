@@ -1,9 +1,10 @@
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     title: "Cherry",
     tagline: "The Cherry Minecraft utility mod!",
     url: "https://rdil.rocks",
     baseUrl: "/cherry/",
-    favicon: "favicon.ico",
+    favicon: "https://rdil.rocks/favicon.ico",
     organizationName: "RDIL",
     projectName: "Cherry",
     themeConfig: {
@@ -41,19 +42,24 @@ module.exports = {
             copyright: `Copyright © ${new Date().getFullYear()} Reece Dunham.`,
         },
     },
-    presets: [
+    plugins: [
         [
-            "@docusaurus/preset-classic",
+            "@docusaurus/plugin-content-docs",
             {
-                docs: {
-                    sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl:
-                        "https://github.com/rdilweb/rdil.rocks/edit/master/cherry/",
-                    showLastUpdateTime: true,
-                },
-                theme: {
-                    customCss: require.resolve("./src/css/cherry-infima.css"),
-                },
+                sidebarPath: require.resolve("./sidebars.js"),
+                editUrl:
+                    "https://github.com/rdilweb/rdil.rocks/edit/master/cherry/",
+                showLastUpdateTime: true,
+                showLastUpdateAuthor: true,
+            },
+        ],
+        "@docusaurus/plugin-content-pages",
+    ],
+    themes: [
+        [
+            "@docusaurus/theme-classic",
+            {
+                customCss: require.resolve("./src/css/cherry-infima.css"),
             },
         ],
     ],
