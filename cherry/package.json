@@ -9,7 +9,7 @@
         "clear": "docusaurus clear"
     },
     "dependencies": {
-        "@docusaurus/core": "2.0.0-alpha.9f5f3931c",
+        "@docusaurus/core": "2.0.0-alpha.70",
         "@docusaurus/plugin-content-docs": "2.0.0-alpha.9f5f3931c",
         "@docusaurus/plugin-content-pages": "2.0.0-alpha.9f5f3931c",
         "@docusaurus/theme-classic": "2.0.0-alpha.9f5f3931c",
