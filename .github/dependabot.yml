@@ -3,7 +3,7 @@ updates:
     - package-ecosystem: npm
       directory: "/"
       schedule:
-          interval: daily
+          interval: weekly
           time: "11:00"
           timezone: EST
       open-pull-requests-limit: 99
@@ -12,7 +12,7 @@ updates:
     - package-ecosystem: npm
       directory: "/cherry/"
       schedule:
-          interval: daily
+          interval: weekly
           time: "11:00"
           timezone: EST
       open-pull-requests-limit: 10

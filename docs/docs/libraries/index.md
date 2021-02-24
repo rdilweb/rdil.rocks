@@ -15,5 +15,5 @@ An index of the libraries documented here.
 -   [lcpy](/libraries/lcpy.mdx)
 -   [mkdocs-plugin-progress](/libraries/mkdocs-plugin-progress.mdx)
 -   [parse-repr](/libraries/parse-repr.mdx)
--   [PickleCore](/libraries/picklecore.md)
+-   [PickleCore](/libraries/picklecore.mdx)
 -   [static-server-rdil](/libraries/static-server-rdil.mdx)
