@@ -29,6 +29,11 @@ module.exports = {
                 "libraries/mkdocs-plugin-progress",
                 "libraries/parse-repr",
                 "libraries/static-server-rdil",
+                {
+                    Archived: [
+                        "libraries/picklecore",
+                    ],
+                },
             ],
         },
         {
@@ -38,5 +43,7 @@ module.exports = {
         {
             About: ["about/me", "about/rdilweb"],
         },
+        "code-of-conduct",
+        "license",
     ],
 }
