@@ -20,6 +20,12 @@ main {
         url("/fonts/open-sans-v17-latin-regular.svg#OpenSans") format("svg");
 }
 
+.next-link {
+    color: #3273ea;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -57,7 +63,6 @@ a {
     right: 0;
     background-color: #24292e;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 60px;
     border: 2px white solid;
     border-right: none;

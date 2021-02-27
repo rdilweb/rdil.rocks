@@ -1,7 +1,8 @@
 ---
 title: "How Software Updates Should be Done"
-slug: "/blog/up-to-date-software"
+slug: "up-to-date-software"
 date: "2020-01-22"
+description: "An outline of the ideal way to handle and deploy software updates."
 ---
 
 Keeping software up-to-date can be hard. Ideally, you want to ensure you have the latest features, security patches, and bug fixes in your app.

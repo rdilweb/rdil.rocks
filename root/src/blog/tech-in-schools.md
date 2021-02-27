@@ -1,7 +1,8 @@
 ---
 title: "Technology in Schools"
-slug: "/blog/tech-in-schools"
+slug: "tech-in-schools"
 date: "2020-03-12"
+description: "My thoughts on the use of technology in schools, and the privacy implications."
 ---
 
 As technology has evolved, so has its uses in different industries. In this post, I'm going to be taking a look at how schools use technology, and the privacy implications behind it.

@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 import { Card, Grid } from "@material-ui/core"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import "../css/base.css"
 
 const Home = () => {
     return (
@@ -123,10 +122,10 @@ const Home = () => {
                     <h2>More about me</h2>
                     <ul>
                         <li>
-                            <Link to="/code-style">My code style</Link>
+                            <Link href="/code-style">My code style</Link>
                         </li>
                         <li>
-                            <Link to="/blog">My blog</Link>
+                            <Link href="/blog">My blog</Link>
                         </li>
                     </ul>
                 </div>

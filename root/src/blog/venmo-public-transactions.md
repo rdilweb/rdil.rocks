@@ -1,7 +1,8 @@
 ---
 title: "Stop Strangers from Snooping on your Venmo"
-slug: "/blog/venmo-public-transactions"
+slug: "venmo-public-transactions"
 date: "2019-12-15"
+description: "A helpful guide to stop strangers to know who you are paying on Venmo!"
 ---
 
 Opinion: Venmo is easy to use and helpful.

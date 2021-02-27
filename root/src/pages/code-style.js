@@ -1,7 +1,6 @@
 import React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import "../css/base.css"
 import styles from "../css/code-style-page.module.css"
 
 const CodeStyle = () => (

@@ -1,7 +1,8 @@
 ---
 title: "Google Acquired Fitbit"
-slug: "/blog/google-acquired-fitbit"
+slug: "google-acquired-fitbit"
 date: "2019-11-03"
+description: "Recently, Google acquired Fitbit, the exersice-tracking wristband maker. Here are my thoughts on it."
 ---
 
 This is going to be a short post, but something I feel is important to discuss.
