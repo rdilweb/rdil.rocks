@@ -1,7 +1,8 @@
 ---
 title: "Privacy Beneficial Laws"
-slug: "/blog/privacy-beneficial-laws"
+slug: "privacy-beneficial-laws"
 date: "2020-01-22"
+description: "Taking a deeper dive into the legal side of privacy."
 ---
 
 The legal side of privacy is complicated.

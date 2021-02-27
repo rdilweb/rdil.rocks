@@ -1,8 +1,8 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+import Head from "next/head"
 
 const Seo = (props) => (
-    <Helmet>
+    <Head>
         <title>{props.title}</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,7 @@ const Seo = (props) => (
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content={props.title} />
         <meta name="twitter:site" content="@rdil_pickle" />
-    </Helmet>
+    </Head>
 )
 
 export default Seo

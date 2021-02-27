@@ -1,3 +1,10 @@
 .heart {
     fill: #d114be;
+    position: relative;
+    top: 3px;
+}
+
+.text-level {
+    position: relative;
+    top: 10px;
 }

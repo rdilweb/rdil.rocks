@@ -1,7 +1,8 @@
 ---
 title: Privacy By RDIL
-slug: "/blog/privacy"
+slug: "privacy"
 date: "2021-01-27"
+description: "The primary points for my thoughts on privacy."
 ---
 
 Note: This content was originally from [privacy.rdil.rocks](https://github.com/rdilweb/privacy), but has been moved here for maintainability.

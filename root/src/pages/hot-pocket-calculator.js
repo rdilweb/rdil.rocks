@@ -7,7 +7,6 @@ import {
     ThemeProvider,
     Card,
 } from "@material-ui/core"
-import "../css/base.css"
 import styles from "../css/hot-pocket-calculator-page.module.css"
 
 const textFieldTheme = createMuiTheme({

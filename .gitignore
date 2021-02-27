@@ -36,5 +36,5 @@ cherry/.pnp.*
 node_modules
 
 cherry/.cache
-root/.cache
-root/public
+root/.next
+root/out

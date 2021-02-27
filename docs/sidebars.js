@@ -30,9 +30,7 @@ module.exports = {
                 "libraries/parse-repr",
                 "libraries/static-server-rdil",
                 {
-                    Archived: [
-                        "libraries/picklecore",
-                    ],
+                    Archived: ["libraries/picklecore"],
                 },
             ],
         },
