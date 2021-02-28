@@ -15,7 +15,7 @@ export function getPostSlugs() {
     return fs.readdirSync(postsDirectory)
 }
 
-export async function getPostBySlug(slug, fields = []) {
+export function getPostBySlug(slug, fields = []) {
     const realSlug = slug.replace(/\.md$/, "")
     const fullPath = join(postsDirectory, `${realSlug}.md`)
     const fileContents = fs.readFileSync(fullPath, "utf8")
@@ -33,10 +33,6 @@ export async function getPostBySlug(slug, fields = []) {
             items[field] = content
         }
 
-        // if (field === "excerpt") {
-        //     items[field] = await markdownToHtml(content.substring(0, 140))
-        // }
-
         if (data[field]) {
             items[field] = data[field]
         }
@@ -50,7 +46,7 @@ export async function getAllPosts(fields = []) {
     let posts = []
 
     for (let slug of slugs) {
-        posts.push(await getPostBySlug(slug, fields))
+        posts.push(getPostBySlug(slug, fields))
     }
 
     // sort posts by date in descending order

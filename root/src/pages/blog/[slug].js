@@ -49,7 +49,7 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-    const post = await getPostBySlug(params.slug, [
+    const post = getPostBySlug(params.slug, [
         "title",
         "date",
         "slug",
