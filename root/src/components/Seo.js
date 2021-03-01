@@ -13,13 +13,19 @@ const Seo = (props) => (
         <meta property="og:locale" content="en_US" />
         <meta
             name="description"
-            content="Official website of RDIL, a coder, designer of websites, and open-source lover."
+            content={
+                props.description ||
+                "Official website of RDIL, a coder, designer of websites, and open-source lover."
+            }
         />
         <meta
             property="og:description"
-            content="Official website of RDIL, a coder, designer of websites, and open-source lover."
+            content={
+                props.description ||
+                "Official website of RDIL, a coder, designer of websites, and open-source lover."
+            }
         />
-        <meta property="og:url" content={`https://rdil.rocks/${props.page}`} />
+        <meta property="og:url" content={`https://rdil.rocks${props.page}`} />
         <meta property="og:site_name" content="RDIL's Site" />
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content={props.title} />

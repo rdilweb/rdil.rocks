@@ -14,6 +14,7 @@ module.exports = {
             title: "RDIL Docs",
             logo: {
                 src: "/rdil.png",
+                alt: "RDIL Logo",
             },
             items: [
                 {
@@ -21,6 +22,12 @@ module.exports = {
                     activeBasePath: "docs",
                     label: "Docs",
                     position: "left",
+                },
+                {
+                    href:
+                        "https://github.com/rdilweb/rdil.rocks/blog/master/docs",
+                    label: "Source",
+                    position: "right",
                 },
             ],
         },
