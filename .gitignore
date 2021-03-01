@@ -4,6 +4,8 @@ _site/
 
 cherry/.docusaurus
 cherry/build
+docs/.docusaurus
+docs/build
 cherry/.cache-loader
 
 .env.local
