@@ -50,7 +50,7 @@ const HotPocketCalculator = () => {
         <>
             <Seo
                 title="Hot Pocket Calculator | RDIL's Site"
-                page="hot-pocket-calculator"
+                page="/hot-pocket-calculator"
             />
             <NavBar />
             <ThemeProvider theme={textFieldTheme}>

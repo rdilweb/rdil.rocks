@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 const Hm3DoorCodes = () => (
     <>
         <NavBar />
-        <Seo title="HITMAN™ 3 Door Codes" page="hm3-door-codes" />
+        <Seo title="HITMAN™ 3 Door Codes" page="/hm3-door-codes" />
         <main>
             <h1>HITMAN&trade; 3 Door Codes</h1>
             <p>

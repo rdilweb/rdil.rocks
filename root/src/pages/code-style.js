@@ -6,7 +6,7 @@ import styles from "../css/code-style-page.module.css"
 const CodeStyle = () => (
     <>
         <NavBar />
-        <Seo title="My Code Style | RDIL's Site" page="code-style" />
+        <Seo title="My Code Style | RDIL's Site" page="/code-style" />
         <main>
             <h1>My Code Style</h1>
             <p>

@@ -22,7 +22,7 @@ export default function Post({ post }) {
                 <>
                     <Seo
                         title={`${post.title} | RDIL's Site`}
-                        page={post.slug?.substring(1) || `/blog/${post.id}`}
+                        page={`/blog/${post.slug}`}
                     />
                     <main>
                         <article>

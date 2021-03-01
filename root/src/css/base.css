@@ -186,8 +186,7 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
     #nav-btn,
-    #nav-btn span,
-    .sidebar-nav {
+    #nav-btn span {
         -webkit-transition: 0;
         -moz-transition: 0;
         -o-transition: 0;

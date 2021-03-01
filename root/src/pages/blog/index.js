@@ -156,7 +156,12 @@ export async function getStaticProps() {
     return {
         props: {
             devArticles,
-            blogPosts: await getAllPosts(["slug", "date", "title", "description"]),
+            blogPosts: await getAllPosts([
+                "slug",
+                "date",
+                "title",
+                "description",
+            ]),
         },
     }
 }
