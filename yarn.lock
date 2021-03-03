@@ -2623,6 +2623,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ace-builds@npm:^1.4.12, ace-builds@npm:^1.4.6":
+  version: 1.4.12
+  resolution: "ace-builds@npm:1.4.12"
+  checksum: 10f23a7e6dd333246af093a22dbb63350528a94265b9d06769bf6d45140269df51e00c8c8b6ab4e15682a03a945c48fe903614b4ad705a334d4c7b1a8ec60ad2
+  languageName: node
+  linkType: hard
+
 "acorn-walk@npm:^8.0.0":
   version: 8.0.2
   resolution: "acorn-walk@npm:8.0.2"
@@ -5107,6 +5114,13 @@ __metadata:
     detect: ./bin/detect-port
     detect-port: ./bin/detect-port
   checksum: 4ebfc40948cd3dc20c5bbef95018ead433d522b6ef0e2efae2d20943632a815db80435a78212525f05b492331b05e66af51d260e42f8bfe6145f66e2a223f054
+  languageName: node
+  linkType: hard
+
+"diff-match-patch@npm:^1.0.4":
+  version: 1.0.5
+  resolution: "diff-match-patch@npm:1.0.5"
+  checksum: 4694f40dbfd725e6ceaaa94c4779b60ceaf2d3b382229118310154d469f983d665ecfddae3c5c402bc5bb51930db63a1d27bd30c5d91e38de13f9d8054f2f4ae
   languageName: node
   linkType: hard
 
@@ -8309,6 +8323,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"lodash.get@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "lodash.get@npm:4.4.2"
+  checksum: 447e575e3caa5131ef44e5a0c135b1614f3c937d86b3be0568f9da7b0fd015010af3b6b4e41edf6e2698c9ce2dcc061ca71b31f274f799c991dceb018be16e4f
+  languageName: node
+  linkType: hard
+
 "lodash.groupby@npm:^4.6.0":
   version: 4.6.0
   resolution: "lodash.groupby@npm:4.6.0"
@@ -8320,6 +8341,13 @@ fsevents@~2.3.1:
   version: 4.5.2
   resolution: "lodash.has@npm:4.5.2"
   checksum: ed2cbed6f3f06fe2ae0a604464208a758197624810e58c4928de3ab9a00d2ac736ade10f49b6ea77f96c702f9d104189a57a7af0bfa1725e8554524aa9466f41
+  languageName: node
+  linkType: hard
+
+"lodash.isequal@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: 5b47e094641c18a915497343894c66f7da6aebb9aaa2a3fcc5643455aaf29d19df60ebbed664c8374fb959c8b4ce96810ee6becd8a71ac58c6c2ca8d29762947
   languageName: node
   linkType: hard
 
@@ -11453,8 +11481,25 @@ fsevents@~2.3.1:
     npm-run-all: ^4.1.5
     prettier: ^2.2.1
     rimraf: ^3.0.2
+    typescript: 4.1.5
   languageName: unknown
   linkType: soft
+
+"react-ace@npm:^9.3.0":
+  version: 9.3.0
+  resolution: "react-ace@npm:9.3.0"
+  dependencies:
+    ace-builds: ^1.4.6
+    diff-match-patch: ^1.0.4
+    lodash.get: ^4.4.2
+    lodash.isequal: ^4.5.0
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0
+    react-dom: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0
+  checksum: 896447f6b400a676fb011b1c208a52416390028279ea8d374270b59d778f7d7e2f844bcb18d89d8ef1b8dfb486e46a27098fb0c676af4e06d49b93c2701789b9
+  languageName: node
+  linkType: hard
 
 "react-dev-utils@npm:^11.0.1":
   version: 11.0.3
@@ -12235,6 +12280,7 @@ fsevents@~2.3.1:
     "@types/node": ^14.14.28
     "@types/react": ^17.0.2
     "@types/react-dom": ^17.0.1
+    ace-builds: ^1.4.12
     axios: ^0.21.1
     clsx: ^1.1.1
     delay: ^5.0.0
@@ -12242,9 +12288,11 @@ fsevents@~2.3.1:
     next: ^10.0.7
     query-string: ^6.14.0
     react: ^17.0.1
+    react-ace: ^9.3.0
     react-dom: ^17.0.1
     remark: ^13.0.0
     remark-html: ^13.0.1
+    typescript: 4.1.5
   languageName: unknown
   linkType: soft
 
@@ -13799,6 +13847,26 @@ fsevents@~2.3.1:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: c9ef0176aaf32593514c31e5c6edc1db970847aff6e1f0a0570a6ac0cc996335792f394c2fcec59cc76691d22a01888ea073a2f3c6930cfcf7c519addf4e2ad7
+  languageName: node
+  linkType: hard
+
+typescript@4.1.5:
+  version: 4.1.5
+  resolution: "typescript@npm:4.1.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@4.1.5#builtin<compat/typescript>":
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
   languageName: node
   linkType: hard
 

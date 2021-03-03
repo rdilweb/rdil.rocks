@@ -11,14 +11,19 @@
 
 import * as React from "react"
 
-const buildYouTubeEmbedUrl = (data) => {
+const buildYouTubeEmbedUrl = (data: string) => {
     const params = `controls=0&amp;autoplay=1${
         data[1] != null ? `&amp;start=${data[1]}` : ""
     }`
     return `https://www.youtube.com/embed/${data[0]}?${params}`
 }
 
-const LoadableSound = (props) => {
+export interface LoadableSoundProps {
+    show?: boolean
+    data: string
+}
+
+export default function LoadableSound(props: LoadableSoundProps) {
     return props.show && props.data[0] !== "" ? (
         <iframe
             width="0"
@@ -32,5 +37,3 @@ const LoadableSound = (props) => {
         <div hidden />
     )
 }
-
-export default LoadableSound

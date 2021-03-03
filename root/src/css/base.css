@@ -1,7 +1,3 @@
-.card {
-    padding: 20px;
-}
-
 main {
     margin: 75px 100px;
 }
@@ -18,6 +14,11 @@ main {
         url("/fonts/open-sans-v17-latin-regular.woff") format("woff"),
         url("/fonts/open-sans-v17-latin-regular.ttf") format("truetype"),
         url("/fonts/open-sans-v17-latin-regular.svg#OpenSans") format("svg");
+}
+
+.card {
+    padding: 20px;
+    margin: 2px;
 }
 
 .next-link {
@@ -192,4 +193,33 @@ a {
         -o-transition: 0;
         transition: 0;
     }
+}
+
+/*
+ * Used in accordions to put space in between child items.
+ */
+.space {
+    margin: 8px !important;
+}
+
+/*
+ * Used by text fields to avoid overlap.
+ */
+.space-left {
+    margin-left: 8px !important;
+}
+
+/*
+ * For light green text.
+ */
+.is-light-green {
+    color: green;
+}
+
+/*
+ * Used for the headings of accordions to put the arrow at the end.
+ */
+.accordion-heading {
+    flex-basis: 33.33%;
+    flex-shrink: 0;
 }

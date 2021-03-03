@@ -4,7 +4,7 @@ import { Card, Grid } from "@material-ui/core"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
 
-const Home = () => {
+export default function Home() {
     return (
         <>
             <Seo title="Home | RDIL's Site" page="" />
@@ -133,5 +133,3 @@ const Home = () => {
         </>
     )
 }
-
-export default Home

@@ -2,12 +2,11 @@ import React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
 import {
-    TextField,
-    createMuiTheme,
-    ThemeProvider,
     Card,
+    createMuiTheme,
+    TextField,
+    ThemeProvider,
 } from "@material-ui/core"
-import styles from "../css/hot-pocket-calculator-page.module.css"
 
 const textFieldTheme = createMuiTheme({
     palette: {
@@ -21,18 +20,19 @@ const textFieldTheme = createMuiTheme({
 const HOT_POCKETS_PER_HOUR = 60 / 3.5
 const HOT_POCKETS_PER_DAY = Math.floor(HOT_POCKETS_PER_HOUR) * 24
 
-const HotPocketCalculator = () => {
-    const yearsToHotPockets = (years) => {
+export default function HotPocketCalculator() {
+    const yearsToHotPockets = (years: number): number => {
         const hotPocketsPerYear = HOT_POCKETS_PER_DAY * 365
         return hotPocketsPerYear * years
     }
 
-    const daysToHotPockets = (days) => HOT_POCKETS_PER_DAY * days
+    const daysToHotPockets = (days: number): number =>
+        HOT_POCKETS_PER_DAY * days
 
-    const [currentYear, setCurrentYear] = React.useState(0)
-    const [currentDay, setCurrentDay] = React.useState(0)
-    const [yearResult, setYearResult] = React.useState(0)
-    const [dayResult, setDayResult] = React.useState(0)
+    const [currentYear, setCurrentYear] = React.useState<string>("0")
+    const [currentDay, setCurrentDay] = React.useState<string>("0")
+    const [yearResult, setYearResult] = React.useState<string>("0")
+    const [dayResult, setDayResult] = React.useState<string>("0")
 
     function onYearUpdate(event) {
         const val = event.target.value
@@ -66,7 +66,7 @@ const HotPocketCalculator = () => {
                         <h2>Why?</h2>
                         <p>I was bored.</p>
                         <h2>Calculator</h2>
-                        <Card className={styles.hotPocketCard}>
+                        <Card className="card">
                             <h3>Years &rarr; Hot Pockets</h3>
                             <TextField
                                 label="Years"
@@ -80,7 +80,7 @@ const HotPocketCalculator = () => {
                             />
                             <p>Result: {yearResult}</p>
                         </Card>
-                        <Card className={styles.hotPocketCard}>
+                        <Card className="card">
                             <h3>Days &rarr; Hot Pockets</h3>
                             <TextField
                                 label="Days"
@@ -100,5 +100,3 @@ const HotPocketCalculator = () => {
         </>
     )
 }
-
-export default HotPocketCalculator
