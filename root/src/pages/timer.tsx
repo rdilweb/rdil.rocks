@@ -9,6 +9,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+import * as React from "react"
 import {
     Button,
     Grid,
@@ -19,11 +20,9 @@ import {
     Slider,
 } from "@material-ui/core"
 import Clock from "@material-ui/icons/Alarm"
-import * as React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
 import TimerLoadableSound from "../components/TimerLoadableSound"
-// @ts-ignore
 import styles from "../css/timer.module.css"
 
 const videos = ["Xylophone Notes", "Birds Chirping", "Bell"]
@@ -42,11 +41,11 @@ const videoListComponents = videos.map((video, index) => (
 const prettySecondsValue = (secondsCount) =>
     secondsCount < 10 ? `0${secondsCount}` : `${secondsCount}`
 
-const Timer = () => {
-    const [isTimerRunning, setTimerIsRunning] = React.useState(false)
+export default function Timer() {
+    const [isTimerRunning, setTimerIsRunning] = React.useState<boolean>(false)
 
-    const [secondsValue, setSecondsValue] = React.useState(0)
-    const [minutesValue, setMinutesValue] = React.useState(10)
+    const [secondsValue, setSecondsValue] = React.useState<number>(0)
+    const [minutesValue, setMinutesValue] = React.useState<number>(10)
 
     const [sound, setSound] = React.useState("")
 
@@ -119,7 +118,7 @@ const Timer = () => {
                                             ? minutesValue
                                             : 0
                                     }
-                                    onChange={(event, value) =>
+                                    onChange={(_event, value) =>
                                         setMinutesValue(value)
                                     }
                                     max={60}
@@ -210,5 +209,3 @@ const Timer = () => {
         </>
     )
 }
-
-export default Timer

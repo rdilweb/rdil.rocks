@@ -1,7 +1,7 @@
 import React from "react"
 import NavBar from "../components/NavBar"
 
-function NotFound() {
+export default function NotFound() {
     return (
         <>
             <NavBar />
@@ -11,5 +11,3 @@ function NotFound() {
         </>
     )
 }
-
-export default NotFound

@@ -6,7 +6,7 @@ import Envelope from "../icons/Envelope"
 import GitLab from "../icons/GitLab"
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
 
-const NavBar = () => {
+export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false)
 
     return (
@@ -34,10 +34,7 @@ const NavBar = () => {
                             <ListItemIcon>
                                 <GitHub className="sidebar-icon" />
                             </ListItemIcon>
-                            <a
-                                href="https://github.com/RDIL"
-                                alt="RDIL on GitHub"
-                            >
+                            <a href="https://github.com/RDIL">
                                 <ListItemText primary="GitHub"></ListItemText>
                             </a>
                         </ListItem>
@@ -45,10 +42,7 @@ const NavBar = () => {
                             <ListItemIcon>
                                 <Twitter className="sidebar-icon" />
                             </ListItemIcon>
-                            <a
-                                href="https://twitter.com/rdil_pickle"
-                                alt="rdil_pickle on Twitter"
-                            >
+                            <a href="https://twitter.com/rdil_pickle">
                                 <ListItemText primary="Twitter"></ListItemText>
                             </a>
                         </ListItem>
@@ -56,7 +50,7 @@ const NavBar = () => {
                             <ListItemIcon>
                                 <Envelope className="sidebar-icon" />
                             </ListItemIcon>
-                            <a href="mailto:me@rdil.rocks" alt="Email me">
+                            <a href="mailto:me@rdil.rocks">
                                 <ListItemText primary="Email"></ListItemText>
                             </a>
                         </ListItem>
@@ -64,10 +58,7 @@ const NavBar = () => {
                             <ListItemIcon>
                                 <GitLab className="sidebar-icon" />
                             </ListItemIcon>
-                            <a
-                                href="https://gitlab.com/rdil"
-                                alt="rdil on GitLab"
-                            >
+                            <a href="https://gitlab.com/rdil">
                                 <ListItemText primary="GitLab"></ListItemText>
                             </a>
                         </ListItem>
@@ -77,5 +68,3 @@ const NavBar = () => {
         </MuiTheme>
     )
 }
-
-export default NavBar
