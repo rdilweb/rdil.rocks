@@ -2,7 +2,13 @@ import React from "react"
 import { InputLabel, MenuItem, Select } from "@material-ui/core"
 import { SelectorProps } from "./classes"
 
-const supportedMacOses = ["catalina-base", "catalina-xcode", "catalina-flutter"]
+const supportedMacOses = [
+    "big-sur-base",
+    "big-sur-xcode-12.3",
+    "big-sur-xcode-12.4",
+    "catalina-base",
+    "catalina-xcode",
+]
 
 const selectors: Array<JSX.Element> = []
 
