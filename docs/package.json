@@ -21,6 +21,9 @@
         "react-dom": "^17.0.1",
         "react-tooltip": "^4.2.14"
     },
+    "devDependencies": {
+        "@docusaurus/types": "2.0.0-alpha.1dd400db7"
+    },
     "browserslist": {
         "production": [
             ">0.2%",

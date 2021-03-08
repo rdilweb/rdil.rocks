@@ -12,10 +12,10 @@ The production version is hosted at `https://backend.rdil.rocks/`.
 
 ## HyperiumJailbreak Specifics
 
-| **HTTP Method** | **Endpoint**                    | **Description**                   |
-| --------------- | ------------------------------- | --------------------------------- |
-| `GET`           | `/words.txt`                    | Get the NickHider word list.      |
-| `GET`           | `/levelhead_config_mirror.json` | Get the Levelhead config file.    |
+| **HTTP Method** | **Endpoint**                    | **Description**                |
+| --------------- | ------------------------------- | ------------------------------ |
+| `GET`           | `/words.txt`                    | Get the NickHider word list.   |
+| `GET`           | `/levelhead_config_mirror.json` | Get the Levelhead config file. |
 
 ## Hypixel Timers
 
