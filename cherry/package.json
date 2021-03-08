@@ -4,8 +4,8 @@
     "private": true,
     "scripts": {
         "docusaurus": "docusaurus",
-        "start": "docusaurus start",
-        "build": "docusaurus build",
+        "start:cherry": "docusaurus start",
+        "build:cherry": "docusaurus build",
         "clear": "docusaurus clear"
     },
     "dependencies": {
