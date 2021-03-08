@@ -150,7 +150,17 @@ export async function getStaticProps() {
         )
 
         const articleData = await devArticleResult.data
-        devArticles.push({ ...devArticle, ...articleData })
+        const filteredArticleData = {}
+
+        Object.keys(articleData).forEach((key) => {
+            const REQUIRED_FIELDS = ["slug", "created_at", "title", "url", "description"]
+
+            if (REQUIRED_FIELDS.includes(key)) {
+                filteredArticleData[key] = articleData[key]
+            }
+        })
+
+        devArticles.push(filteredArticleData)
     }
 
     return {
