@@ -68,6 +68,7 @@ module.exports = {
                 ],
             },
         ],
+        require.resolve("./write-sitemap-data-plugin"),
     ],
     themes: [
         [
