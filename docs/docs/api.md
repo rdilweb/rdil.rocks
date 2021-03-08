@@ -14,8 +14,6 @@ The production version is hosted at `https://backend.rdil.rocks/`.
 
 | **HTTP Method** | **Endpoint**                    | **Description**                   |
 | --------------- | ------------------------------- | --------------------------------- |
-| `GET`           | `/checkUpdate`                  | Get the latest version of HJB.    |
-| `GET`           | `/getOnline`                    | Get the number of online players. |
 | `GET`           | `/words.txt`                    | Get the NickHider word list.      |
 | `GET`           | `/levelhead_config_mirror.json` | Get the Levelhead config file.    |
 
@@ -42,7 +40,6 @@ We do keep logs of visits, which are one-line strings that contain the following
 -   The HTTP protocol version you are using
 -   The response code (e.g. `200` or `404`)
 -   The requested endpoint
--   Your user agent
 -   How long it took the server to provide a response in seconds
 
 In addition, we make these promises about the data:
