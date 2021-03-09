@@ -7,8 +7,8 @@ Build_task:
     Yarn_cache:
         folder: .yarn/cache
         reupload_on_changes: true
-    Root_Gatsby_cache:
-        folder: root/.cache
+    Root_Next_cache:
+        folder: root/build
         reupload_on_changes: true
     Dependencies_script: yarn
     Build_script: yarn build
