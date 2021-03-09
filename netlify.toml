@@ -25,3 +25,8 @@ from = "https://cirrusbuilder.rdil.rocks/*"
 to = "https://rdil.rocks/cirrus-builder"
 status = 301
 force = true
+
+[[plugins]]
+package = "netlify-plugin-cache-nextjs"
+[plugins.inputs]
+build_dir_path = "root"
