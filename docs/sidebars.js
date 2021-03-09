@@ -44,4 +44,11 @@ module.exports = {
         "code-of-conduct",
         "license",
     ],
+    "Libraries Index": [
+        {
+            type: "doc",
+            id: "index",
+        },
+        "libraries/index",
+    ],
 }

@@ -11,10 +11,10 @@
         "swizzle": "docusaurus swizzle"
     },
     "dependencies": {
-        "@docusaurus/core": "2.0.0-alpha.1dd400db7",
-        "@docusaurus/plugin-content-docs": "2.0.0-alpha.1dd400db7",
-        "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-alpha.1dd400db7",
-        "@docusaurus/theme-classic": "2.0.0-alpha.1dd400db7",
+        "@docusaurus/core": "2.0.0-alpha.f8884044f",
+        "@docusaurus/plugin-content-docs": "2.0.0-alpha.f8884044f",
+        "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-alpha.f8884044f",
+        "@docusaurus/theme-classic": "2.0.0-alpha.f8884044f",
         "@mdx-js/react": "^1.6.22",
         "clsx": "^1.1.1",
         "react": "^17.0.1",
