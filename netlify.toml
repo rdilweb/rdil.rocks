@@ -26,6 +26,12 @@ to = "https://rdil.rocks/cirrus-builder"
 status = 301
 force = true
 
+[[redirects]]
+from = "/currys-discord"
+to = "https://discord.gg/SDDY97dv"
+status = 301
+force = true
+
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
 [plugins.inputs]
