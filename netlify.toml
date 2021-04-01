@@ -27,8 +27,8 @@ status = 301
 force = true
 
 [[redirects]]
-from = "/currys-discord"
-to = "https://discord.gg/SDDY97dv"
+from = "/peacock"
+to = "https://discord.gg/suPq4BewQm"
 status = 301
 force = true
 
