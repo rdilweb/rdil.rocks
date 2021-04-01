@@ -36,3 +36,8 @@ force = true
 package = "netlify-plugin-cache-nextjs"
 [plugins.inputs]
 build_dir_path = "root"
+
+[[plugins]]
+package = "netlify-plugin-cache"
+[plugins.inputs]
+paths = ["cherry/node_modules/.cache", "docs/node_modules/.cache"]
