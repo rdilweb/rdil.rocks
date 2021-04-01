@@ -26,13 +26,8 @@ build
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+!.yarn/netlify-cache.js
 .pnp.*
-
-cherry/.yarn/*
-!cherry/.yarn/releases
-!cherry/.yarn/plugins
-!cherry/.yarn/sdks
-!cherry/.yarn/versions
 cherry/.pnp.*
 
 node_modules
