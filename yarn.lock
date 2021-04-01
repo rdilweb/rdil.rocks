@@ -9164,13 +9164,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"netlify-plugin-cache@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "netlify-plugin-cache@npm:1.0.3"
-  checksum: cf4ca2f25130a0126c547a14fa0039d5db89c1fb8ffee86eda50ff094c87bd8f33903c2eec0e728faa7187b357e0084b3c95b2fa89c1727e3c198a68382134e7
-  languageName: node
-  linkType: hard
-
 "next@npm:^10.1.2":
   version: 10.1.2
   resolution: "next@npm:10.1.2"
@@ -11013,7 +11006,6 @@ fsevents@~2.3.1:
     "@types/fs-extra": ^9.0.6
     "@types/node": ^14.14.22
     fs-extra: ^9.1.0
-    netlify-plugin-cache: ^1.0.3
     prettier: ^2.2.1
     rimraf: ^3.0.2
     typescript: 4.2.3
