@@ -3,7 +3,7 @@ import * as React from "react"
 /**
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-function SvgGitHub(props) {
+function SvgGitHub<Props>(props?: Props) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

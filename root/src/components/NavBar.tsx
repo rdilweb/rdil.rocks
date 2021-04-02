@@ -5,6 +5,7 @@ import Twitter from "../icons/Twitter"
 import Envelope from "../icons/Envelope"
 import GitLab from "../icons/GitLab"
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
+import clsx from "clsx"
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -12,9 +13,8 @@ export default function NavBar() {
     return (
         <MuiTheme>
             <div
-                id="nav-btn"
                 onClick={() => setIsOpen(!isOpen)}
-                className={isOpen ? "open" : undefined}
+                className={clsx("nav-btn", isOpen ? "open" : undefined)}
                 role="button"
                 onKeyPress={() => setIsOpen(!isOpen)}
                 tabIndex={0}
