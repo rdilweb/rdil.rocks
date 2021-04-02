@@ -2,8 +2,8 @@
     "name": "rdil.rocks",
     "private": true,
     "scripts": {
-        "build": "yarn clean && yarn build:root && yarn build:cherry && yarn build:docs && yarn assemble",
-        "start": "echo PLEASE USE start:root, start:cherry, or start:docs",
+        "build": "yarn clean && yarn build:root && yarn build:docs && yarn assemble",
+        "start": "echo PLEASE USE start:root or start:docs",
         "assemble": "node assemble",
         "prettier": "prettier --write **/*.{js,jsx,ts,tsx,css,yml,md,html,json}",
         "clean": "rimraf build"
@@ -23,7 +23,6 @@
         "tabWidth": 4
     },
     "workspaces": [
-        "cherry",
         "root",
         "docs"
     ]
