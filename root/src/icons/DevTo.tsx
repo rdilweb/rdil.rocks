@@ -4,7 +4,7 @@ import styles from "../css/svgs.module.css"
 /**
  * https://dev.to/brand
  */
-function SvgDevTo(props) {
+function SvgDevTo<Props>(props?: Props) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
