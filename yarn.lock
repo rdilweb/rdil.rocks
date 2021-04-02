@@ -1952,23 +1952,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:10.1.2":
-  version: 10.1.2
-  resolution: "@next/env@npm:10.1.2"
-  checksum: 1a4c337d8d9ab97dc8a2b9a2ad657de805bc20e9c65b272153693292c7e3bc7b398deaad391f721f5c94d139b3f112c3b1a932109d6029a09dc65668a635e662
+"@next/env@npm:10.1.3":
+  version: 10.1.3
+  resolution: "@next/env@npm:10.1.3"
+  checksum: 2177aecf6b493299aa9db0c160165e771e8fe11a9c31a591344721c68df6cd384c6dee52feae90bb5b34d36f02d7f34b26afd4167c7d7f63ff455a73f0b838f2
   languageName: node
   linkType: hard
 
-"@next/polyfill-module@npm:10.1.2":
-  version: 10.1.2
-  resolution: "@next/polyfill-module@npm:10.1.2"
-  checksum: bf1e32780a0b2b1cd436b6e44b22f93e8bcd7e676674ead32c24468b8f9395491746ba7c8bca8310a3ced3fcc633642160db1f836844b01ae3161bb0972ac2bf
+"@next/polyfill-module@npm:10.1.3":
+  version: 10.1.3
+  resolution: "@next/polyfill-module@npm:10.1.3"
+  checksum: 072eed3b567f8a43a98077907ac218a1df845ab8235f069ad5147285103b891e24ef175bc581b65a7612176b6d311fbe1d9a1ae19e691ec3e306155d306537df
   languageName: node
   linkType: hard
 
-"@next/react-dev-overlay@npm:10.1.2":
-  version: 10.1.2
-  resolution: "@next/react-dev-overlay@npm:10.1.2"
+"@next/react-dev-overlay@npm:10.1.3":
+  version: 10.1.3
+  resolution: "@next/react-dev-overlay@npm:10.1.3"
   dependencies:
     "@babel/code-frame": 7.12.11
     anser: 1.4.9
@@ -1984,20 +1984,20 @@ __metadata:
   peerDependencies:
     react: ^16.9.0 || ^17
     react-dom: ^16.9.0 || ^17
-  checksum: 8bfe3f69256f8ded8204654ec6740e7a4ea41ab3936c3c6671b78f736bec274ada9e88259fbc4e0129c12ceb872b621b8124a17f6d8f2eb6c47a8bca2eb51799
+  checksum: e18bfb1a422c92c0bfb0fb7d89720d433ff5243d964a12ceb9e9a890275d588c35f598490066894bcdb6f4255de4b69ddbcb573b64cd7b08762c347ef9840e79
   languageName: node
   linkType: hard
 
-"@next/react-refresh-utils@npm:10.1.2":
-  version: 10.1.2
-  resolution: "@next/react-refresh-utils@npm:10.1.2"
+"@next/react-refresh-utils@npm:10.1.3":
+  version: 10.1.3
+  resolution: "@next/react-refresh-utils@npm:10.1.3"
   peerDependencies:
     react-refresh: 0.8.3
     webpack: ^4 || ^5
   peerDependenciesMeta:
     webpack:
       optional: true
-  checksum: e9b00b9d4c1fd0fd68c0c50cb4d7a13331de0c0da9c1af8e5bed63ddf22a78e5a3b6cd73a70e820e25e685dc9f9f7e103c6e37892281288adad095cf9808a8a6
+  checksum: 2fd2039c8378847c69d73b39ac64b15139bf2ca78551ebd42ddaa95e47b6cdcb5bcf049b257014fb6ef361b1af7b17ca7ceb7fba2fa68c45c9428f407e1ca300
   languageName: node
   linkType: hard
 
@@ -3906,21 +3906,6 @@ __metadata:
   checksum: fbdec8b182e1f070b3b351c8084cfd1d11e05f6e609ff9dbd5ba13d87f1ffe8f6ce033149e8bcf5ddfbc1cc4e0f2b853d6f35884c3e019ee66cbee47cea25d7a
   languageName: node
   linkType: hard
-
-"cherry@workspace:cherry":
-  version: 0.0.0-use.local
-  resolution: "cherry@workspace:cherry"
-  dependencies:
-    "@docusaurus/core": 2.0.0-alpha.fb07bd871
-    "@docusaurus/plugin-content-docs": 2.0.0-alpha.fb07bd871
-    "@docusaurus/plugin-content-pages": 2.0.0-alpha.fb07bd871
-    "@docusaurus/theme-classic": 2.0.0-alpha.fb07bd871
-    "@mdx-js/react": ^1.6.22
-    clsx: ^1.1.1
-    react: ^17.0.1
-    react-dom: ^17.0.1
-  languageName: unknown
-  linkType: soft
 
 "chokidar@npm:3.5.1, chokidar@npm:^3.4.1, chokidar@npm:^3.5.1":
   version: 3.5.1
@@ -8814,14 +8799,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"mime-db@npm:1.46.0":
-  version: 1.46.0
-  resolution: "mime-db@npm:1.46.0"
-  checksum: 4e137ac502ca5ba6c583e552c5fa6abd0c2157592f647824ba7246b771eb42c65c2a1816fc52b27afdbb88a026127f1d5fba354f9dcde591b3b464be07c3d27e
-  languageName: node
-  linkType: hard
-
-"mime-db@npm:>= 1.43.0 < 2":
+"mime-db@npm:1.47.0, mime-db@npm:>= 1.43.0 < 2":
   version: 1.47.0
   resolution: "mime-db@npm:1.47.0"
   checksum: f5f9220dd53c240c9234323571f632486c663e36676ebfdca9963fb9a92d1dd28b16124bceff60868fb70743764ade8466dd5e6a1a833decde89ae6d15211503
@@ -8845,11 +8823,11 @@ fsevents@~2.3.1:
   linkType: hard
 
 "mime-types@npm:^2.1.12, mime-types@npm:^2.1.27, mime-types@npm:~2.1.17, mime-types@npm:~2.1.19, mime-types@npm:~2.1.24":
-  version: 2.1.29
-  resolution: "mime-types@npm:2.1.29"
+  version: 2.1.30
+  resolution: "mime-types@npm:2.1.30"
   dependencies:
-    mime-db: 1.46.0
-  checksum: 744d72b2a24c64d2aacc1ead86bfc827c2c4f1bb6f3b4bf6d8684b82f5ddd0b75a5c0eff128a888c09080f9ad7979400b64a697889690fca3c42de80c8f5e187
+    mime-db: 1.47.0
+  checksum: c7ca8a9980bdae0b760820aded39ea9541a8236f4abc105df645ea5b09a9c4a5299e28667c0c9596ab8e4ca84b219fd8b94b5c68e32b59891ca1f57a7e848c02
   languageName: node
   linkType: hard
 
@@ -9165,15 +9143,15 @@ fsevents@~2.3.1:
   linkType: hard
 
 "next@npm:^10.1.2":
-  version: 10.1.2
-  resolution: "next@npm:10.1.2"
+  version: 10.1.3
+  resolution: "next@npm:10.1.3"
   dependencies:
     "@babel/runtime": 7.12.5
     "@hapi/accept": 5.0.1
-    "@next/env": 10.1.2
-    "@next/polyfill-module": 10.1.2
-    "@next/react-dev-overlay": 10.1.2
-    "@next/react-refresh-utils": 10.1.2
+    "@next/env": 10.1.3
+    "@next/polyfill-module": 10.1.3
+    "@next/react-dev-overlay": 10.1.3
+    "@next/react-refresh-utils": 10.1.3
     "@opentelemetry/api": 0.14.0
     assert: 2.0.0
     ast-types: 0.13.2
@@ -9233,7 +9211,7 @@ fsevents@~2.3.1:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 97ce484973812e9fc69474d55ca57a982964fd62494868f9184b5a10f214edfd552aa3fc6ec32e855a8f170ce6b40220d88c3a04aa0711a8f8e7dc5f23814c3c
+  checksum: 7e12ae9ea2dfa663950af4ff0eb62060524e8509167744d2bff3fd74bc3847805b5efce7ba8a6ee6df2a1abb2a8f329c3d9032cbbd4b4923c02c2847d6ffb77a
   languageName: node
   linkType: hard
 
@@ -13490,11 +13468,11 @@ typescript@4.2.3:
   linkType: hard
 
 "unist-util-remove@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "unist-util-remove@npm:2.0.1"
+  version: 2.1.0
+  resolution: "unist-util-remove@npm:2.1.0"
   dependencies:
     unist-util-is: ^4.0.0
-  checksum: 2f4e0b4c460bfd41b897095a4ccd3503d11f7e142f20e0a8601498ae1484d1d7551e6df70ddd4652cac1eac9cff54b2a919161c8f8c0c561b9fe19bf0bea3af4
+  checksum: 2b2321812789ccff6176acab4e9085eada286781b3723b44745ee503e99642c6f029f76e53a3b81936f8b435325196b55095471816094a8262a37376114a0548
   languageName: node
   linkType: hard
 

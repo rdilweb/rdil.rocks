@@ -6,6 +6,5 @@ const makeSitemap = require("./sitemap")
 
 rimraf("build")
 fs.copySync("root/out", "build")
-fs.copySync("cherry/build", "build/cherry")
 fs.copySync("docs/build", "build/docs")
 fs.writeFileSync("build/sitemap.xml", makeSitemap())

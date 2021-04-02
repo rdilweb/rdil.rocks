@@ -3,6 +3,7 @@
 const { readdirSync, readFileSync } = require("fs")
 
 const ROOT_URLS = [
+    "",
     "/blog",
     ...readdirSync("root/src/blog").map(
         (name) => `/blog/${name.replace(".md", "")}`
@@ -11,11 +12,6 @@ const ROOT_URLS = [
     "/hot-pocket-calculator",
     "/tools",
     "/timer",
-    "/cherry",
-    "/cherry/docs/changelog",
-    "/cherry/docs/downloads",
-    "/cherry/docs/features",
-    "/cherry/docs/thanks",
     ...JSON.parse(readFileSync("docs/.docusaurus/sitemap-data.json"))
         .routesPaths,
 ]

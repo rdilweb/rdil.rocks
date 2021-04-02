@@ -40,4 +40,4 @@ build_dir_path = "root"
 [[plugins]]
 package = "/.yarn/netlify-cache"
 [plugins.inputs]
-paths = ["cherry/node_modules/.cache", "docs/node_modules/.cache"]
+paths = ["docs/node_modules/.cache"]

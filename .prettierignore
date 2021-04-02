@@ -1,6 +1,4 @@
 build
-cherry/build
-cherry/.docusaurus
 root/out
 root/.next
 docs/.docusaurus
