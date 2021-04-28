@@ -1,5 +1,6 @@
 main {
-    margin: 75px 100px;
+    margin: 60px 100px;
+    margin-block-start: 8px;
 }
 
 @font-face {
@@ -38,7 +39,8 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.75em;
+    margin-bottom: 0px;
 }
 
 h2 {
