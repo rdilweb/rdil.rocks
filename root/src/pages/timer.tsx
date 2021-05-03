@@ -119,7 +119,7 @@ export default function Timer() {
                                             : 0
                                     }
                                     onChange={(_event, value) =>
-                                        setMinutesValue(value)
+                                        setMinutesValue(value as number)
                                     }
                                     max={60}
                                 />
@@ -147,7 +147,7 @@ export default function Timer() {
                                             : 0
                                     }
                                     onChange={(event, value) =>
-                                        setSecondsValue(value)
+                                        setSecondsValue(value as number)
                                     }
                                     max={59}
                                 />
