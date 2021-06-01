@@ -12,5 +12,3 @@ Build_task:
         reupload_on_changes: true
     Dependencies_script: yarn
     Build_script: yarn build
-    Site_Preview_artifacts:
-        path: build/**/**
