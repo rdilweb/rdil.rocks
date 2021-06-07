@@ -7,6 +7,7 @@ for = "/*"
 
 [[headers.values]]
 Referrer-Policy = "same-origin"
+Cache-Control = "max-age: 43200"
 
 [[redirects]]
 from = "/update"
