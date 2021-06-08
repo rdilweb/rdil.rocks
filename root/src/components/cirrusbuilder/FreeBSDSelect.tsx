@@ -5,8 +5,11 @@ import { SelectorProps } from "./classes"
 const supportedFreeBsdOses = [
     "freebsd-13-0-snap",
     "freebsd-12-1-snap",
+    "freebsd-13-0",
     "freebsd-12-1",
+    "freebsd-12-2",
     "freebsd-12-0",
+    "freebsd-11-4",
     "freebsd-11-3-snap",
     "freebsd-11-3",
 ]

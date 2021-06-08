@@ -6,6 +6,7 @@ const supportedMacOses = [
     "big-sur-base",
     "big-sur-xcode-12.3",
     "big-sur-xcode-12.4",
+    "big-sur-xcode-12.5",
     "catalina-base",
     "catalina-xcode",
 ]

@@ -39,11 +39,11 @@ const mtype = new Machine()
 const TaskFactory = () => {
     const [tab, setTab] = React.useState<number>(0)
     const [name, setName] = React.useState<string>("") // current task name
-    const [freeBsdVersion, setFreeBsdVersion] = React.useState("")
-    const [macOsVersion, setMacOsVersion] = React.useState("")
-    const [dockerImage, setDockerImage] = React.useState<string>(
-        "debian:latest"
-    )
+    const [freeBsdVersion, setFreeBsdVersion] = React.useState<string>("")
+    const [macOsVersion, setMacOsVersion] = React.useState<string>("")
+    const [dockerImage, setDockerImage] =
+        React.useState<string>("debian:latest")
+    const [onlyIf, setOnlyIf] = React.useState<string>("true")
     // a state that allows us to make react think the dom needs
     // to be re-rendered when we change it.
     const [, setForce] = React.useState<number>(0)
@@ -122,6 +122,7 @@ const TaskFactory = () => {
 task:
     # Basic metadata:
     name: ${name}
+    only_if: ${onlyIf}
 
     # The build machine:
     ${mtype.toString(macOsVersion, freeBsdVersion, dockerImage)}
@@ -145,6 +146,14 @@ task:
                         value={name}
                         required={true}
                         onChange={(event) => setName(event.target.value)}
+                    />
+                    <TextField
+                        className={"margin-top"}
+                        label="Only run if"
+                        variant="outlined"
+                        value={onlyIf === "true" ? "Always run" : onlyIf}
+                        required={onlyIf !== "true"}
+                        onChange={(event) => setOnlyIf(event.target.value)}
                     />
                 </Grid>
                 <Grid item xs>
