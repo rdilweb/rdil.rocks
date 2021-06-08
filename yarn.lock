@@ -2284,6 +2284,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/clean-css@npm:^4.2.4":
+  version: 4.2.4
+  resolution: "@types/clean-css@npm:4.2.4"
+  dependencies:
+    "@types/node": "*"
+    source-map: ^0.6.0
+  checksum: 984e48e8b9537bd7e94b85db2d559e105e2ef95b88237c65422ab26cfd084190b72a9717ed89ebd5766a446a6c731bd270d37485760a3324857813e467d6c2a0
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.0":
   version: 3.7.0
   resolution: "@types/eslint-scope@npm:3.7.0"
@@ -3861,7 +3871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-css@npm:^5.1.1":
+"clean-css@npm:^5.1.1, clean-css@npm:^5.1.2":
   version: 5.1.2
   resolution: "clean-css@npm:5.1.2"
   dependencies:
@@ -11225,11 +11235,13 @@ fsevents@~2.3.1:
     "@material-ui/core": ^4.11.4
     "@material-ui/icons": ^4.11.2
     "@material-ui/styles": ^4.11.4
+    "@types/clean-css": ^4.2.4
     "@types/node": ^15.12.2
     "@types/react": ^17.0.9
     "@types/react-dom": ^17.0.6
     ace-builds: ^1.4.12
     axios: ^0.21.1
+    clean-css: ^5.1.2
     clsx: ^1.1.1
     delay: ^5.0.0
     gray-matter: ^4.0.3

@@ -1,6 +1,7 @@
 import React from "react"
 import Document, { Html, Main, NextScript, Head } from "next/document"
 import { ServerStyleSheets } from "@material-ui/core/styles"
+import CleanCSS from "clean-css"
 
 export default class MyDocument extends Document {
     render() {
@@ -50,12 +51,16 @@ MyDocument.getInitialProps = async (ctx) => {
 
     const initialProps = await Document.getInitialProps(ctx)
 
+    const minified = new CleanCSS({}).minify(sheets.toString()).styles
+    const element = sheets.getStyleElement()
+    element.props.dangerouslySetInnerHTML.__html = minified
+
     return {
         ...initialProps,
         // Styles fragment is rendered after the app and page rendering finish.
         styles: [
             ...React.Children.toArray(initialProps.styles),
-            sheets.getStyleElement(),
+           element,
         ],
     }
 }
