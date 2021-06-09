@@ -5,7 +5,7 @@ publish = "build/"
 [[headers]]
 for = "/*"
 
-[[headers.values]]
+[headers.values]
 Referrer-Policy = "same-origin"
 Cache-Control = "max-age: 43200"
 
@@ -24,12 +24,6 @@ force = true
 [[redirects]]
 from = "https://cirrusbuilder.rdil.rocks/*"
 to = "https://rdil.rocks/cirrus-builder"
-status = 301
-force = true
-
-[[redirects]]
-from = "/peacock"
-to = "https://discord.gg/AbaXDydjP5"
 status = 301
 force = true
 
