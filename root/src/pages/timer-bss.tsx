@@ -11,15 +11,17 @@
 
 import * as React from "react"
 import NavBar from "../components/NavBar"
-import Seo from "../components/Seo"
+import style from "../css/altfont.module.css"
 import TimerComponent from "../components/TimerComponent";
+import MuiTheme from "../components/MuiTheme";
 
 export default function Timer() {
     return (
-        <>
-            <Seo title="Timer | RDIL's Site" page="/timer" />
+        <div className={style.bss}>
             <NavBar />
-            <TimerComponent />
-        </>
+            <MuiTheme>
+                <TimerComponent />
+            </MuiTheme>
+        </div>
     )
 }

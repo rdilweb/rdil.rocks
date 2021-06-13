@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Big Scream Straight";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Big_Scream_Straight.otf");
+}
+
+.bss {
+    font-family: "Big Scream Straight", sans-serif !important;
+}
