@@ -1,5 +1,13 @@
 import React from "react"
-import { Button, Grid, Input, MenuItem, Paper, Select, Slider } from "@material-ui/core";
+import {
+    Button,
+    Grid,
+    Input,
+    MenuItem,
+    Paper,
+    Select,
+    Slider,
+} from "@material-ui/core"
 import styles from "../css/timer.module.css"
 import Clock from "@material-ui/icons/Alarm"
 import TimerLoadableSound from "./TimerLoadableSound"
@@ -75,17 +83,12 @@ export default function TimerComponent() {
                 <h1>
                     {!isTimerRunning
                         ? "Timer"
-                        : `${minutesValue}:${prettySecondsValue(
-                            secondsValue
-                        )}`}
+                        : `${minutesValue}:${prettySecondsValue(secondsValue)}`}
                 </h1>
                 <br />
                 <div>
                     <Grid container justify="center" alignItems="center">
-                        <div
-                            hidden={isTimerRunning}
-                            className={styles.small}
-                        >
+                        <div hidden={isTimerRunning} className={styles.small}>
                             <br />
                             <p>Minutes</p>
                             <Slider

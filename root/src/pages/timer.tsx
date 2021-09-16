@@ -12,7 +12,7 @@
 import * as React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import TimerComponent from "../components/TimerComponent";
+import TimerComponent from "../components/TimerComponent"
 
 export default function Timer() {
     return (
