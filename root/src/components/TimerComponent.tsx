@@ -7,9 +7,9 @@ import {
     Paper,
     Select,
     Slider,
-} from "@material-ui/core"
+} from "@mui/material"
 import styles from "../css/timer.module.css"
-import Clock from "@material-ui/icons/Alarm"
+import Clock from "@mui/icons-material/Alarm"
 import TimerLoadableSound from "./TimerLoadableSound"
 
 const videos = ["Xylophone Notes", "Birds Chirping", "Bell"]
@@ -87,7 +87,7 @@ export default function TimerComponent() {
                 </h1>
                 <br />
                 <div>
-                    <Grid container justify="center" alignItems="center">
+                    <Grid container justifyContent="center" alignItems="center">
                         <div hidden={isTimerRunning} className={styles.small}>
                             <br />
                             <p>Minutes</p>

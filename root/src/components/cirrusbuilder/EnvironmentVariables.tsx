@@ -7,8 +7,8 @@ import {
     Grid,
     FormControl,
     Chip,
-} from "@material-ui/core"
-import { Add, Https } from "@material-ui/icons"
+} from "@mui/material"
+import { Add, Https } from "@mui/icons-material"
 
 const EnvironmentVariables = (props: SelectorProps<EnvironmentVariable[]>) => {
     const [currAddingName, setCurrAddingName] = React.useState("")

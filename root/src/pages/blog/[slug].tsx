@@ -4,7 +4,7 @@ import markdownToHtml, { getPostBySlug, getAllPosts } from "../../../lib/api"
 import NavBar from "../../components/NavBar"
 import Seo from "../../components/Seo"
 import styles from "../../css/blog.module.css"
-import Calendar from "@material-ui/icons/CalendarToday"
+import Calendar from "@mui/icons-material/CalendarToday"
 
 export default function Post({ post }) {
     const router = useRouter()

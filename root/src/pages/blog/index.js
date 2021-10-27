@@ -1,11 +1,11 @@
-import React from "react"
+import * as React from "react"
 import queryString from "query-string"
 import axios from "axios"
 import delay from "delay"
 import Link from "next/link"
 import Seo from "../../components/Seo"
 import NavBar from "../../components/NavBar"
-import { Card, Grid } from "@material-ui/core"
+import { Card, Grid } from "@mui/material"
 import DevTo from "../../icons/DevTo"
 import Heart from "../../icons/Heart"
 import { getAllPosts } from "../../../lib/api"
@@ -133,8 +133,7 @@ export async function getStaticProps() {
         headers: {
             "cache-control": "no-cache",
             pragma: "no-cache",
-            accept:
-                "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+            accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
             "accept-encoding": "gzip, deflate, br",
             "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
             "upgrade-insecure-requests": 1,
@@ -153,7 +152,13 @@ export async function getStaticProps() {
         const filteredArticleData = {}
 
         Object.keys(articleData).forEach((key) => {
-            const REQUIRED_FIELDS = ["slug", "created_at", "title", "url", "description"]
+            const REQUIRED_FIELDS = [
+                "slug",
+                "created_at",
+                "title",
+                "url",
+                "description",
+            ]
 
             if (REQUIRED_FIELDS.includes(key)) {
                 filteredArticleData[key] = articleData[key]

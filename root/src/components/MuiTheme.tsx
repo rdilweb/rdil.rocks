@@ -1,9 +1,9 @@
 import * as React from "react"
-import { ThemeProvider, createMuiTheme } from "@material-ui/core"
+import { createTheme } from "@mui/material"
 
-const theme = createMuiTheme({
+export const theme = createTheme({
     palette: {
-        type: "dark",
+        mode: "dark",
         primary: {
             main: "#fff",
         },
@@ -12,11 +12,3 @@ const theme = createMuiTheme({
         fontFamily: "Open Sans,sans-serif",
     },
 })
-
-export interface MuiThemeProps {
-    children: JSX.Element | JSX.Element[]
-}
-
-export default function MuiTheme({ children }: MuiThemeProps) {
-    return <ThemeProvider theme={theme}>{children}</ThemeProvider>
-}

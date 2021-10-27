@@ -1,12 +1,12 @@
 import React from "react"
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import { Artifact } from "./classes"
 import {
     Accordion,
     AccordionDetails,
     AccordionSummary,
     TextField,
-} from "@material-ui/core"
+} from "@mui/material"
 
 interface ArtifactConfigProps {
     artifact: Artifact

@@ -1,13 +1,12 @@
 import React from "react"
-import { AppBar, IconButton, Toolbar, Paper } from "@material-ui/core"
+import { AppBar, IconButton, Toolbar, Paper } from "@mui/material"
 import Seo from "../components/Seo"
-import MuiTheme from "../components/MuiTheme"
 import TaskFactory from "../components/cirrusbuilder/TaskFactory"
-import GitHubIcon from "@material-ui/icons/GitHub"
+import GitHubIcon from "@mui/icons-material/GitHub"
 
 export default function App() {
     return (
-        <MuiTheme>
+        <>
             <Seo
                 title="Cirrus CI Configuration Builder | RDIL's Site"
                 page="/cirrus-builder"
@@ -45,6 +44,6 @@ export default function App() {
             >
                 <TaskFactory />
             </Paper>
-        </MuiTheme>
+        </>
     )
 }

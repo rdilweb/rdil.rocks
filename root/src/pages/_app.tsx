@@ -1,18 +1,26 @@
-import React from "react"
 import "../css/base.css"
 import Head from "next/head"
-import { AppProps } from "next/app"
+import * as React from "react"
+import type { AppProps } from "next/app"
+import { ThemeProvider } from "@mui/material/styles"
+import CssBaseline from "@mui/material/CssBaseline"
+import { CacheProvider, EmotionCache } from "@emotion/react"
+import createEmotionCache from "../emotionCache"
+import { theme } from "../components/MuiTheme"
 
-export default function App(props: AppProps) {
-    const { Component, pageProps } = props
+// Client-side cache, shared for the whole session of the user in the browser.
+const clientSideEmotionCache = createEmotionCache()
 
-    React.useEffect(() => {
-        // Remove the server-side injected CSS.
-        const jssStyles = document.querySelector("#jss-server-side")
-        if (jssStyles) {
-            jssStyles.parentElement!.removeChild(jssStyles)
-        }
-    }, [])
+interface MyAppProps extends AppProps {
+    emotionCache?: EmotionCache
+}
+
+export default function App(props: MyAppProps) {
+    const {
+        Component,
+        emotionCache = clientSideEmotionCache,
+        pageProps,
+    } = props
 
     return (
         <React.Fragment>
@@ -30,7 +38,12 @@ export default function App(props: AppProps) {
                     content="minimum-scale=1, initial-scale=1, width=device-width"
                 />
             </Head>
-            <Component {...pageProps} />
+            <CacheProvider value={emotionCache}>
+                <ThemeProvider theme={theme}>
+                    <CssBaseline />
+                    <Component {...pageProps} />
+                </ThemeProvider>
+            </CacheProvider>
         </React.Fragment>
     )
 }

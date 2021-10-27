@@ -1,5 +1,5 @@
-import React from "react"
-import TextField from "@material-ui/core/TextField"
+import * as React from "react"
+import { TextField } from "@mui/material"
 import { SelectorProps } from "./classes"
 
 const DockerSelect = (props: SelectorProps<string>) => {

@@ -11,7 +11,7 @@ import {
     Tab,
     Tabs,
     LinearProgress,
-} from "@material-ui/core"
+} from "@mui/material"
 import FreeBSDSelect from "./FreeBSDSelect"
 import WindowsSelect from "./WindowsSelect"
 import MacOSSelect from "./MacOSSelect"
@@ -28,7 +28,7 @@ import ScriptConfig from "./ScriptConfig"
 import CacheConfig from "./CacheConfig"
 import ArtifactConfig from "./ArtifactConfig"
 import Centered from "./Centered"
-import { Backup, Create, Cached, Code } from "@material-ui/icons"
+import { Backup, Create, Cached, Code } from "@mui/icons-material"
 import EnvironmentVariables from "./EnvironmentVariables"
 import dynamic from "next/dynamic"
 

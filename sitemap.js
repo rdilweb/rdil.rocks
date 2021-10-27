@@ -12,7 +12,7 @@ const ROOT_URLS = [
     "/hot-pocket-calculator",
     "/tools",
     "/timer",
-    ...JSON.parse(readFileSync("docs/.docusaurus/sitemap-data.json"))
+    ...JSON.parse(readFileSync("docs/.docusaurus/sitemap-data.json").toString())
         .routesPaths,
 ]
 

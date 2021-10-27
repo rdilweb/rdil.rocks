@@ -1,5 +1,5 @@
 import React from "react"
-import { InputLabel, MenuItem, Select } from "@material-ui/core"
+import { InputLabel, MenuItem, Select } from "@mui/material"
 import { SelectorProps } from "./classes"
 
 const supportedMacOses = [

@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import { Card, Grid } from "@material-ui/core"
+import { Card, Grid } from "@mui/material"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
 
@@ -17,7 +17,7 @@ export default function Home() {
                         lover.
                     </p>
                 </div>
-                <Grid container justify="center" spacing={2}>
+                <Grid container justifyContent="center" spacing={2}>
                     <Grid item xs={12} sm={4}>
                         <Card className="card">
                             <h3>About Me</h3>

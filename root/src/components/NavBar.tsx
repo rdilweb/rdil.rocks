@@ -1,17 +1,16 @@
-import React from "react"
-import MuiTheme from "./MuiTheme"
+import * as React from "react"
 import GitHub from "../icons/GitHub"
 import Twitter from "../icons/Twitter"
 import Envelope from "../icons/Envelope"
 import GitLab from "../icons/GitLab"
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
+import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material"
 import clsx from "clsx"
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false)
 
     return (
-        <MuiTheme>
+        <>
             <div
                 onClick={() => setIsOpen(!isOpen)}
                 className={clsx("nav-btn", isOpen ? "open" : undefined)}
@@ -19,9 +18,9 @@ export default function NavBar() {
                 onKeyPress={() => setIsOpen(!isOpen)}
                 tabIndex={0}
             >
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
             </div>
             {isOpen ? (
                 <nav
@@ -35,7 +34,7 @@ export default function NavBar() {
                                 <GitHub className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="https://github.com/RDIL">
-                                <ListItemText primary="GitHub"></ListItemText>
+                                <ListItemText primary="GitHub" />
                             </a>
                         </ListItem>
                         <ListItem button>
@@ -43,7 +42,7 @@ export default function NavBar() {
                                 <Twitter className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="https://twitter.com/rdil_pickle">
-                                <ListItemText primary="Twitter"></ListItemText>
+                                <ListItemText primary="Twitter" />
                             </a>
                         </ListItem>
                         <ListItem button>
@@ -51,7 +50,7 @@ export default function NavBar() {
                                 <Envelope className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="mailto:me@rdil.rocks">
-                                <ListItemText primary="Email"></ListItemText>
+                                <ListItemText primary="Email" />
                             </a>
                         </ListItem>
                         <ListItem button>
@@ -59,12 +58,12 @@ export default function NavBar() {
                                 <GitLab className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="https://gitlab.com/rdil">
-                                <ListItemText primary="GitLab"></ListItemText>
+                                <ListItemText primary="GitLab" />
                             </a>
                         </ListItem>
                     </List>
                 </nav>
             ) : null}
-        </MuiTheme>
+        </>
     )
 }

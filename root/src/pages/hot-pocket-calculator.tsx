@@ -3,14 +3,14 @@ import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
 import {
     Card,
-    createMuiTheme,
     TextField,
     ThemeProvider,
-} from "@material-ui/core"
+    createTheme
+} from "@mui/material"
 
-const textFieldTheme = createMuiTheme({
+const textFieldTheme = createTheme({
     palette: {
-        type: "dark",
+        mode: "dark",
         primary: {
             main: "#fff",
         },

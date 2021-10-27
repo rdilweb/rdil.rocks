@@ -24,8 +24,7 @@ module.exports = {
                     position: "left",
                 },
                 {
-                    href:
-                        "https://github.com/rdilweb/rdil.rocks/blog/master/docs",
+                    href: "https://github.com/rdilweb/rdil.rocks/blog/master/docs",
                     label: "Source",
                     position: "right",
                 },
