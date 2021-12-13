@@ -9,14 +9,11 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <meta
-                        name="theme-color"
-                        content="#303f9f"
-                    />
+                    <meta name="theme-color" content="#303f9f" />
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         )

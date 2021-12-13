@@ -19,6 +19,9 @@ function Tools() {
                     <li>
                         <Link href="timer">Timer</Link>
                     </li>
+                    <li>
+                        <Link href="time">Time in RDIL's timezone.</Link>
+                    </li>
                 </ul>
             </main>
         </>

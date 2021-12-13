@@ -1,12 +1,7 @@
 import React from "react"
 import NavBar from "../components/NavBar"
 import Seo from "../components/Seo"
-import {
-    Card,
-    TextField,
-    ThemeProvider,
-    createTheme
-} from "@mui/material"
+import { Card, TextField, ThemeProvider, createTheme } from "@mui/material"
 
 const textFieldTheme = createTheme({
     palette: {
