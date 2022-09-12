@@ -66,17 +66,8 @@ export default function Home() {
                     </p>
 
                     <h2>Things I've made</h2>
+                    <p>Note: currently revamping this section. Check back soon.</p>
                     <ul>
-                        <li>
-                            <a href="https://area4.readthedocs.io/en/stable">
-                                area4
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.rdil.rocks">
-                                My Privacy Journal
-                            </a>
-                        </li>
                         <li>
                             <a href="https://github.com/rdilweb">
                                 A few web libraries
