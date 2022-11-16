@@ -1,7 +1,6 @@
 module.exports = {
     sidebar: [
         "index",
-        "api",
         "security",
         "support-policy",
         {

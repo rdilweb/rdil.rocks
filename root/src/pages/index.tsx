@@ -74,7 +74,7 @@ export default function Home() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://docs.rdil.rocks">
+                            <a href="https://rdil.rocks/docs">
                                 A lot of other things, some are documented here
                             </a>
                         </li>
