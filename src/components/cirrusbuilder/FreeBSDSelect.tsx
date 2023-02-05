@@ -1,12 +1,13 @@
-import * as React from "react"
+import React from "react"
 import { InputLabel, MenuItem, Select } from "@mui/material"
 import { SelectorProps } from "./classes"
 
 const supportedFreeBsdOses = [
-    "freebsd-13-0-snap",
-    "freebsd-12-1-snap",
+    "freebsd-14-0-snap",
+    "freebsd-13-1",
     "freebsd-13-0",
     "freebsd-12-1",
+    "freebsd-13-0",
     "freebsd-12-2",
     "freebsd-12-0",
     "freebsd-11-4",

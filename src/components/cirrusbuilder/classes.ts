@@ -3,7 +3,7 @@
  *
  * This isn't exported, its point is
  * just to ensure the name and ID methods exist
- * in the sub classes.
+ * in the subclasses.
  */
 class BaseObject {
     /**
@@ -16,31 +16,19 @@ class BaseObject {
      */
     id: number
 
-    /**
-     * Basic no-argument constructor.
-     */
     constructor() {
         this.name = ""
         this.id = Math.floor(Math.random() * 10000)
     }
 
-    /**
-     * Get the node's name.
-     */
     getName(): string {
         return this.name.replace(" ", "_")
     }
 
-    /**
-     * Set the node's name to the passed string.
-     */
     setName(newName: string) {
         this.name = newName
     }
 
-    /**
-     * Get the object ID.
-     */
     getId(): number {
         return this.id
     }
@@ -62,9 +50,6 @@ export class Script extends BaseObject {
      */
     isCacheMember: boolean
 
-    /**
-     * Basic no-argument constructor.
-     */
     constructor() {
         super()
         this.run = ""
@@ -109,7 +94,7 @@ export class Script extends BaseObject {
 
 /**
  * Abstract cache instruction.
- * Yes, **we do need** to name it CICache to fix conficts.
+ * Yes, **we do need** to name it CICache to fix conflicts.
  */
 export class CICache extends BaseObject {
     /**
@@ -261,11 +246,7 @@ export class Artifact extends BaseObject {
      */
     path: string
 
-    /**
-     * Basic no-argument constructor.
-     */
     constructor() {
-        // init superclass
         super()
         // set initial text for path
         this.path = ""
@@ -322,9 +303,6 @@ export class EnvironmentVariable extends BaseObject {
      */
     value: string
 
-    /**
-     * Basic no-argument constructor.
-     */
     constructor() {
         // init superclass
         super()

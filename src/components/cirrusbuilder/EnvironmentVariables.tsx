@@ -8,7 +8,8 @@ import {
     FormControl,
     Chip,
 } from "@mui/material"
-import { Add, Https } from "@mui/icons-material"
+import Add from "@mui/icons-material/Add"
+import Https from "@mui/icons-material/Https"
 
 const EnvironmentVariables = (props: SelectorProps<EnvironmentVariable[]>) => {
     const [currAddingName, setCurrAddingName] = React.useState("")

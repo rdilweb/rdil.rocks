@@ -10,7 +10,6 @@ import {
     Button,
     Tab,
     Tabs,
-    LinearProgress,
 } from "@mui/material"
 import FreeBSDSelect from "./FreeBSDSelect"
 import WindowsSelect from "./WindowsSelect"
@@ -28,9 +27,12 @@ import ScriptConfig from "./ScriptConfig"
 import CacheConfig from "./CacheConfig"
 import ArtifactConfig from "./ArtifactConfig"
 import Centered from "./Centered"
-import { Backup, Create, Cached, Code } from "@mui/icons-material"
+import Backup from "@mui/icons-material/Backup"
+import Create from "@mui/icons-material/Create"
+import Cached from "@mui/icons-material/Cached"
+import Code from "@mui/icons-material/Code"
 import EnvironmentVariables from "./EnvironmentVariables"
-import dynamic from "next/dynamic"
+import Editor from "./Editor"
 
 type Instruction = Script | CICache | Artifact
 const instructions: Instruction[] = []
@@ -50,11 +52,6 @@ const TaskFactory = () => {
     const [envVars, setEnvVars] = React.useState<EnvironmentVariable[]>(
         [] as EnvironmentVariable[]
     )
-
-    const LoadableEditor = dynamic(() => import("./Editor"), {
-        loading: () => <LinearProgress />,
-        ssr: false,
-    })
 
     let osOptionsComponent: JSX.Element
     switch (mtype.getType()) {
@@ -133,7 +130,7 @@ task:
     ${collectedInstructions}
 `
 
-        return <LoadableEditor value={value} />
+        return <Editor value={value} />
     }
 
     const general = (

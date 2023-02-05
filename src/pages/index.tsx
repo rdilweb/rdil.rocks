@@ -17,7 +17,7 @@ export default function Home() {
                         lover.
                     </p>
                 </div>
-                <Grid container justifyContent="center" spacing={2}>
+                <Grid container justifyContent="center" spacing={1} style={{ display: "flex" }}>
                     <Grid item xs={12} sm={4}>
                         <Card className="card">
                             <h3>About Me</h3>
@@ -34,12 +34,11 @@ export default function Home() {
                         <Card className="card">
                             <h3>Experience</h3>
                             <p>
-                                I have taken a large amount of classes on Python
-                                (my main language) and web design, plus some on
-                                other languages such as Java, React, and the
-                                basics of Docker. I run several OSS projects
-                                that have helped me to learn how to apply code
-                                to the real world.
+                                I've taken many coding classes, and have highly
+                                extensive knowledge in many different languages
+                                ranging from Python, JavaScript, Java, and more.
+                                I have also worked on many open source projects
+                                and enjoy contributing to the tools I use.
                             </p>
                         </Card>
                     </Grid>
@@ -51,8 +50,6 @@ export default function Home() {
                                 likely walking my dog, enjoying tennis, taking a
                                 hike in the local woods, playing a video game or
                                 two, listening to Spotify, or watching Netflix.
-                                Or sleeping - that's great for gaining energy to
-                                code more.
                             </p>
                         </Card>
                     </Grid>
@@ -71,11 +68,6 @@ export default function Home() {
                         <li>
                             <a href="https://github.com/rdilweb">
                                 A few web libraries
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://rdil.rocks/docs">
-                                A lot of other things, some are documented here
                             </a>
                         </li>
                     </ul>

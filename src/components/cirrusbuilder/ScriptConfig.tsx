@@ -5,7 +5,7 @@ import {
     AccordionDetails,
     TextField,
 } from "@mui/material"
-import { ExpandMore } from "@mui/icons-material"
+import ExpandMore from "@mui/icons-material/ExpandMore"
 import { Script } from "./classes"
 
 interface ScriptConfigProps {

@@ -646,13 +646,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ace-builds@npm:^1.4.14, ace-builds@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "ace-builds@npm:1.5.0"
-  checksum: 5a37b37fe4f90ae74bf868113f738fb258c940b4eddac9459ea9e0e0f6232f1bc56985bf792e844125dacd725804425b6833a58d18fd2a1cda4b6cbd14148568
-  languageName: node
-  linkType: hard
-
 "ansi-styles@npm:^3.2.1":
   version: 3.2.1
   resolution: "ansi-styles@npm:3.2.1"
@@ -895,13 +888,6 @@ __metadata:
   version: 1.0.0
   resolution: "delayed-stream@npm:1.0.0"
   checksum: 22f11ed342773dbc427e84d5a972e5c67fc34a44bf80eead5a41d8697c9303ae32991e568921cbd82553deeb1b33f3d6ecc148bf0efe3789589c8cb7b0e1a53a
-  languageName: node
-  linkType: hard
-
-"diff-match-patch@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "diff-match-patch@npm:1.0.5"
-  checksum: 9a136b2502e990d19fe6f3655ff5b87f9de62c86634f325868e00dc1d06df91f49be4a53a7452af323388cc127ac82f16e5f68f7ef1250b85254563c01477c5b
   languageName: node
   linkType: hard
 
@@ -1254,20 +1240,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.get@npm:^4.4.2":
-  version: 4.4.2
-  resolution: "lodash.get@npm:4.4.2"
-  checksum: 779e6f3d2c59b82cfee2407abe0fb7f2cefb6eda9a23ffd7caa1390ebcd40697a03a46622294a10f99e9fc0197fb844f3c433400d67584d722aa46b606c43590
-  languageName: node
-  linkType: hard
-
-"lodash.isequal@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "lodash.isequal@npm:4.5.0"
-  checksum: d413585fd1dbcb6ebed6d9d98a7fe5e10cc6f653b6676a61a69185aa1f6ae5b4aac1367a632db0ee46197ee1ab6aa5b7428c1721f9b5459a3623e0cc930b9b77
-  languageName: node
-  linkType: hard
-
 "longest-streak@npm:^2.0.0":
   version: 2.0.4
   resolution: "longest-streak@npm:2.0.4"
@@ -1567,7 +1539,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -1603,22 +1575,6 @@ __metadata:
     split-on-first: "npm:^1.0.0"
     strict-uri-encode: "npm:^2.0.0"
   checksum: 27ea9adf63c5ffd2b69437c2d1f534ace6269080393ef5579675bec38fb8c0a80e73cc9615115d1c09760ca8fc5e650f737e5ef122e62e16c81851254e6aad83
-  languageName: node
-  linkType: hard
-
-"react-ace@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "react-ace@npm:10.1.0"
-  dependencies:
-    ace-builds: "npm:^1.4.14"
-    diff-match-patch: "npm:^1.0.5"
-    lodash.get: "npm:^4.4.2"
-    lodash.isequal: "npm:^4.5.0"
-    prop-types: "npm:^15.7.2"
-  peerDependencies:
-    react: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 38b76d69365f8e79160b426087f67e5281c26d069d75d3a3c383dafa905d09c0fe657ab92da59b7a3572a349604bf5e4dfd27bdc5e29db583d95b9f415e1a1dc
   languageName: node
   linkType: hard
 
@@ -1801,7 +1757,6 @@ __metadata:
     "@types/node": "npm:^18.11.19"
     "@types/react": "npm:^18.0.27"
     "@types/react-dom": "npm:^18.0.10"
-    ace-builds: "npm:^1.5.0"
     axios: "npm:^1.3.2"
     clean-css: "npm:^5.3.2"
     clsx: "npm:^1.1.1"
@@ -1810,7 +1765,6 @@ __metadata:
     next: "npm:^13.1.6"
     query-string: "npm:^7.1.1"
     react: "npm:^18.1.0"
-    react-ace: "npm:^10.1.0"
     react-dom: "npm:^18.1.0"
     remark: "npm:^13.0.0"
     remark-html: "npm:^13.0.1"

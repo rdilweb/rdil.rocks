@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import GitHub from "../icons/GitHub"
 import Twitter from "../icons/Twitter"
 import Envelope from "../icons/Envelope"
