@@ -18,7 +18,7 @@ Real-time location data isn't needed on every person - it should only be collect
 If you don't have probable cause, don't collect records of calls.
 
 A law that I believe would help is a law requiring all government branches to release all documents after 10 years.
-Tons of documents are classified, and haven't been released for miniscule reasons.
+Tons of documents are classified, and haven't been released for minuscule reasons.
 If the government was required to release these documents after 10 years of their authoring, it encourages transparency.
 
 I believe the ideas expressed above would help, and I hope that with the induction of younger congress members who understand these concepts, privacy's legal aspects can be revisited.
