@@ -1,9 +1,5 @@
 _site/
 .DS_Store
-.sass-cache
-
-docs/.docusaurus
-docs/build
 
 .env.local
 .env.development.local
@@ -15,6 +11,8 @@ yarn-debug.log*
 yarn-error.log*
 
 build
+out
+.next
 
 .idea
 
@@ -27,6 +25,3 @@ build
 .pnp.*
 
 node_modules
-
-root/.next
-root/out

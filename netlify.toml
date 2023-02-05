@@ -10,12 +10,6 @@ Referrer-Policy = "same-origin"
 Cache-Control = "max-age: 43200"
 
 [[redirects]]
-from = "/update"
-to = "https://github.com/hyperiumjailbreak/client/releases"
-status = 301
-force = true
-
-[[redirects]]
 from = "https://www.rdil.rocks/"
 to = "https://rdil.rocks"
 status = 301
@@ -26,13 +20,3 @@ from = "https://cirrusbuilder.rdil.rocks/*"
 to = "https://rdil.rocks/cirrus-builder"
 status = 301
 force = true
-
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
-[plugins.inputs]
-build_dir_path = "root"
-
-[[plugins]]
-package = "/.yarn/netlify-cache"
-[plugins.inputs]
-paths = ["docs/node_modules/.cache"]

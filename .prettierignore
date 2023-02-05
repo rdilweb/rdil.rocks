@@ -2,5 +2,4 @@ build
 root/out
 root/.next
 docs/.docusaurus
-docs/static/javadocs
-.yarn/netlify-cache.js
+public/docs/javadocs
