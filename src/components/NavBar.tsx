@@ -1,9 +1,8 @@
 import React from "react"
 import GitHub from "../icons/GitHub"
-import Twitter from "../icons/Twitter"
 import Envelope from "../icons/Envelope"
 import GitLab from "../icons/GitLab"
-import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material"
+import { List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
 import clsx from "clsx"
 
 export default function NavBar() {
@@ -29,38 +28,30 @@ export default function NavBar() {
                     style={{ width: isOpen ? "265px" : "0" }}
                 >
                     <List>
-                        <ListItem button>
+                        <ListItemButton>
                             <ListItemIcon>
                                 <GitHub className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="https://github.com/RDIL">
                                 <ListItemText primary="GitHub" />
                             </a>
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemIcon>
-                                <Twitter className="sidebar-icon" />
-                            </ListItemIcon>
-                            <a href="https://twitter.com/rdil_pickle">
-                                <ListItemText primary="Twitter" />
-                            </a>
-                        </ListItem>
-                        <ListItem button>
+                        </ListItemButton>
+                        <ListItemButton>
                             <ListItemIcon>
                                 <Envelope className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="mailto:me@rdil.rocks">
                                 <ListItemText primary="Email" />
                             </a>
-                        </ListItem>
-                        <ListItem button>
+                        </ListItemButton>
+                        <ListItemButton>
                             <ListItemIcon>
                                 <GitLab className="sidebar-icon" />
                             </ListItemIcon>
                             <a href="https://gitlab.com/rdil">
                                 <ListItemText primary="GitLab" />
                             </a>
-                        </ListItem>
+                        </ListItemButton>
                     </List>
                 </nav>
             ) : null}
