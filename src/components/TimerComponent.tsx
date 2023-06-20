@@ -18,8 +18,8 @@ const videoStartTimestamps = [null, null, "6"]
 
 const videoListComponents = videos.map((video, index) => (
     <MenuItem
-        key={ids[index]}
-        value={[ids[index], videoStartTimestamps[index]]}
+        key={ids[index]!}
+        value={[ids[index]!, videoStartTimestamps[index]!]}
     >
         {video}
     </MenuItem>

@@ -8,20 +8,35 @@ import NavBar from "../../components/NavBar"
 import { Card, Grid } from "@mui/material"
 import DevTo from "../../icons/DevTo"
 import Heart from "../../icons/Heart"
-import { getAllPosts } from "../../../lib/api"
+import { getAllPosts, Post } from "../../../lib/api"
 
-export default function BlogIndex({ devArticles, blogPosts }) {
+type DevArticle = {
+    slug: string
+    url: string
+    description: string
+    created_at: string
+    title: string
+}
+
+interface BlogIndexProps {
+    devArticles: DevArticle[]
+    blogPosts: Post[]
+}
+
+export default function BlogIndex({ devArticles, blogPosts }: BlogIndexProps) {
     return (
         <>
             <NavBar />
             <Seo title="Blog | RDIL's Site" page="blog" />
+
             <main>
                 <h1>Blog Posts</h1>
                 <p>
                     Note: This is still a work in progress as content is being
                     migrated here from my other blog locations.
                 </p>
-                <Grid container justify="center" spacing={2}>
+
+                <Grid container spacing={2} justifyContent="center">
                     {blogPosts.map((post) => {
                         const title = post.title || post.slug
 
@@ -55,6 +70,7 @@ export default function BlogIndex({ devArticles, blogPosts }) {
                             </Grid>
                         )
                     })}
+
                     {devArticles.map((article) => {
                         return (
                             <Grid item xs={12} sm={6} key={article.slug}>
@@ -91,6 +107,7 @@ export default function BlogIndex({ devArticles, blogPosts }) {
                             </Grid>
                         )
                     })}
+
                     <Grid item xs={12} sm={6}>
                         <Card className="card">
                             <article
@@ -124,35 +141,26 @@ export default function BlogIndex({ devArticles, blogPosts }) {
 }
 
 export async function getStaticProps() {
-    const devArticles = []
+    const devArticles: DevArticle[] = []
     const params = queryString.stringify({
         username: "rdil",
     })
 
-    const res = await axios.get(`https://dev.to/api/articles?${params}`, {
-        headers: {
-            "cache-control": "no-cache",
-            pragma: "no-cache",
-            accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
-            "accept-encoding": "gzip, deflate, br",
-            "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-            "upgrade-insecure-requests": 1,
-        },
-    })
+    const res = await axios.get(`https://dev.to/api/articles?${params}`)
 
     const { data } = res
 
     for (const devArticle of data) {
         await delay(500)
-        const devArticleResult = await axios(
+        const devArticleResult = await axios.get(
             `https://dev.to/api/articles/${devArticle.id}`
         )
 
         const articleData = await devArticleResult.data
-        const filteredArticleData = {}
+        const filteredArticleData: Partial<DevArticle> = {}
 
-        Object.keys(articleData).forEach((key) => {
-            const REQUIRED_FIELDS = [
+        Object.keys(articleData).forEach((key: keyof DevArticle) => {
+            const REQUIRED_FIELDS: (keyof DevArticle)[] = [
                 "slug",
                 "created_at",
                 "title",
@@ -165,7 +173,7 @@ export async function getStaticProps() {
             }
         })
 
-        devArticles.push(filteredArticleData)
+        devArticles.push(filteredArticleData as DevArticle)
     }
 
     return {

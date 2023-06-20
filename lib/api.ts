@@ -1,7 +1,7 @@
 import fs from "fs"
 import { join } from "path"
-import matter from "gray-matter"
-import remark from "remark"
+import matter, { GrayMatterFile } from "gray-matter"
+import { remark } from "remark"
 import html from "remark-html"
 
 export default async function markdownToHtml(markdown) {
@@ -11,17 +11,26 @@ export default async function markdownToHtml(markdown) {
 
 const postsDirectory = "src/blog"
 
-export function getPostSlugs() {
+export function getPostSlugs(): string[] {
     return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug, fields = []) {
+export type Post = GrayMatterFile<string> & {
+    title?: string
+    date?: string
+    slug?: string
+    description?: string
+}
+
+type FrontMatterKey = keyof (GrayMatterFile<string> & { slug: string } & Record<string, string>)
+
+export function getPostBySlug(slug: string, fields: FrontMatterKey[] = []): Post {
     const realSlug = slug.replace(/\.md$/, "")
     const fullPath = join(postsDirectory, `${realSlug}.md`)
     const fileContents = fs.readFileSync(fullPath, "utf8")
     const { data, content } = matter(fileContents)
 
-    const items = {}
+    const items: GrayMatterFile<string> = {} as any
 
     // Ensure only the minimal needed data is exposed
     for (let field of fields) {
@@ -41,15 +50,17 @@ export function getPostBySlug(slug, fields = []) {
     return items
 }
 
-export async function getAllPosts(fields = []) {
+export async function getAllPosts(fields: FrontMatterKey[] = []) {
     const slugs = getPostSlugs()
-    let posts = []
+    let posts: Post[] = []
 
     for (let slug of slugs) {
         posts.push(getPostBySlug(slug, fields))
     }
 
     // sort posts by date in descending order
-    posts = posts.sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+    posts = posts.sort((post1, post2) => (
+        (post1.date || 0) > (post2.date || 0) ? -1 : 1)
+    )
     return posts
 }

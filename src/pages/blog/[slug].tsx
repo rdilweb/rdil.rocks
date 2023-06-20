@@ -1,49 +1,50 @@
 import { useRouter } from "next/router"
-import ErrorPage from "next/error"
-import markdownToHtml, { getPostBySlug, getAllPosts } from "../../../lib/api"
+import markdownToHtml, { getPostBySlug, getAllPosts, Post } from "../../../lib/api"
 import NavBar from "../../components/NavBar"
 import Seo from "../../components/Seo"
 import styles from "../../css/blog.module.css"
 import Calendar from "@mui/icons-material/CalendarToday"
 
-export default function Post({ post }) {
+interface PostProps {
+    post: Post
+}
+
+export default function Post({ post }: PostProps) {
     const router = useRouter()
 
-    if (!router.isFallback && !post?.slug) {
-        return <ErrorPage statusCode={404} />
+    if (router.isFallback) {
+        throw new Error("Not supported")
     }
 
     return (
         <>
             <NavBar />
-            {router.isFallback ? (
-                <h1>Loading...</h1>
-            ) : (
-                <>
-                    <Seo
-                        title={`${post.title} | RDIL's Site`}
-                        page={`/blog/${post.slug}`}
-                    />
-                    <main>
-                        <article>
-                            <section>
-                                <h1>{post.title}</h1>
-                                <div className={styles.blogMetadata}>
-                                    <Calendar className={styles.blogMetadata} />
-                                    {post.date}
-                                </div>
-                            </section>
-                            <section>
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.content,
-                                    }}
-                                />
-                            </section>
-                        </article>
-                    </main>
-                </>
-            )}
+
+            <>
+                <Seo
+                    title={`${post.title} | RDIL's Site`}
+                    page={`/blog/${post.slug}`}
+                />
+                <main>
+                    <article>
+                        <section>
+                            <h1>{post.title}</h1>
+                            <div className={styles.blogMetadata}>
+                                <Calendar className={styles.blogMetadata} />
+                                {post.date}
+                            </div>
+                        </section>
+
+                        <section>
+                            <div
+                                dangerouslySetInnerHTML={{
+                                    __html: post.content
+                                }}
+                            />
+                        </section>
+                    </article>
+                </main>
+            </>
         </>
     )
 }
@@ -54,17 +55,18 @@ export async function getStaticProps({ params }) {
         "date",
         "slug",
         "author",
-        "content",
+        "content"
     ])
+
     const content = await markdownToHtml(post.content || "")
 
     return {
         props: {
             post: {
                 ...post,
-                content,
-            },
-        },
+                content
+            }
+        }
     }
 }
 
@@ -75,10 +77,10 @@ export async function getStaticPaths() {
         paths: posts.map((post) => {
             return {
                 params: {
-                    slug: post.slug,
-                },
+                    slug: post.slug
+                }
             }
         }),
-        fallback: false,
+        fallback: false
     }
 }

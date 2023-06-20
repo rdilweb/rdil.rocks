@@ -25,3 +25,5 @@ out
 .pnp.*
 
 node_modules
+
+public/*.xml

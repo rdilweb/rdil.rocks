@@ -108,7 +108,7 @@ export default function Home() {
                             <Link href="/code-style">My code style</Link>
                         </li>
                         <li>
-                            <Link href="/blog">My blog</Link>
+                            <Link href="/index">My blog</Link>
                         </li>
                     </ul>
                 </div>

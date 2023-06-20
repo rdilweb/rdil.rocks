@@ -2,12 +2,12 @@
 title: "Google Acquired Fitbit"
 slug: "google-acquired-fitbit"
 date: "2019-11-03"
-description: "Recently, Google acquired Fitbit, the exersice-tracking wristband maker. Here are my thoughts on it."
+description: "Recently, Google acquired Fitbit, the exercise-tracking wristband maker. Here are my thoughts on it."
 ---
 
 This is going to be a short post, but something I feel is important to discuss.
 
-Recently, Google [acquired](https://www.engadget.com/2019/11/01/google-buys-fitbit/) [Fitbit](https://fitbit.com), the exersice-tracking wristband maker.
+Recently, Google [acquired](https://www.engadget.com/2019/11/01/google-buys-fitbit/) [Fitbit](https://fitbit.com), the exercise-tracking wristband maker.
 
 Google has stated that "Fitbit health and wellness data will not be used for Google ads," _although it will collect data, much as it does with its other platforms_.
 I personally feel uncomfortable hearing this, as an ex. Fitbit owner, I don't feel like my health data is in good hands now.

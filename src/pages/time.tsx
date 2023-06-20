@@ -15,7 +15,7 @@ function calcTime(offset: number): string {
     return nd.toLocaleString()
 }
 
-function Time() {
+export default function Time() {
     const [isClientSideRenderer, setIsClientSideRenderer] =
         React.useState(false)
     const [, setTime] = React.useState(0)
@@ -40,6 +40,7 @@ function Time() {
             <Seo title="Time | RDIL's Site" page="/time" />
             <main>
                 <h1>Time</h1>
+
                 {isClientSideRenderer ? (
                     <p>
                         It is currently {time} for RDIL, who lives in UTC-5 (
@@ -52,5 +53,3 @@ function Time() {
         </>
     )
 }
-
-export default Time
