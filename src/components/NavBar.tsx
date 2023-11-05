@@ -2,7 +2,6 @@ import React from "react"
 import GitHub from "../icons/GitHub"
 import Envelope from "../icons/Envelope"
 import GitLab from "../icons/GitLab"
-import { List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
 import clsx from "clsx"
 
 export default function NavBar() {
@@ -24,35 +23,26 @@ export default function NavBar() {
             {isOpen ? (
                 <nav
                     aria-label="site"
-                    className="sidebar-nav"
-                    style={{ width: isOpen ? "265px" : "0" }}
+                    className={"sidebar-nav"}
                 >
-                    <List>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <GitHub className="sidebar-icon" />
-                            </ListItemIcon>
-                            <a href="https://github.com/RDIL">
-                                <ListItemText primary="GitHub" />
-                            </a>
-                        </ListItemButton>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <Envelope className="sidebar-icon" />
-                            </ListItemIcon>
-                            <a href="mailto:me@rdil.rocks">
-                                <ListItemText primary="Email" />
-                            </a>
-                        </ListItemButton>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <GitLab className="sidebar-icon" />
-                            </ListItemIcon>
-                            <a href="https://gitlab.com/rdil">
-                                <ListItemText primary="GitLab" />
-                            </a>
-                        </ListItemButton>
-                    </List>
+                    <div>
+                        <GitHub className="sidebar-icon" />
+                        <a href="https://github.com/RDIL">
+                            <p>GitHub</p>
+                        </a>
+                    </div>
+                    <div>
+                        <Envelope className="sidebar-icon" />
+                        <a href="mailto:me@rdil.rocks">
+                            <p>Email</p>
+                        </a>
+                    </div>
+                    <div>
+                        <GitLab className="sidebar-icon" />
+                        <a href="https://gitlab.com/rdil">
+                            <p>GitLab</p>
+                        </a>
+                    </div>
                 </nav>
             ) : null}
         </>
